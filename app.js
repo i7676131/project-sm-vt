@@ -8,6 +8,10 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var users = require('./routes/users');
 
+var isProd = process.env.NODE_ENV === 'production';
+console.log("Prod? "+isProd);
+
+// create global app object
 var app = express();
 
 // view engine setup
