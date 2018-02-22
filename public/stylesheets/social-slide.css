@@ -1,0 +1,75 @@
+.rear_img{
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(5px);
+    border: none;
+    transform: scale(1.1);
+}
+
+.front_img{
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    max-width: 100%;
+    max-height: 100%;
+    margin:auto;
+    overflow: auto;
+    z-index: -1;
+    box-shadow: 0 4px 8px RGBA(0,0,0,0.2), 0 6px 20px 0 RGBA(0,0,0,0.19);
+}
+
+.sm_post{
+    margin: 10% 10% 0 0;
+    height: auto;
+    width: 40%;
+    background-color: RGB(255,255,255);
+    float: right;
+    position: relative;
+    opacity: 0.9;
+    box-shadow: 0 4px 8px RGBA(0,0,0,0.2), 0 6px 20px 0 RGBA(0,0,0,0.19);
+}
+#sm_logo{
+    height: 50px;
+    margin: 5% 5% 0 0;
+    position: relative;
+    float: right;
+}
+#avatar{
+    height: 80px;
+    width: 80px;
+    margin: 5% 10px 0 5%;
+    border-radius: 50%;
+    position: relative;
+    float: left;
+}
+#txt_name{
+    margin: 50px 5% 0 5%;
+    position: relative;
+    font-size: 20px;
+}
+#txt_username{
+    position: relative;
+}
+#txt_content{
+    height: inherit;
+    margin: 10% 5% 0 5%;
+    font-size: 30px;
+    overflow: auto;
+    max-height: 50vh;
+}
+#txt_date{
+    margin: 5% 5% 5% 0;
+    vertical-align: bottom;
+    position: relative;
+    float: right;
+}
+
+
+

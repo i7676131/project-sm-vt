@@ -1,5 +1,17 @@
 extends layout
 
 block content
-    div.page_container
-        img= imageSrc
+    - var isVideo = false;
+        if isVideo
+            div().video
+        else
+            div(style='background-image: url(' + source + ')').rear_img
+            img(src=source).front_img
+
+    div.sm_post
+        img#avatar(src=smAvatar)
+        img#sm_logo(src=smLogo)
+        div#txt_name= smName
+        div#txt_username= smUsername
+        div#txt_content= smPostContent
+        div#txt_date= smDate

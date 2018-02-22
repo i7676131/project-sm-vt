@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+var socialSlide = require('./routes/social-slide')
 
 var isProd = process.env.NODE_ENV === 'production';
 console.log("Prod? "+isProd);
@@ -28,6 +29,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
+app.use('/social-slide', socialSlide);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
