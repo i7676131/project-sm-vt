@@ -20,12 +20,16 @@ li a{
   padding: 10px 12px;
   text-decoration: none;
 }
+li a{
+  color: RGB(255,1,128);
+}
 li.dropdown{
-  display: inline;
+  display: inline-block;
 }
 .dropdown_items{
   display: none;
   position: absolute;
+  background-color: RGB(0,0,0);
   min-width: 150px;
   box-shadow: 0 4px 8px RGBA(0,0,0,0.2), 0 6px 20px 0 RGBA(0,0,0,0.19);
   z-index: 1;
@@ -43,4 +47,3 @@ li.dropdown{
 .dropdown:hover .dropdown_items{
   display: block;
 }
-
