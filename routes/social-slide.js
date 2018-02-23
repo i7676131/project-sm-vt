@@ -1,11 +1,11 @@
 var express = require('express');
 var router = express.Router();
+var SmPostModel = require('SmPostModel');
 
-router.get('/', function(req, res, next) {
-
+/*router.get('/', function(req, res) {
 
     res.render('social-slide', {
-        source: getNextImage(),
+        source: '/images/slide_image1.jpg',
         title: 'Social Slide',
         smName: 'Tyrone Williams',
         smUsername: '@Mr_Rone_',
@@ -15,15 +15,40 @@ router.get('/', function(req, res, next) {
         smAvatar: '/images/profile_pic.jpg',
         smLogo: '/images/logos/Twitter_Logo_Blue.png'
     });
+});*/
+
+router.get('/', function(req, res) {
+
+    res.render('social-slide',{
+        title: 'Social Slide'
+    });
+
 });
 
-router.get('/statistics', function(req, req, next) {
+router.get('/api/test', function(req, res) {
 
+    var smPostModel = {
+        postId: 1,
+        listPriority: 1,
+        name: 'Tyrone Williams',
+        userName: 'Mr_rone_',
+        postContent: 'Great day at the beach today. Chips were lovely. #Btown #Bournemouth #Beach #FishAndChips',
+        postDate: '25 Jan 2018',
+        postAvatarUrl: '/images/profile_pic.jpg',
+        postImgUrl: '/images/slide_image1.jpg',
+        smPlatformLogo: '/images/logos/Twitter_Logo_Blue.png'
+    };
+    // use mongoose to get all todos in the database
+    /*SmPostModel.find(function(err, smPost) {
 
+        if (err) {
+            res.send(err)
+        }
+
+        res.json(smPost); // return all todos in JSON format
+    });*/
+
+    res.json(smPostModel);
 });
-
-function getNextImage(){
-    return '/images/slide_image1.jpg'
-}
 
 module.exports = router;

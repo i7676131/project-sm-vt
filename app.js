@@ -7,15 +7,14 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
 var index = require('./routes/index');
-var users = require('./routes/users');
 var socialSlide = require('./routes/social-slide')
 
 var isProd = process.env.NODE_ENV === 'production';
-console.log("Prod? "+isProd);
+console.log("App running on production? "+isProd);
 
 var db;
 if(isProd){
-  // Connect to production database.
+  // TODO: Connect to production database.
 }else{
   console.log('Connecting to MongoDb...')
   mongoose.connect('mongodb://localhost/DevDb')
@@ -43,9 +42,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/users', users);
 app.use('/social-slide', socialSlide);
-
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

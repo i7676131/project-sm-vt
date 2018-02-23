@@ -9,9 +9,10 @@ block content
             img(src=source).front_img
 
     div.sm_post
-        img#avatar(src=smAvatar)
-        img#sm_logo(src=smLogo)
-        div#txt_name= smName
-        div#txt_username= smUsername
-        div#txt_content= smPostContent
-        div#txt_date= smDate
+        img#avatar(src=smPostModel.postAvatarUrl)
+        img#sm_logo(src=smPostModel.smPlatformLogo)
+        div#txt_name= smPostModel.name
+        div#txt_username= smPostModel.userName
+        div#txt_content= smPostModel.postContent
+        div#txt_date= smPostModel.postDate
+
