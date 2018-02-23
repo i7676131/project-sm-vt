@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var SmPostModel = require('SmPostModel');
+var smPostModel = require('../public/javascripts/models/sm-post-model.js');
 
 /*router.get('/', function(req, res) {
 
@@ -27,7 +27,7 @@ router.get('/', function(req, res) {
 
 router.get('/api/test', function(req, res) {
 
-    var smPostModel = {
+    var smPost = {
         postId: 1,
         listPriority: 1,
         name: 'Tyrone Williams',
@@ -39,7 +39,7 @@ router.get('/api/test', function(req, res) {
         smPlatformLogo: '/images/logos/Twitter_Logo_Blue.png'
     };
     // use mongoose to get all todos in the database
-    /*SmPostModel.find(function(err, smPost) {
+    /*smPostModel.find(function(err, smPost) {
 
         if (err) {
             res.send(err)
@@ -48,7 +48,7 @@ router.get('/api/test', function(req, res) {
         res.json(smPost); // return all todos in JSON format
     });*/
 
-    res.json(smPostModel);
+    res.json(smPost);
 });
 
 module.exports = router;

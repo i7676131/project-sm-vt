@@ -17,14 +17,14 @@ if(isProd){
   // TODO: Connect to production database.
 }else{
   console.log('Connecting to MongoDb...')
-  mongoose.connect('mongodb://localhost/DevDb')
+  //mongoose.connect('mongodb://localhost/DevDb')
 }
 
-var db = mongoose.connection;
+/*var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
     console.log('App now connected to MongoDb... ');
-});
+});*/
 
 // create global app object
 var app = express();

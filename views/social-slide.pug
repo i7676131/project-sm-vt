@@ -5,14 +5,17 @@ block content
         if isVideo
             div().video
         else
-            div(style='background-image: url(' + source + ')').rear_img
-            img(src=source).front_img
+            div(style='background-image: url( {{ socialPost.postImgUrl }})').rear_img
+            img(ng-src='{{ socialPost.postImgUrl }}').front_img
 
     div.sm_post
-        img#avatar(src=smPostModel.postAvatarUrl)
-        img#sm_logo(src=smPostModel.smPlatformLogo)
-        div#txt_name= smPostModel.name
-        div#txt_username= smPostModel.userName
-        div#txt_content= smPostModel.postContent
-        div#txt_date= smPostModel.postDate
-
+        img#avatar(ng-src='{{ socialPost.postAvatarUrl }}')
+        img#sm_logo(ng-src='{{ socialPost.smPlatformLogo }}')
+        div#txt_name.
+            {{ socialPost.name }}
+        div#txt_username.
+            {{ socialPost.userName }}
+        div#txt_content.
+            {{ socialPost.postContent }}
+        div#txt_date.
+            {{ socialPost.postDate }}
