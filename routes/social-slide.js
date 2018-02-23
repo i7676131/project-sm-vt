@@ -17,6 +17,11 @@ router.get('/', function(req, res, next) {
     });
 });
 
+router.get('/statistics', function(req, req, next) {
+
+
+});
+
 function getNextImage(){
     return '/images/slide_image1.jpg'
 }
