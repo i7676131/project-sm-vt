@@ -1,12 +1,16 @@
 doctype html
-html(lang='en')
-  head(ng-app="socialSlide")
+html(lang='en' ng-app="socialSlide")
+  head
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='/stylesheets/social-slide.css')
-  body(ng-controller='mainController')
+    script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js')
+    script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js')
+    script(src='/javascripts/controllers/social-slide-controller.js')
+
+  body
     ul
       li
         div.dropdown
@@ -15,8 +19,5 @@ html(lang='en')
             a(href='') About
             a(href='') Settings
             a(href='') Social Slide
-    scirpt(src='//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
-    script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js')
-    script(src='/javascripts/social-slide-controller.js')
 
   block content

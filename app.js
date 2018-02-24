@@ -5,9 +5,10 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
+var engine = require('consolidate');
 
 var index = require('./routes/index');
-var socialSlide = require('./routes/social-slide')
+var socialSlide = require('./routes/social-slide');
 
 var isProd = process.env.NODE_ENV === 'production';
 console.log("App running on production? "+isProd);
@@ -17,14 +18,14 @@ if(isProd){
   // TODO: Connect to production database.
 }else{
   console.log('Connecting to MongoDb...')
-  //mongoose.connect('mongodb://localhost/DevDb')
+  mongoose.connect('mongodb://localhost/DevDb')
 }
 
-/*var db = mongoose.connection;
+var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
-    console.log('App now connected to MongoDb... ');
-});*/
+    console.log('App now connected to MongoDb on port: '+db.port);
+});
 
 // create global app object
 var app = express();

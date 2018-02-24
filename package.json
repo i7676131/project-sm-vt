@@ -4,7 +4,7 @@
   "description": "Repository for the Social Media Visualisation Tool",
   "main": "app.js",
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "nodemon ./bin/www",
     "dev": ""
   },
   "repository": {
@@ -17,13 +17,14 @@
     "url": "https://github.com/i7676131/project-sm-vt/issues"
   },
   "dependencies": {
-    "angular": "^1.6.9",
     "body-parser": "~1.18.2",
+    "consolidate": "^0.15.0",
     "cookie-parser": "~1.4.3",
     "debug": "~3.1.0",
     "express": "~4.16.2",
-    "mongoose": "^5.0.6",
+    "mongoose": "^5.0.7",
     "morgan": "~1.9.0",
+    "mustache": "^2.3.0",
     "nodemon": "^1.15.1",
     "pug": "2.0.0-rc.4",
     "serve-favicon": "~2.4.5"

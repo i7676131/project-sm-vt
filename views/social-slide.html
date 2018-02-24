@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="socialSlide">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel='stylesheet' href='/stylesheets/style.css'/>
+        <link rel='stylesheet' href='/stylesheets/social-slide.css'/>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+        <script src="/javascripts/social-slide-controller.js"></script>
+    </head>
+    <body>
+        <ul>
+            <li>
+                <div class="dropdown"/>
+                    <a href="javascript:void(0)" class="droptntn">•••</a>
+                    <div class="dropdown_items"/>
+                        <a href="">About</a>
+                        <a href="">Settings</a>
+                        <a href="">Social Slide</a>
+            </li>
+        </ul>
+
+        <div ng-controller="mainCtrl">
+            <div class="rear_img" style="background-image: url({{ imageSrc }});"></div>
+            <img class="front_img" ng-src="{{imageSrc}}">
+            <p>Hello: {{name}}</p>
+        </div>
+    </body>
+</html>
