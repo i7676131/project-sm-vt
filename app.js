@@ -1,3 +1,4 @@
+var conf = require('./config/system-config');
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -10,21 +11,19 @@ var engine = require('consolidate');
 var index = require('./routes/index');
 var socialSlide = require('./routes/social-slide');
 
+// Change from production to dev variables
 var isProd = process.env.NODE_ENV === 'production';
 console.log("App running on production? "+isProd);
 
+// MongoDb connection
 var db;
-if(isProd){
-  // TODO: Connect to production database.
-}else{
-  console.log('Connecting to MongoDb...')
-  mongoose.connect('mongodb://localhost/DevDb')
-}
-
-var db = mongoose.connection;
+console.log('Connecting to MongoDb...');
+mongoose.connect(conf.database.dbUrl);
+db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
-    console.log('App now connected to MongoDb on port: '+db.port);
+    console.log('App now connected to MongoDb on port: '+db.port+' to db: '+db.name);
+
 });
 
 // create global app object
@@ -34,8 +33,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
-// uncomment after placing your favicon in /public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));

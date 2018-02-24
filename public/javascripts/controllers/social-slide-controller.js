@@ -6,9 +6,9 @@ socialSlide.controller("mainCtrl", function($scope, $http) {
 
     $http({
         method: 'GET',
-        url: 'social-slide/api/test'
+        url: 'social-slide/api/get/next-post'
     }).then(function (res) {
-        console.log(res);
+        console.log('API response: '+res.data);
         var post = res.data;
 
         $scope.imageSrc = post.smImageUrl;

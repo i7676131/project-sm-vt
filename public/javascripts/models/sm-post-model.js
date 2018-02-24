@@ -16,4 +16,6 @@ var smPost = new Schema({
     }
 });
 
-module.exports = mongoose.model('SmPostModel', smPost);
+var SmPostModel = mongoose.model('SmPostModel', smPost);
+
+module.exports=SmPostModel;
