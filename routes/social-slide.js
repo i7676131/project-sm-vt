@@ -22,7 +22,6 @@ router.get('/api/get/next-post', function(req, res) {
         res.json(smPost);
     })
 
-//    res.json(smPost);
 });
 
 module.exports = router;

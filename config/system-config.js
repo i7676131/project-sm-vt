@@ -1,8 +1,7 @@
 module.exports = {
 
     database: {
-        dbUrl: 'mongodb://localhost/posts',
-        dbPort: '27017',
+        dbUrl: 'mongodb://localhost/DevDb',
         dbConnRetry: '3'
     },
     server: {

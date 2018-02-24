@@ -11,10 +11,6 @@ var engine = require('consolidate');
 var index = require('./routes/index');
 var socialSlide = require('./routes/social-slide');
 
-// Change from production to dev variables
-var isProd = process.env.NODE_ENV === 'production';
-console.log("App running on production? "+isProd);
-
 // MongoDb connection
 var db;
 console.log('Connecting to MongoDb...');
