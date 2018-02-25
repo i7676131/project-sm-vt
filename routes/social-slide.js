@@ -2,26 +2,29 @@ var express = require('express');
 var router = express.Router();
 var SmPostModel = require('../public/javascripts/models/sm-post-model');
 
+// path for /social-slide
 router.get('/', function(req, res) {
-
-    res.render('social-slide-p',{
+    res.render('social-slide',{
         title: 'Social Slide'
     });
-
 });
 
+// path for /social-slide/api/get/next-post
 router.get('/api/get/next-post', function(req, res) {
 
-    SmPostModel.findOne({postId:'1'}, function(err, smPost) {
+    // TODO sort collection by date and serve to Angular controller.
+    // TODO also check if that post has been used the same day, we don't want the same posts to be cycled through all day.
 
-        if (err) {
-            res.send(err)
-        }
-        console.log("Result from db: "+smPost);
+    var posts = [1,2,3];
+    var i = posts[Math.floor(Math.random()*posts.length)];
+    console.log('Post Id: '+i);
+    SmPostModel.findOne({smPostId: i}, function(err, smPost) {
 
+        if (err) { throw err; }
+
+        console.log("Result from db:\n"+smPost);
         res.json(smPost);
     })
-
 });
 
 module.exports = router;

@@ -14,12 +14,12 @@ var socialSlide = require('./routes/social-slide');
 // MongoDb connection
 var db;
 console.log('Connecting to MongoDb...');
-mongoose.connect(conf.database.dbUrl);
-db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', function() {
-    console.log('App now connected to MongoDb on port: '+db.port+' to db: '+db.name);
-
+mongoose.connect(conf.database.dbUrl, function(err){
+  if (err){
+      throw err;
+  };
+  db = mongoose.connection;
+  console.log('App successfully connected to MongoDb. \nPort: '+db.port+'\nDb: '+db.name);
 });
 
 // create global app object

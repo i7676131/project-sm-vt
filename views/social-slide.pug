@@ -6,8 +6,8 @@ block content
             if isVideo
                 div().video
             else
-                div(style='background-image: url({{ imageSrc }})').rear_img
-                img(ng-src="{{ imageSrc}}").front_img
+                div(style='background-image: url({{ postImageSrc }})').rear_img
+                img(ng-src="{{ postImageSrc}}").front_img
         div.sm_post
             img#avatar(ng-src='{{ postAvatarUrl }}')
             img#sm_logo(ng-src='{{ postPlatformLogo }}')

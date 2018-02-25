@@ -1,21 +1,25 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
+const logoUrl = '/images/logos/';
 
-var smPost = new Schema({
-    postId: Number,
-    listPriority: Number,
-    name: String,
-    userName: String,
-    postContent: String,
-    postDate: String,
-    postProfileImgUrl: String,
-    postImgUrl: String,
-    smPlatform: {
+var postSchema = new Schema({
+    smPostId: Number,
+    smListPriority: String,
+    smName: String,
+    smUserName: String,
+    smContent: String,
+    smDate: String,
+    smAvatarUrl: {
         type: String,
-        enum: ['Facebook', 'Instagram', 'Twitter']
-    }
+        default: 'some/url' //TODO add default profile pic.
+    },
+    smImageUrl: {
+        type: String,
+        default: 'some/url' //TODO add default background image, in case there is no SM image.
+    },
+    smPlatform: String,
+    timesUsed: Number
 });
 
-var SmPostModel = mongoose.model('SmPostModel', smPost);
-
-module.exports=SmPostModel;
+var Post = mongoose.model('posts', postSchema);
+module.exports=Post;
