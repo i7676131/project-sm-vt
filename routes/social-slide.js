@@ -15,6 +15,12 @@ router.get('/api/get/next-post', (req, res) => {
     // TODO sort collection by date and serve to Angular controller.
     // TODO also check if that post has been used the same day, we don't want the same posts to be cycled through all day.
 
+    /*let statPage = res.getAttribute('load-stat-page');
+
+    if(statPage){
+
+    }*/
+
     var posts = [1,2,3];
     var i = posts[Math.floor(Math.random()*posts.length)];
     console.log('Post Id: '+i);

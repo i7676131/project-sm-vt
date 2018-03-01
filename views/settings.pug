@@ -3,6 +3,7 @@ extends layout
 block content
     div.container
         form(action='/settings' method='POST')
-            input(type='text' placeholder='example...' name='example')
-            input(type='text' placeholder='example...' name='example1')
+            input(type='text' placeholder='Whitelist...' name='wListWord')
             button(type='submit') Save
+
+        p API refresh: #{appSett.apiRefresh}

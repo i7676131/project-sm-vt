@@ -18,8 +18,8 @@ var postSchema = new Schema({
         default: 'some/url' //TODO add default background image, in case there is no SM image.
     },
     smPlatform: String,
-    timesUsed: Number
+    timesUsedToday: Number
 });
 
 var Post = mongoose.model('posts', postSchema);
-module.exports=Post;
+module.exports= Post;

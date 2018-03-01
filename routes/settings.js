@@ -1,20 +1,24 @@
 let express = require('express');
 let router = express.Router();
+let SettingModel = require('../public/javascripts/models/sm-post-model');
+let settingsController = require('../public/javascripts/controllers/settings-controller');
+
 
 // path for /social-slide
-router.get('/', (req, res) => {
+/*router.get('/', (req, res) => {
+
+    let set = settingsController.getSettings(req, res);
     res.render('settings',{
-        title: 'Settings'
+        title: 'Settings',
+        appSettings: set
     });
-});
+});*/
 
-router.post('/', (req, res) => {
+router.get('/', settingsController.getSettings);
 
-});
+router.post('/', settingsController.addWhiteListItem);
 
-router.put('/', (req, res) => {
-
-});
+router.put('/');
 
 router.delete('/', (req, res) => {
 
