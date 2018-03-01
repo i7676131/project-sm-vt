@@ -1,5 +1,5 @@
-let mongoose = require('mongoose');
-let Schema = mongoose.Schema;
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
 
 let blacklist = new Schema({
     bListId: {type: Number, require: true},
@@ -9,7 +9,6 @@ let whitelist = new Schema({
     wListId: {type: Number, require: true},
     word: String
 });
-
 
 let settingSchema = new Schema({
     whitelist: [whitelist],
@@ -23,4 +22,5 @@ let settingSchema = new Schema({
     }
 });
 
-module.exports= mongoose.model('settings', settingSchema);
+let Settings = mongoose.model('settings', settingSchema);
+module.exports= Settings;

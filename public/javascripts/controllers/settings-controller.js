@@ -1,5 +1,6 @@
-let mongoose = require('mongoose');
-let AppSetting = mongoose.model('settings');
+var mongoose = require('mongoose');
+var AppSetting = require('../models/settings-model');
+mongoose.model('settings');
 
 var settingsController = {};
 
@@ -19,15 +20,15 @@ settingsController.getSettings = (req, res) => {
 };
 
 settingsController.addWhiteListItem = (req, res) => {
-    let newWord = new AppSetting(req.body);
+    let newWord = {wListId:4, word:'Amy'};
 
     // add whitelist word to Array in the settings document in MondoDb.
-    newWord.save((err) => {
+    AppSetting.findOneAndUpdate({instance:'1'},{$push: {whitelist:newWord}}, (err) => {
        if(err){
            console.log(err);
            throw err
        }else{
-           console.log('New whitelist word was added successfully.');
+           console.log('New whitelist word: '+newWord.word+' was added successfully.');
            res.redirect('/settings')
        }
     });

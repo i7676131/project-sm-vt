@@ -1,7 +1,6 @@
-let express = require('express');
-let router = express.Router();
-let SettingModel = require('../public/javascripts/models/sm-post-model');
-let settingsController = require('../public/javascripts/controllers/settings-controller');
+var express = require('express');
+var router = express.Router();
+var settingsController = require('../public/javascripts/controllers/settings-controller');
 
 
 // path for /social-slide
