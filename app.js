@@ -6,18 +6,15 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
-var engine = require('consolidate');
 
-var index = require('./routes/index');
 var socialSlide = require('./routes/social-slide');
+var settings = require('./routes/settings');
 
 // MongoDb connection
 var db;
 console.log('Connecting to MongoDb...');
-mongoose.connect(conf.database.dbUrl, function(err){
-  if (err){
-      throw err;
-  };
+mongoose.connect(conf.database.dbUrl, (err) => {
+  if (err){throw err;};
   db = mongoose.connection;
   console.log('App successfully connected to MongoDb. \nPort: '+db.port+'\nDb: '+db.name);
 });
@@ -36,18 +33,18 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', index);
 app.use('/social-slide', socialSlide);
+app.use('/settings', settings);
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use((req, res, next) => {
   var err = new Error('Not Found');
   err.status = 404;
   next(err);
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use((err, req, res, next) => {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
