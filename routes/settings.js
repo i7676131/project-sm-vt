@@ -15,11 +15,11 @@ var settingsController = require('../public/javascripts/controllers/settings-con
 
 router.get('/', settingsController.getSettings);
 
-router.post('/', settingsController.addWhiteListItem);
+router.post('/', settingsController.addListItem);
 
 router.put('/');
 
-router.delete('/', (req, res) => {
+router.delete('/:id', (req, res) => {
 
 });
 

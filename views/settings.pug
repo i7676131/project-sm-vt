@@ -3,7 +3,32 @@ extends layout
 block content
     div.container
         form(action='/settings' method='POST')
-            input(type='text' placeholder='Whitelist...' name='wListWord')
+            input(type='text' placeholder='Whitelist...' name='listWord' required=true)
+            input(type='hidden' name='listType' value='whitelist')
             button(type='submit') Save
 
-        p API refresh: #{appSett.apiRefresh}
+        form(action='/settings' method='POST')
+            input(type='text' placeholder='Blacklist......' name='listWord' required=true)
+            input(type='hidden' name='listType' value='blacklist')
+            button(type='submit') Save
+
+        label Select WhiteLsit Word for Deletion (Select 1 or More...)
+        select(required=true)
+            each item in appSett
+                each word in item.whitelist
+                    option(value=word._id) #{word.word}
+                else
+                    li No whitelist words
+        button(type='submit') Delete
+
+        label Select Blacklist Word for Deletion (Select 1 or More...)
+        form(action='/settings' method='DELETE')
+
+            select(required=true)
+                each item in appSett
+                    each word in item.blacklist
+                        option(value=word._id) #{word.word}
+
+            button(type='submit') Delete
+
+
