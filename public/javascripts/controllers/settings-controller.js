@@ -6,6 +6,10 @@ var settingsController = {};
 
 settingsController.getSettings = (req, res) => {
 
+    let message = req.query.message;
+    let success = req.query.success;
+    console.log('Message: '+message);
+
     AppSetting.find({}).exec((err, setting) => {
         console.log('DB response:\n'+setting);
 
@@ -15,40 +19,54 @@ settingsController.getSettings = (req, res) => {
             res.render('../views/settings.pug', {
                 title: 'Settings',
                 appSett: setting,
+                message: message,
             });
         }
     });
 };
 
 settingsController.addListItem = (req, res) => {
+    let message;
     let listType = req.body.listType;
-    console.log('List type from user: '+listType);
-
     let newWord = {word: req.body.listWord};
 
     if(listType == 'whitelist'){
-        addWord(listType, newWord);
-        // TODO set a parameter to true to indicate to user that adding word was a sucecss.
-        res.redirect('/settings');
+        message = encodeURIComponent(addWord(listType, newWord));
+        console.log('MESSAGE: '+message)
+        res.redirect('/settings?message='+message);
     }else if(listType == 'blacklist'){
-        addWord(listType, newWord);
-        res.redirect('/settings');
+        message = encodeURIComponent(addWord(listType, newWord));
+        res.redirect('/settings?message='+message);
     };
 };
 
 function addWord (list, newWord) {
-    AppSetting.findOneAndUpdate({instance:'1'},{$push: { [list] :newWord}}, (err) => {
-        if(err){throw err;}
-        console.log('New '+list+' word \''+newWord.word+'\' was added successfully...');
+    AppSetting.findOneAndUpdate(
+        {instance:'1'},
+        {$push: { [list] :newWord}},
+        (err) => {
+            if(err){
+                throw err;
+            }
+            console.log('New '+list+' word \''+newWord.word+'\' was added successfully...');
     });
+    return 'New '+list+' word \''+newWord.word+'\' was added successfully...';
 }
 
 settingsController.delete = (req, res) => {
-    AppSetting.remove({_id: req.body.id}, (err) => {
-        if(err){throw err};
-        console.log('Word has been deleted...');
+    const id = req.body.blacklistSelect;
 
-    });
+    AppSetting.update(
+        {_id: '5a985a4917fd01299334e96c'},
+        {$pull: {blacklist: {_id:id}}},
+        (err) => {
+            if(err){
+                throw err
+            }else {
+                let message = encodeURIComponent(req.body.blacklistSelect+' has been deleted');
+                res.redirect('/settings?message='+message);
+            }
+        });
 };
 
 

@@ -2,12 +2,12 @@ extends layout
 
 block content
     div.container
-        form(action='/settings' method='POST')
+        form(action='/settings/add' method='POST')
             input(type='text' placeholder='Whitelist...' name='listWord' required=true)
             input(type='hidden' name='listType' value='whitelist')
             button(type='submit') Save
 
-        form(action='/settings' method='POST')
+        form(action='/settings/add' method='POST')
             input(type='text' placeholder='Blacklist......' name='listWord' required=true)
             input(type='hidden' name='listType' value='blacklist')
             button(type='submit') Save
@@ -18,17 +18,19 @@ block content
                 each word in item.whitelist
                     option(value=word._id) #{word.word}
                 else
-                    li No whitelist words
-        button(type='submit') Delete
+                    option No data to display
+            button(type='submit') Delete
 
-        label Select Blacklist Word for Deletion (Select 1 or More...)
-        form(action='/settings' method='DELETE')
-
-            select(required=true)
+    label Select Blacklist Word for Deletion (Select 1 or More...)
+        form(action='/settings/delete' method='POST' enctype='application/x-www-form-urlencoded')
+            select(required=true name='blacklistSelect')
                 each item in appSett
                     each word in item.blacklist
                         option(value=word._id) #{word.word}
-
+                    else
+                        option No data to display.
             button(type='submit') Delete
 
 
+    if message
+            p= message
