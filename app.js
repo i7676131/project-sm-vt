@@ -6,19 +6,10 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var cors = require('cors')
-var mongoose = require('mongoose');
+var db = require('./public/javascripts/database/db');
 
 var socialSlide = require('./routes/social-slide');
 var settings = require('./routes/settings');
-
-// MongoDb connection
-var db;
-console.log('Connecting to MongoDb...');
-mongoose.connect(conf.database.dbUrl, (err) => {
-  if (err){throw err;};
-  db = mongoose.connection;
-  console.log('App successfully connected to MongoDb. \nPort: '+db.port+'\nDb: '+db.name);
-});
 
 // create global app object
 var app = express();

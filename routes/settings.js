@@ -6,7 +6,7 @@ router.get('/', settingsController.getSettings);
 
 router.post('/add', settingsController.addListItem);
 
-router.put('/');
+router.post('/update', settingsController.update);
 
 router.post('/delete', settingsController.delete);
 
