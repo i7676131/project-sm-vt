@@ -14,4 +14,4 @@ let settingSchema = new Schema({
 });
 
 let Settings = mongoose.model('settings', settingSchema);
-module.exports= Settings;
+module.exports = Settings;

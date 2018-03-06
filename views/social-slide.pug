@@ -1,17 +1,18 @@
 extends layout
 
 block content
-    div(ng-controller="mainCtrl")
-        - var isVideo = false;
-            if isVideo
-                div().video
-            else
-                div(style='background-image: url({{ postImageSrc }})').rear_img
-                img(ng-src="{{ postImageSrc}}").front_img
-        div.sm_post
-            img#avatar(ng-src='{{ postAvatarUrl }}')
-            img#sm_logo(ng-src='{{ postPlatformLogo }}')
-            div#txt_name {{postName}}
-            div#txt_username {{postUserName}}
-            div#txt_content {{postContent}}
-            div#txt_date {{postDate}}
+    - var isPost = true;
+    if isPost
+        div(ng-controller="mainCtrl")
+            div(style='background-image: url({{ postImageSrc }})').rear_img
+            img(ng-src="{{ postImageSrc}}").front_img
+
+            div.sm_post
+                img#avatar(ng-src='{{ postAvatarUrl }}')
+                img#sm_logo(ng-src='{{ postPlatformLogo }}')
+                div#txt_name {{postName}}
+                div#txt_username {{postUserName}}
+                div#txt_content {{postContent}}
+                div#txt_date {{postDate}}
+    else
+        //TODO Add statistics here...

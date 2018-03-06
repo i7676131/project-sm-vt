@@ -7,5 +7,8 @@ module.exports = {
     },
     settings: {
         settingDocObjectId: '5a985a4917fd01299334e96c'
+    },
+    twitter: {
+        appKey: ''
     }
 };

@@ -3,7 +3,6 @@ var Schema = mongoose.Schema;
 const logoUrl = '/images/logos/';
 
 var postSchema = new Schema({
-    smPostId: Number,
     smListPriority: String,
     smName: String,
     smUserName: String,
@@ -18,8 +17,12 @@ var postSchema = new Schema({
         default: 'some/url' //TODO add default background image, in case there is no SM image.
     },
     smPlatform: String,
-    timesUsedToday: Number
+    timesUsedToday: {
+        type: Number,
+        default: 0,
+        required: true
+    }
 });
 
 var Post = mongoose.model('posts', postSchema);
-module.exports= Post;
+module.exports = Post;
