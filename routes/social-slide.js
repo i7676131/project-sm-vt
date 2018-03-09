@@ -1,10 +1,16 @@
 var express = require('express');
 var router = express.Router();
-var SmPostModel = require('../public/javascripts/models/sm-post-model');
-var slideController = require('../public/javascripts/controllers/slide-controller');
+var slideController = require('../public/javascripts/database/slide-controller');
+var statsController = require('../public/javascripts/database/stats-controller');
 
-router.get('/', slideController.loadPage);
+router.get('/', (req, res) => {
+    res.render('social-slide', {
+        title: 'Social Slide'
+    });
+});
 
-router.get('/api/get/next-post', slideController.nextPost);
+router.get('/api/get/next-post', slideController.getNextPost);
+
+router.get('/api/get/next-stats', statsController.getStatistics);
 
 module.exports = router;

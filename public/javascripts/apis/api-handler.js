@@ -1,10 +1,11 @@
 var conf = require('../../../config/system-config');
-var mongoose = require('mongoose');
 var AppSetting = require('../models/settings-model');
-mongoose.model('settings');
+var timeConverter = require('../helpers/milliseconds');
 const settingObjId = conf.settings.settingDocObjectId;
+
 // Set default interval in-case of error.
 var apiRefresh = 900000;
+
 // Update list once when app starts.
 updatePostList();
 getApiRefresh();
@@ -15,7 +16,7 @@ function getApiRefresh() {
             console.log('ERROR: Could not get API Refresh.');
             process.exit(0);
         }
-        apiRefresh = getMilliseconds(setting[0].apiRefresh);
+        apiRefresh = timeConverter.minsToMills(setting[0].apiRefresh);
         console.log('API refresh set to \'' + apiRefresh + '\' (milliseconds)');
         setInterval(updatePostList, apiRefresh);
     });
@@ -24,12 +25,4 @@ function getApiRefresh() {
 function updatePostList() {
     // TODO: Call platform APIs from this function.
     console.log('Updating social media post list...');
-}
-
-function getMilliseconds(minutes) {
-    if (isNaN(minutes)) {
-        console.log('ERROR: Input variable is not a number.');
-    } else {
-        return minutes * 60000;
-    }
 }

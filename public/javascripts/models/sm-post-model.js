@@ -3,11 +3,14 @@ var Schema = mongoose.Schema;
 const logoUrl = '/images/logos/';
 
 var postSchema = new Schema({
-    smListPriority: String,
+    smId: String,
     smName: String,
     smUserName: String,
     smContent: String,
-    smDate: String,
+    smDate: {
+        type: Date,
+        default: Date.now()
+    },
     smAvatarUrl: {
         type: String,
         default: 'some/url' //TODO add default profile pic.

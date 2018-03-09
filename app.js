@@ -6,7 +6,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var postListUpdate = require('./public/javascripts/apis/api-handler');
+var postUpdate = require('./public/javascripts/apis/api-handler');
 
 var socialSlide = require('./routes/social-slide');
 var settings = require('./routes/settings');

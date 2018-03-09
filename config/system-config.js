@@ -9,6 +9,6 @@ module.exports = {
         settingDocObjectId: '5a985a4917fd01299334e96c'
     },
     twitter: {
-        appKey: ''
+        appKey: '1573006615-JA70OGRbwp5NNZdTjGSeqNB67uevMyolk3adz6p'
     }
 };

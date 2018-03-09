@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var settingsController = require('../public/javascripts/controllers/settings-controller');
+var settingsController = require('../public/javascripts/database/settings-controller');
 
 router.get('/', settingsController.getSettings);
 
