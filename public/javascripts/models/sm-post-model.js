@@ -20,6 +20,7 @@ var postSchema = new Schema({
         default: 'some/url' //TODO add default background image, in case there is no SM image.
     },
     smPlatform: String,
+    keywordUsed: String,
     timesUsedToday: {
         type: Number,
         default: 0,

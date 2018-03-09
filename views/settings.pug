@@ -5,8 +5,8 @@ block content
         h1 General Settings
         label Update general settings by filling out each field and clicking 'Submit'.
         form(action='/settings/update' method='POST')
-            |API Refresh (mins) *Requires App Restart
-            input(type='number' min='15' max='60' placeholder=appSett[0].apiRefresh+'...' name='formApiRefresh')
+            |Update Refresh (mins) *Requires App Restart
+            input(type='number' min='15' max='60' placeholder=appSett[0].updateRefresh+'...' name='formUpdateRefresh')
             br
             |Slide Speed (secs)
             input(type='number' min='1' max='60' placeholder=appSett[0].slideSpeed+'...' name='formSlideSpeed')

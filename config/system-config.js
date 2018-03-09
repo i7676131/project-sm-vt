@@ -9,6 +9,8 @@ module.exports = {
         settingDocObjectId: '5a985a4917fd01299334e96c'
     },
     twitter: {
-        appKey: '1573006615-JA70OGRbwp5NNZdTjGSeqNB67uevMyolk3adz6p'
+        consumer_key: 'wmQ884x5DKICPJpHQusuTP1bE',
+        consumer_secret: 'mBGp9dE4TTXxH69lj7kuD8Ms0myxfJuf901iXRMRrEY80VecTf',
+        bearer_token: 'AAAAAAAAAAAAAAAAAAAAAPUY4QAAAAAAeG9M903ZlKt40V8Ilv58rmDPfnk'
     }
 };

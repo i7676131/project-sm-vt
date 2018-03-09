@@ -1,12 +1,10 @@
 var socialSlide = angular.module('socialSlide', []);
+var counter = 10;
 
-socialSlide.controller("mainCtrl", function($scope, $http, $interval) {
+socialSlide.controller("mainCtrl", function ($scope, $http, $interval) {
 
-    $interval(function(){
-        $http({
-            method: 'GET',
-            url: 'social-slide/api/get/next-post'
-        }).then(function (res) {
+    $interval(function () {
+        $http.get('/social-slide/api/get/next-post').then((res) => {
             var post = res.data;
             $scope.postImageSrc = post.smImageUrl;
             $scope.postAvatarUrl = post.smAvatarUrl;
@@ -15,8 +13,6 @@ socialSlide.controller("mainCtrl", function($scope, $http, $interval) {
             $scope.postUserName = post.smUserName;
             $scope.postContent = post.smContent;
             $scope.postDate = post.smDate;
-        }), function (error) {
-            throw error;
-        }
+        });
     }, 10000);
 });

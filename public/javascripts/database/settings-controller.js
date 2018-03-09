@@ -35,7 +35,7 @@ settingsController.addListItem = (req, res) => {
     });
 };
 settingsController.update = (req, res) => {
-    let apiRefresh = req.body.formApiRefresh;
+    let updateRefresh = req.body.formUpdateRefresh;
     let slideSpeed = req.body.formSlideSpeed;
     let message = '';
     let disPlatform = {
@@ -44,8 +44,8 @@ settingsController.update = (req, res) => {
         disInstagram: req.body.formDisInstagram
     };
 
-    if (apiRefresh !== '') {
-        updateSetting('apiRefresh', apiRefresh);
+    if (updateRefresh !== '') {
+        updateSetting('updateRefresh', updateRefresh);
     }
     if (slideSpeed !== '') {
         updateSetting('slideSpeed', slideSpeed);

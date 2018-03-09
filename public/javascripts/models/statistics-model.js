@@ -18,4 +18,4 @@ let statSchema = new Schema({
 });
 
 let Statistics = mongoose.model('statistics', statSchema);
-module.exports= Statistics;
+module.exports = Statistics;

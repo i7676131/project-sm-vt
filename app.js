@@ -1,15 +1,17 @@
 var db = require('./public/javascripts/database/db');
 var conf = require('./config/system-config');
 var express = require('express');
+var cors = require('cors')
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var postUpdate = require('./public/javascripts/apis/api-handler');
-
+var updater = require('./public/javascripts/system/auto-updater');
+var stat = require('./public/javascripts/database/stats-controller');
 var socialSlide = require('./routes/social-slide');
 var settings = require('./routes/settings');
+
 
 // create global app object
 var app = express();
@@ -18,6 +20,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
+app.use(cors());
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());

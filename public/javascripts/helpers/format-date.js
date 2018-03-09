@@ -2,15 +2,24 @@ var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov',
 
 var formatDate = {};
 
-formatDate.twitterDate = (date) => {
+formatDate.twitterDate = (post) => {
 
-    let newDate = new Date(date);
-
+    let newDate = new Date(post.smDate);
     let d = newDate.getDay();
     let m = months[newDate.getMonth()];
     let y = newDate.getFullYear();
 
-    return d+' '+m+' '+y;
+    let t = newDate.get
+
+    return {
+        smDate: d+' '+m+' '+y,
+        smPlatform: post.smPlatform,
+        smContent: post.smContent,
+        smAvatarUrl: post.smAvatarUrl,
+        smImageUrl: post.smImageUrl,
+        smUserName: post.smUserName,
+        smName: post.smName
+    }
 };
 
 module.exports = formatDate;

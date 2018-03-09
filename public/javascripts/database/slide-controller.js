@@ -14,13 +14,8 @@ slideController.getNextPost = (req, res) => {
             throw err
         }
         slideController.updateUsedPost(post._id);
-
-        var fmtDate = format.twitterDate(post.smDate);
-        post.smDate = fmtDate;
-
-        console.log('NEW DATE: '+fmtDate);
-        console.log('Next post: '+post)
-        res.json(post);
+        var fmtPost = format.twitterDate(post);
+        res.json(fmtPost);
     });
 };
 
@@ -31,7 +26,6 @@ slideController.updateUsedPost = (objId) => {
         if (err) {
             throw new Error('ERROR: Could not get post by ID \'' + objId + '\'.');
         }
-        console.log('Post: ' + post);
         timesUsed = post.timesUsedToday + 1;
         console.log('Times used today was ' + post.timesUsedToday + ' now ' + timesUsed + '.');
         SmPost.update({_id: objId}, {timesUsedToday: timesUsed}, {upsert: true}, (err) => {

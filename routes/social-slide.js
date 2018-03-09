@@ -11,6 +11,6 @@ router.get('/', (req, res) => {
 
 router.get('/api/get/next-post', slideController.getNextPost);
 
-router.get('/api/get/next-stats', statsController.getStatistics);
+router.get('/api/get/next-stat', statsController.getPostOfTheWeek);
 
 module.exports = router;
