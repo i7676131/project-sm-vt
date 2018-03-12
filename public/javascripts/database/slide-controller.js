@@ -20,8 +20,7 @@ slideController.getNextPost = (req, res) => {
 };
 
 slideController.updateUsedPost = (objId) => {
-    var timesUsed = 0;
-
+    let timesUsed = 0;
     SmPost.findOne({_id: objId}, (err, post) => {
         if (err) {
             throw new Error('ERROR: Could not get post by ID \'' + objId + '\'.');
@@ -40,25 +39,20 @@ slideController.addSocialMediaPosts = (posts) => {
     console.log('Number of posts to check ' + posts.length + '.');
 
     let filteredPosts = [];
-
     for (let i = 0; posts.length > i; i++) {
         filteredPosts.push(checkExists(posts[i]));
     }
 
     Promise.all(filteredPosts).then((data) => {
-
         console.log('Number of promises: ' + data.length);
         for (let i = 0; data.length > i; i++) {
-
             if (data[i] === true || data === null) {
                 console.log('Not adding.');
             } else {
                 console.log('Adding.');
                 let newPost = new SmPost(data[i]);
                 newPost.save(newPost, (err) => {
-                    if (err) {
-                        console.log('ERROR: ' + err + '.')
-                    }
+                    if (err) {console.log('ERROR: ' + err + '.')}
                 });
                 console.log('Success.');
             }
@@ -85,5 +79,4 @@ function checkExists(post) {
         });
     });
 }
-
 module.exports = slideController;

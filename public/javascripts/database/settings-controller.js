@@ -22,6 +22,27 @@ settingsController.getSettings = (req, res) => {
         }
     });
 };
+
+settingsController.getWhitelist = () => {
+    return new Promise((resolve, reject) => {
+        AppSetting.findOne({_id: settingObjId}, (err, settings) => {
+            if(err){reject(err)}
+
+            console.log('Get settings: '+settings.whitelist);
+            resolve(settings.whitelist);
+        });
+    });
+};
+settingsController.getBlacklist = () => {
+    return new Promise((resolve, reject) => {
+        AppSetting.findOne({_id: settingObjId}, (err, settings) => {
+            if(err){reject(err)}
+
+            console.log('Get settings: '+settings.blacklist);
+            resolve(settings.blacklist);
+        });
+    });
+};
 settingsController.addListItem = (req, res) => {
     let newWord = {word: req.body.listWord};
     let success = encodeURIComponent('Added successfully.');
