@@ -45,12 +45,18 @@ block content
             button(type='submit') Update
         br
         h1 Whitelist Settings
-        label Add a word to the whitelist
+        h2 Add a Query to the whitelist.
+        p Hashtags e.g: #bournemouth
+        p User Mentions e.g: @RatioNetwork
+        p From specific user e.g: from:RatioNetwork
+        p Phrases e.g: "Ratio are cool"
+        p Includes images e.g: Beach filter:images
+        br
         form(action='/settings/add' method='POST')
             input(type='text' placeholder='Whitelist...' name='listWord' required=true)
             input(type='hidden' name='listType' value='whitelist')
             button(type='submit') Save
-        label Select Whitelist Word for Deletion (Select 1 or More...)
+        label Select Whitelist Query for Deletion (Select 1 or More...)
         form(action='/settings/delete' method='POST' enctype='application/x-www-form-urlencoded')
             input(type='hidden' name='listType' value='whitelist')
             select(required=true name='whitelistSelect')
