@@ -37,8 +37,6 @@ settingsController.getBlacklist = () => {
     return new Promise((resolve, reject) => {
         AppSetting.findOne({_id: settingObjId}, (err, settings) => {
             if(err){reject(err)}
-
-            console.log('Get settings: '+settings.blacklist);
             resolve(settings.blacklist);
         });
     });

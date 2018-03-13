@@ -30,13 +30,22 @@ api.getNewPosts = () => {
             }
         }
 
+        let filteredTweets = [];
+
         console.log('Total tweets: ' + singleArrayOfTweets.length);
-        /*for (let x = 0; x < singleArrayOfTweets.length; x++) {
-            console.log('TWEET: '+singleArrayOfTweets[x].id+' - '+ singleArrayOfTweets[x].text);
-        }*/
+        for (let i = 0; i < singleArrayOfTweets.length; i++) {
+            filteredTweets.push(checkBlacklist(singleArrayOfTweets[i]));
+        }
 
-        checkBlacklist(singleArrayOfTweets);
+        return Promise.all(filteredTweets);
 
+    }).then((filteredTweets) => {
+
+        for (let i = 0; i < filteredTweets.length; i++) {
+            console.log('Filtered: '+filteredTweets[i].text);
+        }
+
+        console.log('Total filtered tweets: '+filteredTweets.length);
     }).catch((reject) => {
         console.log('Error: ' + reject)
     });
@@ -59,34 +68,21 @@ function getTweets(query) {
     });
 }
 
-function checkBlacklist(tweets) {
+function checkBlacklist(tweet) {
     return new Promise((resolve, reject) => {
 
-        let filteredTweets = [];
-
         settings.getBlacklist().then((bList) => {
+            for (let i = 0; i < bList.length; i++) {
 
-           console.log('Blacklist: '+bList);
-
-           for(let i = 0; i < bList.length; i++){
-               for(let x = 0; x < tweets.length; x++){
-
-                   if(tweets[x].text.replace(/\s/g, '').includes(bList[i].word.replace())){
-                       console.log('Not adding post: '+tweets[x].text);
-                   }else{
-                       filteredTweets.push(tweets[x]);
-                   }
-
-               }
-
-           }
-
-
-
+                //if (tweet.text.replace(/\s/g, '').includes(bList[i].word.replace(/\s/g, ''))) {
+                if (tweet.text.match(new RegExp(bList, 'ig'))) {
+                //if (tweet.text.match()) {
+                    console.log('Not adding post: ' + tweet.text);
+                } else {
+                    resolve(tweet);
+                }
+            }
         });
-
-
-
     });
 }
 
