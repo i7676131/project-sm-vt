@@ -1,6 +1,7 @@
 module.exports = {
     database: {
-        dbUrl: 'mongodb://localhost/DevDb',
+        dbUrl: 'mongodb://86.27.197.196/DevDb',
+        authDbUrl: 'mongodb://86.27..197.196/DevDb'
     },
     server: {
         port: '3000'
