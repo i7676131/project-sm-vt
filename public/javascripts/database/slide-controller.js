@@ -70,10 +70,8 @@ function checkExists(post) {
                 reject(err);
             }
             if (result.length) {
-                console.log('Post: '+post.smId+' exists.');
                 resolve(true);
             } else {
-                console.log('Post: '+post.smId+' does not exist.');
                 resolve(post);
             }
         });

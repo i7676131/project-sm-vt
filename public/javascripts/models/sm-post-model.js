@@ -17,7 +17,7 @@ var postSchema = new Schema({
     },
     smImageUrl: {
         type: String,
-        default: 'some/url' //TODO add default background image, in case there is no SM image.
+        default: '/images/default-image.png' //TODO add default background image, in case there is no SM image.
     },
     smPlatform: String,
     keywordUsed: String,

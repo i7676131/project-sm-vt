@@ -1,4 +1,5 @@
 var settings = require('../../../database/settings-controller');
+var convert = require('../../../helpers/tweet-model-mapper');
 var db = require('../../../database/slide-controller');
 var Twitter = require('twitter');
 var conf = require('../../../../../config/system-config');
@@ -41,11 +42,18 @@ api.getNewPosts = () => {
 
     }).then((filteredTweets) => {
 
+        let nullFilteredTweets = [];
+
         for (let i = 0; i < filteredTweets.length; i++) {
-            console.log('Filtered: '+filteredTweets[i].text);
+            if(filteredTweets[i] !== null){
+                nullFilteredTweets.push(filteredTweets[i]);
+            }
         }
 
-        console.log('Total filtered tweets: '+filteredTweets.length);
+        console.log('Total filtered tweets: '+nullFilteredTweets.length);
+
+        db.addSocialMediaPosts(nullFilteredTweets);
+
     }).catch((reject) => {
         console.log('Error: ' + reject)
     });
@@ -57,13 +65,22 @@ function getTweets(query) {
             q: query.word,
             lang: conf.twitter.lang,
             result_type: conf.twitter.result_type,
-            count: conf.twitter.count
+            count: conf.twitter.count,
+            geocode: '50.720806,-1.904755,10mi'
         }, (err, data, res) => {
+
             if (err) {
                 reject(err);
             }
-            console.log('Number of Tweets: ' + data.statuses.length + ' for query: ' + query);
-            resolve(data.statuses);
+
+            console.log('Number of Tweets: ' + data.statuses.length + ' for query: ' + query.word);
+            //console.log(data.statuses[0].entities.media[0].media_url);
+
+            if(data.statuses === 'undefined' || data.statuses === null || data.statuses.length === 0){
+                resolve(data.statuses);
+            }else {
+                resolve(convert.convertToTwitterModel(data.statuses, query.word));
+            }
         });
     });
 }
@@ -72,15 +89,23 @@ function checkBlacklist(tweet) {
     return new Promise((resolve, reject) => {
 
         settings.getBlacklist().then((bList) => {
+            let rejectTweet = false;
+
             for (let i = 0; i < bList.length; i++) {
 
-                //if (tweet.text.replace(/\s/g, '').includes(bList[i].word.replace(/\s/g, ''))) {
-                if (tweet.text.match(new RegExp(bList, 'ig'))) {
-                //if (tweet.text.match()) {
-                    console.log('Not adding post: ' + tweet.text);
-                } else {
-                    resolve(tweet);
+                regPatt = new RegExp(bList[i].word, 'ig');
+
+                if (regPatt.test(tweet.text)) {
+                    console.log('Not adding post containing \''+bList[i].word+'\' - '+tweet.text);
+                    rejectTweet = true;
+                    break;
                 }
+            }
+
+            if(rejectTweet){
+                resolve(null);
+            }else{
+                resolve(tweet);
             }
         });
     });

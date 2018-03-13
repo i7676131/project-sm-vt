@@ -4,15 +4,17 @@ var formatDate = {};
 
 formatDate.twitterDate = (post) => {
 
+    console.log('PREV DATE: '+post.smDate);
     let newDate = new Date(post.smDate);
-    let d = newDate.getDay();
+    let d = newDate.getUTCDate();
     let m = months[newDate.getMonth()];
     let y = newDate.getFullYear();
 
-    let t = newDate.get
+    let date = d+' '+m+' '+y;
+    console.log('DATE: '+date);
 
     return {
-        smDate: d+' '+m+' '+y,
+        smDate: date,
         smPlatform: post.smPlatform,
         smContent: post.smContent,
         smAvatarUrl: post.smAvatarUrl,
