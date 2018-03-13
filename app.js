@@ -12,7 +12,6 @@ var stat = require('./public/javascripts/database/stats-controller');
 var socialSlide = require('./routes/social-slide');
 var settings = require('./routes/settings');
 
-
 // create global app object
 var app = express();
 
