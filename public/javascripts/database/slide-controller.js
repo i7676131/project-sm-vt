@@ -6,13 +6,15 @@ slideController.getNextPost = (req, res) => {
 
     options = {
         timesUsedToday:1,
-        smDate:1
+        smDate:-1
     }
 
     SmPost.findOne({}).sort(options).exec((err, post) => {
         if (err) {
             throw err
         }
+        console.log('Next post - Date: '+post.smDate+' Times used: '+post.timesUsedToday);
+
         slideController.updateUsedPost(post._id);
         var fmtPost = format.twitterDate(post);
         res.json(fmtPost);
@@ -36,7 +38,7 @@ slideController.updateUsedPost = (objId) => {
 };
 
 slideController.addSocialMediaPosts = (posts) => {
-    console.log('Number of posts to check ' + posts.length + '.');
+    console.log('No. of Tweets to check ' + posts.length + '.');
 
     let filteredPosts = [];
     for (let i = 0; posts.length > i; i++) {
@@ -44,19 +46,21 @@ slideController.addSocialMediaPosts = (posts) => {
     }
 
     Promise.all(filteredPosts).then((data) => {
-        console.log('Number of promises: ' + data.length);
+        console.log('No. of Tweets to add: ' + data.length);
+        let added = 0;
+        let notAdded = 0;
         for (let i = 0; data.length > i; i++) {
             if (data[i] === true || data === null) {
-                console.log('Not adding.');
+                notAdded++;
             } else {
-                console.log('Adding.');
                 let newPost = new SmPost(data[i]);
                 newPost.save(newPost, (err) => {
                     if (err) {console.log('ERROR: ' + err + '.')}
                 });
-                console.log('Success.');
+                added++;
             }
         }
+        console.log('Total added: '+added+' - Total not added: '+notAdded);
     }).catch((err) => {
         console.log('ERROR: Promise encountered an error: ' + err);
     });
@@ -64,7 +68,6 @@ slideController.addSocialMediaPosts = (posts) => {
 
 function checkExists(post) {
     return new Promise((resolve, reject) => {
-        console.log('Checking if ' + post.smId + ' exists...');
         SmPost.find({smId: post.smId}, (err, result) => {
             if (err) {
                 reject(err);

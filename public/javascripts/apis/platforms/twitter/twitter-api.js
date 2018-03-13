@@ -66,15 +66,17 @@ function getTweets(query) {
             lang: conf.twitter.lang,
             result_type: conf.twitter.result_type,
             count: conf.twitter.count,
-            geocode: '50.720806,-1.904755,10mi'
+            geocode: conf.twitter.geocode,
+            tweet_mode: conf.twitter.tweet_mode
         }, (err, data, res) => {
+
+            console.log('DATA: '+res.body);
 
             if (err) {
                 reject(err);
             }
 
-            console.log('Number of Tweets: ' + data.statuses.length + ' for query: ' + query.word);
-            //console.log(data.statuses[0].entities.media[0].media_url);
+            console.log('No. of Tweets for query \'' + query.word+'\' = '+ data.statuses.length);
 
             if(data.statuses === 'undefined' || data.statuses === null || data.statuses.length === 0){
                 resolve(data.statuses);
@@ -95,8 +97,12 @@ function checkBlacklist(tweet) {
 
                 regPatt = new RegExp(bList[i].word, 'ig');
 
-                if (regPatt.test(tweet.text)) {
-                    console.log('Not adding post containing \''+bList[i].word+'\' - '+tweet.text);
+                if (regPatt.test(tweet.smContent)) {
+                    console.log('Not adding post containing \''+bList[i].word+'\' in full_text \''+tweet.smContent+'\'');
+                    rejectTweet = true;
+                    break;
+                }else if (regPatt.test(tweet.smUserName)) {
+                    console.log('Not adding post containing \''+bList[i].word+'\' in username \''+tweet.smUserName+'\'');
                     rejectTweet = true;
                     break;
                 }

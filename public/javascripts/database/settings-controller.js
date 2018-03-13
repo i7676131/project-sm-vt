@@ -27,8 +27,6 @@ settingsController.getWhitelist = () => {
     return new Promise((resolve, reject) => {
         AppSetting.findOne({_id: settingObjId}, (err, settings) => {
             if(err){reject(err)}
-
-            console.log('Get settings: '+settings.whitelist);
             resolve(settings.whitelist);
         });
     });
@@ -74,7 +72,7 @@ settingsController.update = (req, res) => {
     res.redirect('/settings?message=' + message);
 };
 settingsController.delete = (req, res) => {
-    let sucecss = encodeURIComponent('Deleted successfully.')
+    let success = encodeURIComponent('Deleted successfully.')
     let listType = req.body.listType;
     let wordId;
 
@@ -91,7 +89,7 @@ settingsController.delete = (req, res) => {
             let failure = encodeURIComponent(err);
             res.redirect('/settings?message=' + failure);
         } else {
-            res.redirect('/settings?message=' + sucecss);
+            res.redirect('/settings?message=' + success);
         }
     });
 };

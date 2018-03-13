@@ -26,7 +26,7 @@
 }
 
 .sm_post{
-    margin: 10% 10% 0 0;
+    margin: 5% 5% 0 0;
     height: auto;
     width: 40%;
     background-color: RGB(255,255,255);
@@ -59,7 +59,7 @@
 }
 #txt_content{
     height: inherit;
-    margin: 10% 5% 0 5%;
+    margin: 5% 5% 0 5%;
     font-size: 30px;
     overflow: auto;
     max-height: 50vh;

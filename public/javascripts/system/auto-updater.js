@@ -6,7 +6,7 @@ var Twitter = require('../apis/platforms/twitter/twitter-api');
 const settingObjId = conf.settings.settingDocObjectId;
 
 // Set default interval in-case of error.
-var apiRefresh = 900000;
+var updateRefresh = 900000;
 
 // Update list once when app starts.
 updateAppData();

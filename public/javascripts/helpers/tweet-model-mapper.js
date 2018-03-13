@@ -12,7 +12,6 @@ module.exports = {
             let tweet = tweets[i];
             let image;
 
-
             if('media' in tweet.entities){
                 image = tweet.entities.media[0].media_url;
             }
@@ -21,7 +20,7 @@ module.exports = {
                 smId: tweet.id,
                 smName: tweet.user.name,
                 smUserName: '@'+tweet.user.screen_name,
-                smContent: tweet.text.replace(/http.*$/,''),
+                smContent: tweet.full_text.replace(/http.*$/,'').replace(/&amp;/g,'&'),
                 smDate: tweet.created_at,
                 smAvatarUrl: tweet.user.profile_image_url,
                 smImageUrl: image,

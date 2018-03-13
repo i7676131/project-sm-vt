@@ -11,7 +11,7 @@ statsController.getPostOfTheWeek = (req, res) => {
 
 statsController.updateStats = () => {
     SmPost.find({keywordUsed:'pier'}).count((err, count) => {
-        console.log('COUNT: '+count);
+        //console.log('COUNT: '+count);
     });
 };
 
