@@ -3,7 +3,9 @@ var AppSetting = require('../models/settings-model');
 var timeConverter = require('../helpers/milliseconds');
 var Statistics = require('../database/stats-controller');
 var Twitter = require('../apis/platforms/twitter/twitter-api');
+var log = require('../helpers/logger');
 const settingObjId = conf.settings.settingDocObjectId;
+const logger = 'AUTO UPDATER';
 
 // Set default interval in-case of error.
 var updateRefresh = 900000;
@@ -15,21 +17,21 @@ getUpdateRefresh();
 function getUpdateRefresh() {
     AppSetting.find({_id: settingObjId}).exec((err, setting) => {
         if (err) {
-            console.log('ERROR: Could not get API Refresh.');
+            log.fat('ERROR: Could not get API Refresh.', logger);
             process.exit(0);
         }
         updateRefresh = timeConverter.minsToMills(setting[0].updateRefresh);
-        console.log('API refresh set to \'' + updateRefresh + '\' (milliseconds)');
+        log.inf('API refresh set to \'' + updateRefresh + '\' (milliseconds)', logger);
         setInterval(updateAppData, updateRefresh);
     });
 };
 
 function updateAppData() {
 
-    console.log('Updating social media post list...');
+    log.inf('Updating social media post list...', logger);
     Twitter.getNewPosts();
 
-    console.log('Updating app statistics...');
+    log.inf('Updating app statistics...', logger);
     Statistics.updateStats();
 
 };

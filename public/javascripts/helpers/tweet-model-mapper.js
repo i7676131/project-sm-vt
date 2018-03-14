@@ -3,15 +3,11 @@ var SmPost = require('../models/sm-post-model');
 module.exports = {
 
     convertToTwitterModel: function(tweets, word){
-
-        console.log('Converting to Twitter model...');
         let modelTweets = [];
-
         for(let i = 0; i < tweets.length; i++){
 
             let tweet = tweets[i];
             let image;
-
             if('media' in tweet.entities){
                 image = tweet.entities.media[0].media_url;
             }

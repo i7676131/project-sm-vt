@@ -1,4 +1,5 @@
 var settings = require('../../../database/settings-controller');
+var log = require('../../../helpers/logger');
 var convert = require('../../../helpers/tweet-model-mapper');
 var db = require('../../../database/slide-controller');
 var Twitter = require('twitter');
@@ -8,7 +9,7 @@ var client = new Twitter({
     consumer_secret: conf.twitter.consumer_secret,
     bearer_token: conf.twitter.bearer_token
 });
-
+const logger = 'TWITTER API';
 var api = {};
 
 api.getNewPosts = () => {
@@ -33,7 +34,7 @@ api.getNewPosts = () => {
 
         let filteredTweets = [];
 
-        console.log('Total tweets: ' + singleArrayOfTweets.length);
+        log.inf('Total tweets: ' + singleArrayOfTweets.length, logger);
         for (let i = 0; i < singleArrayOfTweets.length; i++) {
             filteredTweets.push(checkBlacklist(singleArrayOfTweets[i]));
         }
@@ -50,12 +51,12 @@ api.getNewPosts = () => {
             }
         }
 
-        console.log('Total filtered tweets: '+nullFilteredTweets.length);
+        log.inf('Total filtered tweets: '+nullFilteredTweets.length, logger);
 
         db.addSocialMediaPosts(nullFilteredTweets);
 
     }).catch((reject) => {
-        console.log('Error: ' + reject)
+        log.err(reject, logger);
     });
 };
 
@@ -70,13 +71,11 @@ function getTweets(query) {
             tweet_mode: conf.twitter.tweet_mode
         }, (err, data, res) => {
 
-            console.log('DATA: '+res.body);
-
             if (err) {
                 reject(err);
             }
 
-            console.log('No. of Tweets for query \'' + query.word+'\' = '+ data.statuses.length);
+            log.inf('No. of Tweets for query \'' + query.word+'\' = '+ data.statuses.length, logger);
 
             if(data.statuses === 'undefined' || data.statuses === null || data.statuses.length === 0){
                 resolve(data.statuses);
@@ -96,13 +95,12 @@ function checkBlacklist(tweet) {
             for (let i = 0; i < bList.length; i++) {
 
                 regPatt = new RegExp(bList[i].word, 'ig');
-
                 if (regPatt.test(tweet.smContent)) {
-                    console.log('Not adding post containing \''+bList[i].word+'\' in full_text \''+tweet.smContent+'\'');
+                    log.war('Not adding post containing \''+bList[i].word+'\' in full_text \''+tweet.smContent+'\'', logger);
                     rejectTweet = true;
                     break;
                 }else if (regPatt.test(tweet.smUserName)) {
-                    console.log('Not adding post containing \''+bList[i].word+'\' in username \''+tweet.smUserName+'\'');
+                    log.war('Not adding post containing \''+bList[i].word+'\' in username \''+tweet.smUserName+'\'', logger);
                     rejectTweet = true;
                     break;
                 }

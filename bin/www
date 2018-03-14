@@ -7,6 +7,8 @@ var conf = require('../config/system-config');
 var app = require('../app');
 var debug = require('debug')('smvt:server');
 var http = require('http');
+var log = require('../public/javascripts/helpers/logger');
+
 
 /**
  * Get port from system.config.js and store in Express.
@@ -23,7 +25,7 @@ var server = http.createServer(app);
  * Listen on provided port, on all network interfaces.
  */
 server.listen(port);
-console.log("Server is listening on port: "+port)
+log.inf("Server is listening on port: "+port)
 server.on('error', onError);
 server.on('listening', onListening);
 
@@ -61,11 +63,11 @@ function onError(error) {
   // handle specific listen errors with friendly messages
   switch (error.code) {
     case 'EACCES':
-      console.error(bind + ' requires elevated privileges');
+      log.fat(bind + ' requires elevated privileges');
       process.exit(1);
       break;
     case 'EADDRINUSE':
-      console.error(bind + ' is already in use');
+      log.fat(bind + ' is already in use');
       process.exit(1);
       break;
     default:

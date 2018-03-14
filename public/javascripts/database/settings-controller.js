@@ -1,6 +1,8 @@
 var conf = require('../../../config/system-config');
+var log = require('../helpers/logger');
 var AppSetting = require('../models/settings-model');
 const settingObjId = conf.settings.settingDocObjectId;
+const logger = 'SETTINGS CTRL';
 
 var settingsController = {};
 
@@ -8,7 +10,6 @@ settingsController.getSettings = (req, res) => {
     let message = req.query.message;
 
     AppSetting.find({}).exec((err, setting) => {
-        console.log('DB response:\n' + setting);
         if (err) {
             res.render('../views/settings.pug', {
                 message: err,
@@ -26,19 +27,27 @@ settingsController.getSettings = (req, res) => {
 settingsController.getWhitelist = () => {
     return new Promise((resolve, reject) => {
         AppSetting.findOne({_id: settingObjId}, (err, settings) => {
-            if(err){reject(err)}
+            if(err){
+                log.err(err, logger);
+                reject(err)
+            }
             resolve(settings.whitelist);
         });
     });
 };
+
 settingsController.getBlacklist = () => {
     return new Promise((resolve, reject) => {
         AppSetting.findOne({_id: settingObjId}, (err, settings) => {
-            if(err){reject(err)}
+            if(err){
+                log.err(err, logger);
+                reject(err)
+            }
             resolve(settings.blacklist);
         });
     });
 };
+
 settingsController.addListItem = (req, res) => {
     let newWord = {word: req.body.listWord};
     let success = encodeURIComponent('Added successfully.');
@@ -51,61 +60,66 @@ settingsController.addListItem = (req, res) => {
         }
     });
 };
+
 settingsController.update = (req, res) => {
     let updateRefresh = req.body.formUpdateRefresh;
     let slideSpeed = req.body.formSlideSpeed;
-    let message = '';
-    let disPlatform = {
+    let message = 'Update successful.';
+    /*let disPlatform = {
         disTwitter: req.body.formDisTwitter,
         disFacebook: req.body.formDisFacebook,
         disInstagram: req.body.formDisInstagram
-    };
+    };*/
 
-    if (updateRefresh !== '') {
+    if (updateRefresh !== '' && slideSpeed !== '') {
         updateSetting('updateRefresh', updateRefresh);
-    }
-    if (slideSpeed !== '') {
         updateSetting('slideSpeed', slideSpeed);
+    }else if (updateRefresh !== '') {
+        updateSetting('updateRefresh', updateRefresh);
+    }else if (slideSpeed !== '') {
+        updateSetting('slideSpeed', slideSpeed);
+    }else{
+        message = 'No updated detected.';
     }
-    updateSetting('disablePlatform', disPlatform)
 
-    res.redirect('/settings?message=' + message);
+    //updateSetting('disablePlatform', disPlatform);
+
+    res.redirect('/settings?message=' + encodeURIComponent(message));
 };
+
 settingsController.delete = (req, res) => {
-    let success = encodeURIComponent('Deleted successfully.')
+    let success = encodeURIComponent('Deleted successfully.');
     let listType = req.body.listType;
     let wordId;
 
-    if (listType == 'blacklist') {
+    if (listType === 'blacklist') {
         wordId = req.body.blacklistSelect;
-    } else if (listType == 'whitelist') {
+    } else if (listType === 'whitelist') {
         wordId = req.body.whitelistSelect;
     } else {
-        throw new Error('ERROR: listType is unknown.')
+        log.err(listType+' is unknown.', logger);
     }
 
     AppSetting.update({_id: settingObjId}, {$pull: {[listType]: {_id: wordId}}}, (err) => {
         if (err) {
             let failure = encodeURIComponent(err);
+            log.inf('Could not delete word \''+wordId+'\'.', logger);
             res.redirect('/settings?message=' + failure);
         } else {
+            log.inf('Word \''+wordId+'\' deleted.', logger);
             res.redirect('/settings?message=' + success);
         }
     });
 };
 
 function updateSetting(field, newValue) {
-    let returnMsg;
-
     AppSetting.update({_id: settingObjId}, {[field]: newValue}, {upsert: true}, (err) => {
         if (err) {
-            returnMsg = encodeURIComponent(err);
+            log.err(err, logger);
         } else {
-            returnMsg = encodeURIComponent(field + ' updated successfully. ');
+            log.inf(field+' was updated successfully.', logger);
         }
     });
-    console.log('UPDATE FUNCTION: ' + returnMsg);
-    return returnMsg;
 };
 
 module.exports = settingsController;

@@ -1,6 +1,5 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-const logoUrl = '/images/logos/';
 
 var postSchema = new Schema({
     smId: String,
@@ -13,7 +12,7 @@ var postSchema = new Schema({
     },
     smAvatarUrl: {
         type: String,
-        default: 'some/url' //TODO add default profile pic.
+        default: '/images/logos/twitter-logo.png' //TODO add default profile pic.
     },
     smImageUrl: {
         type: String,
@@ -25,6 +24,12 @@ var postSchema = new Schema({
         type: Number,
         default: 0,
         required: true
+    },
+    postExpiry: {
+        type: Date,
+        default: function () {
+            return new Date(Date.now() + 1000*60*60*24*7);
+        }
     }
 });
 

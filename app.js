@@ -1,4 +1,5 @@
 var db = require('./public/javascripts/database/db');
+var log = require('./public/javascripts/helpers/logger');
 var conf = require('./config/system-config');
 var express = require('express');
 var cors = require('cors')
