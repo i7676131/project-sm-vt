@@ -10,6 +10,12 @@ router.get('/', (req, res) => {
     });
 });
 
+router.get('/stat', (req, res) => {
+    res.render('statistics', {
+        title: 'Statistics'
+    });
+});
+
 router.get('/api/get/next-post', slideController.getNextPost);
 
 router.get('/api/get/next-stat', statsController.getPostOfTheWeek);

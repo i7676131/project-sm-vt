@@ -1,25 +1,28 @@
 let socialSlide = angular.module('socialSlide', ['ngRoute']);
 
-socialSlide.config(function($routeProvider){
-
+socialSlide.config(function ($routeProvider) {
     $routeProvider
-        .when('/next-stat', {
-            templateUrl: 'social-stat.pug'
-        })
-        .when('/next-post', {
-        templateUrl: 'social-post.pug'
-    });
+        .when('/stat', {
+            templateUrl: '/views/statistics',
+            controller: 'StatController'
+        });
+});
+
+socialSlide.controller('StatController', function ($scope, $http, $window) {
+
 
 
 });
 
-socialSlide.controller("mainCtrl", function ($scope, $http, $location, $interval) {
+socialSlide.controller("MainController", function ($scope, $http, $window, $interval) {
 
     let speed = [];
 
     speed.push($http.get('/social-slide/api/get/slide-speed'));
 
     Promise.all(speed).then((speed) => {
+
+        let count = 5;
 
         console.log('Speed: ' + speed[0].data);
 
@@ -35,11 +38,24 @@ socialSlide.controller("mainCtrl", function ($scope, $http, $location, $interval
                 $scope.postContent = post.smContent;
                 $scope.postDate = post.smDate;
             });
+            count--;
 
-            $location.path('/api/get/next-stat');
-
+            if(count === 0){
+                $window.location = '#/stat'
+            }
 
         }, speed[0].data);
 
     });
+});
+
+socialSlide.controller('SocialStats', function ($scope, $http) {
+
+    $http.get('/social-slide/api/get/next-stat').then((res) => {
+
+        $scope.message = res.data.message;
+
+    });
+
+
 });
