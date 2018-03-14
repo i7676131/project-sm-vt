@@ -1,5 +1,4 @@
 var log = require('../helpers/logger');
-const logger = 'MILLISECONDS';
 var mills = {};
 
 mills.minsToMills = (minutes) => {
@@ -8,6 +7,18 @@ mills.minsToMills = (minutes) => {
         return 900000;
     } else {
         return minutes * 60000;
+    }
+};
+
+mills.secsToMills = (seconds) => {
+    if (isNaN(seconds)) {
+        log.err('Input variable is not a number, returning default \'10000\'.');
+        return 10000;
+    }else if(seconds === '' || seconds === null){
+        log.err('Input variable is empty or null, returning default \'10000\'.');
+        return 10000;
+    } else {
+        return seconds * 1000;
     }
 };
 

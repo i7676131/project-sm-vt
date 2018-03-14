@@ -16,7 +16,12 @@ module.exports = {
                 smId: tweet.id,
                 smName: tweet.user.name,
                 smUserName: '@'+tweet.user.screen_name,
-                smContent: tweet.full_text.replace(/http.*$/,'').replace(/&amp;/g,'&'),
+                //smContent: tweet.full_text.replace(/http.*$/,'').replace(/https.*$/,'').replace(/&amp;/g,'&'),
+                smContent: tweet.full_text
+                    .replace(/&amp;/g,'&')
+                    .replace(/&gt;/g,'>')
+                    .replace(/&lt;/g,'<')
+                    .replace(/(?:https|http):\/\/[\n\S]+/g, ''),
                 smDate: tweet.created_at,
                 smAvatarUrl: tweet.user.profile_image_url,
                 smImageUrl: image,

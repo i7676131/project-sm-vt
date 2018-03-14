@@ -13,34 +13,6 @@ block content
             br
             br
 
-            //label Check at least ONE platform to include in the slide
-            //br
-            //label Disable Twitter
-            //br
-            //|True
-            //input(type='radio' value='true' name='formDisTwitter')
-            //|False
-            //input(type='radio' checked value='false' name='formDisTwitter')
-            //br
-            //br
-            //label Disable Facebook
-            //br
-            //|True
-            //input(type='radio'  value='true' name='formDisFacebook')
-            //|False
-            //input(type='radio' checked value='false' name='formDisFacebook')
-            //br
-            //br
-            //label Disable Instagram
-            //br
-            //|True
-            //input(type='radio' value='true' name='formDisInstagram')
-            //|False
-            //input(type='radio' checked value='false' name='formDisInstagram')
-            //br
-            //br
-
-
             button(type='submit') Update
         br
         h1 Whitelist Settings
@@ -51,8 +23,10 @@ block content
         p Phrases e.g: "Ratio are cool"
         p Includes images e.g: Beach filter:images
         br
+        label Enter New Query and Geo-location (optional)
         form(action='/settings/add' method='POST')
             input(type='text' placeholder='Whitelist...' name='listWord' required=true)
+            input(type='text' placeholder='latitude, longitude, radius' name='geoCode')
             input(type='hidden' name='listType' value='whitelist')
             button(type='submit') Save
         label Select Whitelist Query for Deletion (Select 1 or More...)
@@ -66,6 +40,7 @@ block content
                         option(value=0) No data to display.
             button(type='submit') Delete
         br
+
         h1 Blacklist Settings
         label Add a word to the blacklist
         form(action='/settings/add' method='POST')

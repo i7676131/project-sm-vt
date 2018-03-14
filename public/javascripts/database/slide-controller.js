@@ -1,6 +1,7 @@
 var log = require('../helpers/logger');
 var format = require('../helpers/format-date');
 var SmPost = require('../models/sm-post-model');
+
 const logger = 'SLIDE CTRL';
 
 var slideController = {};
@@ -17,11 +18,16 @@ slideController.getNextPost = (req, res) => {
             log.fat('Could not get next post: '+err, logger);
             throw err
         }
-        log.inf('** Next post - Date: '+post.smDate+' - Times used: '+post.timesUsedToday+' **', logger);
 
-        slideController.updateUsedPost(post._id);
-        let fmtPost = format.twitterDate(post);
-        res.json(fmtPost);
+        if(post !== null){
+            log.inf('** Next post - Date: '+post.smDate+' - Times used: '+post.timesUsedToday+' **', logger);
+
+            slideController.updateUsedPost(post._id);
+            let fmtPost = format.twitterDate(post);
+            res.json(fmtPost);
+        }else{
+            log.err('Next post is NULL.', logger);
+        }
     });
 };
 
@@ -38,7 +44,7 @@ slideController.updateUsedPost = (objId) => {
 };
 
 slideController.addSocialMediaPosts = (posts) => {
-    log.inf('No. of Tweets to check ' + posts.length + '.', logger);
+    log.inf('No. of Tweets to exist check ' + posts.length + '.', logger);
 
     let filteredPosts = [];
     for (let i = 0; posts.length > i; i++) {
@@ -47,11 +53,10 @@ slideController.addSocialMediaPosts = (posts) => {
 
     Promise.all(filteredPosts).then((data) => {
         log.inf('Check complete.', logger);
-        log.inf('No. of filtered Tweets to add: ' + data.length, logger);
         let added = 0;
         let notAdded = 0;
         for (let i = 0; data.length > i; i++) {
-            if (data[i] === true || data === null) {
+            if (data[i] === true || data[i] === null) {
                 notAdded++;
             } else {
                 let newPost = new SmPost(data[i]);
@@ -61,7 +66,7 @@ slideController.addSocialMediaPosts = (posts) => {
                 added++;
             }
         }
-        log.inf('Total added: '+added+' - Total not added: '+notAdded, logger);
+        log.inf('POSTS: New \''+added+'\' - Already Exists \''+notAdded+'\'', logger);
     }).catch((err) => {
         log.err('Promise encountered an error. ' + err, logger);
     });

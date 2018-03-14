@@ -67,7 +67,7 @@ function getTweets(query) {
             lang: conf.twitter.lang,
             result_type: conf.twitter.result_type,
             count: conf.twitter.count,
-            geocode: conf.twitter.geocode,
+            geocode: query.geocode,
             tweet_mode: conf.twitter.tweet_mode
         }, (err, data, res) => {
 
@@ -75,7 +75,7 @@ function getTweets(query) {
                 reject(err);
             }
 
-            log.inf('No. of Tweets for query \'' + query.word+'\' = '+ data.statuses.length, logger);
+            log.inf('No. of Tweets for query \'' + query.word+' - '+query.geocode+'\' = '+ data.statuses.length, logger);
 
             if(data.statuses === 'undefined' || data.statuses === null || data.statuses.length === 0){
                 resolve(data.statuses);

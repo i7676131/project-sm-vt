@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var slideController = require('../public/javascripts/database/slide-controller');
 var statsController = require('../public/javascripts/database/stats-controller');
+var settingController = require('../public/javascripts/database/settings-controller');
 
 router.get('/', (req, res) => {
     res.render('social-slide', {
@@ -12,5 +13,7 @@ router.get('/', (req, res) => {
 router.get('/api/get/next-post', slideController.getNextPost);
 
 router.get('/api/get/next-stat', statsController.getPostOfTheWeek);
+
+router.get('/api/get/slide-speed', settingController.getSlideSpeed);
 
 module.exports = router;

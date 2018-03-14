@@ -1,6 +1,8 @@
 var conf = require('../../../config/system-config');
 var log = require('../helpers/logger');
+var convert = require('../helpers/milliseconds');
 var AppSetting = require('../models/settings-model');
+
 const settingObjId = conf.settings.settingDocObjectId;
 const logger = 'SETTINGS CTRL';
 
@@ -24,10 +26,17 @@ settingsController.getSettings = (req, res) => {
     });
 };
 
+settingsController.getSlideSpeed = (req, res) => {
+    AppSetting.findOne({_id: settingObjId}, (err, settings) => {
+        if (err) {log.err(err, logger);}
+        res.json(convert.secsToMills(settings.slideSpeed));
+    });
+};
+
 settingsController.getWhitelist = () => {
     return new Promise((resolve, reject) => {
         AppSetting.findOne({_id: settingObjId}, (err, settings) => {
-            if(err){
+            if (err) {
                 log.err(err, logger);
                 reject(err)
             }
@@ -39,7 +48,7 @@ settingsController.getWhitelist = () => {
 settingsController.getBlacklist = () => {
     return new Promise((resolve, reject) => {
         AppSetting.findOne({_id: settingObjId}, (err, settings) => {
-            if(err){
+            if (err) {
                 log.err(err, logger);
                 reject(err)
             }
@@ -49,7 +58,13 @@ settingsController.getBlacklist = () => {
 };
 
 settingsController.addListItem = (req, res) => {
-    let newWord = {word: req.body.listWord};
+    let newWord = '';
+    if (req.body.geoCode !== '') {
+        newWord = {word: req.body.listWord, geocode: req.body.geoCode.replace(/\s/g, '')};
+    } else {
+        newWord = {word: req.body.listWord};
+    }
+
     let success = encodeURIComponent('Added successfully.');
     AppSetting.update({_id: settingObjId}, {$push: {[req.body.listType]: newWord}}, (err) => {
         if (err) {
@@ -74,11 +89,11 @@ settingsController.update = (req, res) => {
     if (updateRefresh !== '' && slideSpeed !== '') {
         updateSetting('updateRefresh', updateRefresh);
         updateSetting('slideSpeed', slideSpeed);
-    }else if (updateRefresh !== '') {
+    } else if (updateRefresh !== '') {
         updateSetting('updateRefresh', updateRefresh);
-    }else if (slideSpeed !== '') {
+    } else if (slideSpeed !== '') {
         updateSetting('slideSpeed', slideSpeed);
-    }else{
+    } else {
         message = 'No updated detected.';
     }
 
@@ -97,16 +112,16 @@ settingsController.delete = (req, res) => {
     } else if (listType === 'whitelist') {
         wordId = req.body.whitelistSelect;
     } else {
-        log.err(listType+' is unknown.', logger);
+        log.err(listType + ' is unknown.', logger);
     }
 
     AppSetting.update({_id: settingObjId}, {$pull: {[listType]: {_id: wordId}}}, (err) => {
         if (err) {
             let failure = encodeURIComponent(err);
-            log.inf('Could not delete word \''+wordId+'\'.', logger);
+            log.inf('Could not delete word \'' + wordId + '\'.', logger);
             res.redirect('/settings?message=' + failure);
         } else {
-            log.inf('Word \''+wordId+'\' deleted.', logger);
+            log.inf('Word \'' + wordId + '\' deleted.', logger);
             res.redirect('/settings?message=' + success);
         }
     });
@@ -117,7 +132,7 @@ function updateSetting(field, newValue) {
         if (err) {
             log.err(err, logger);
         } else {
-            log.inf(field+' was updated successfully.', logger);
+            log.inf(field + ' was updated successfully.', logger);
         }
     });
 };
