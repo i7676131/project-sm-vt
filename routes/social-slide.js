@@ -18,7 +18,7 @@ router.get('/stats', (req, res) => {
 
 router.get('/api/get/next-post', slideController.getNextPost);
 
-router.get('/api/get/next-stat', statsController.getTotalPosts);
+router.get('/api/get/next-stat', statsController.getStatistics);
 
 router.get('/api/get/slide-speed', settingController.getSlideSpeed);
 

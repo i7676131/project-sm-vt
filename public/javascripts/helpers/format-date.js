@@ -1,6 +1,7 @@
+let week = require('current-week-number');
 let months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 
-var formatDate = {};
+let formatDate = {};
 
 formatDate.twitterDate = (post) => {
     let newDate = new Date(post.smDate);
@@ -17,6 +18,14 @@ formatDate.twitterDate = (post) => {
         smUserName: post.smUserName,
         smName: post.smName
     }
+};
+
+formatDate.getWeek = () => {
+    return week();
+};
+
+formatDate.getWeekFromDate = (date) => {
+    return week(date);
 };
 
 module.exports = formatDate;

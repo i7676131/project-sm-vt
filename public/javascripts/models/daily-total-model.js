@@ -3,9 +3,13 @@ let Schema = mongoose.Schema;
 
 let dailyTotal = new Schema({
     day: String,
-    total: {
+    dayTotal: {
         type: Number,
         default: 0
+    },
+    date: {
+        type: Date,
+        default: Date.now()
     }
 });
 
