@@ -31,7 +31,4 @@ function updateAppData() {
     log.inf('Updating social media post list...', logger);
     Twitter.getNewPosts();
 
-    log.inf('Updating app statistics...', logger);
-    Statistics.updateStats();
-
 };

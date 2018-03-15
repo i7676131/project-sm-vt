@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var postSchema = new Schema({
+let postSchema = new Schema({
     smId: String,
     smName: String,
     smUserName: String,
@@ -33,5 +33,5 @@ var postSchema = new Schema({
     }
 });
 
-var Post = mongoose.model('posts', postSchema);
+let Post = mongoose.model('posts', postSchema);
 module.exports = Post;

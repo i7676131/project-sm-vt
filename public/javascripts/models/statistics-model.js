@@ -1,7 +1,7 @@
 let mongoose = require('mongoose');
 let Schema = mongoose.Schema;
 
-let keywordSchema = new Schema({
+let popularWordsSchema = new Schema({
     word: String,
     total: {
         type: Number,
@@ -9,13 +9,16 @@ let keywordSchema = new Schema({
     }
 });
 
-let statSchema = new Schema({
-    statPlatform: String,
-    statWeeklyPostTotal: Number,
-    statPopularKeywords: {
-        keyword: [keywordSchema]
+let dailyTotal = new Schema({
+    day: String,
+    total: {
+        type: Number,
+        default: 0
     }
 });
 
-let Statistics = mongoose.model('statistics', statSchema);
-module.exports = Statistics;
+let PopularWords = mongoose.model('TotalPosts', popularWordsSchema);
+module.exports = PopularWords;
+
+let WeeklyTotal = mongoose.model('WeeklyPosts', weeklyTotal);
+module.exports = WeeklyTotal;

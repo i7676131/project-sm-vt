@@ -9677,3 +9677,788 @@ Click This Link '
 [2018-03-14T23:13:10.788] [INFO] SLIDE CTRL - Check complete.
 [2018-03-14T23:13:10.788] [INFO] SLIDE CTRL - POSTS: New '0' - Already Exists '51'
 [2018-03-14T23:13:26.082] [INFO] SLIDE CTRL - ** Next post - Date: Wed Mar 14 2018 20:10:10 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-14T23:13:36.080] [INFO] SLIDE CTRL - ** Next post - Date: Wed Mar 14 2018 20:02:00 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-14T23:13:46.075] [INFO] SLIDE CTRL - ** Next post - Date: Wed Mar 14 2018 20:01:15 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-14T23:13:56.077] [INFO] SLIDE CTRL - ** Next post - Date: Wed Mar 14 2018 19:58:13 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-14T23:14:06.079] [INFO] SLIDE CTRL - ** Next post - Date: Wed Mar 14 2018 19:47:25 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-14T23:14:16.076] [INFO] SLIDE CTRL - ** Next post - Date: Wed Mar 14 2018 19:35:12 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-14T23:14:26.077] [INFO] SLIDE CTRL - ** Next post - Date: Wed Mar 14 2018 19:33:44 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-14T23:14:36.077] [INFO] SLIDE CTRL - ** Next post - Date: Wed Mar 14 2018 19:33:32 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-14T23:14:46.077] [INFO] SLIDE CTRL - ** Next post - Date: Wed Mar 14 2018 19:07:43 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-15T17:37:10.583] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T17:37:11.376] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T17:37:11.382] [INFO] AUTO UPDATER - Updating app statistics...
+[2018-03-15T17:37:11.419] [INFO] default - Server is listening on port: 3000
+[2018-03-15T17:37:11.480] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T17:37:11.554] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T17:37:11.853] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T17:37:11.860] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T17:37:11.968] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T17:37:11.998] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T17:37:12.038] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T17:37:12.048] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T17:37:12.052] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T17:37:12.151] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T17:37:12.152] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T17:37:12.173] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T17:37:12.183] [INFO] SLIDE CTRL - POSTS: New '22' - Already Exists '29'
+[2018-03-15T17:37:52.866] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:35:24 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T17:38:02.847] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:30:02 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T17:38:12.844] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:14:04 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T17:38:22.844] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 16:59:01 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T17:38:32.847] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 16:49:23 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T17:38:42.844] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 16:34:57 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T17:38:52.844] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 16:28:36 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T17:39:02.844] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 16:10:42 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T17:39:12.844] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 16:00:41 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T17:39:22.844] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:58:39 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T17:39:32.844] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:56:39 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T17:39:42.844] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:55:35 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T17:39:52.845] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:53:44 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T17:40:02.844] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:50:58 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T17:40:12.844] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:47:58 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T17:40:22.844] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:47:16 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T17:40:32.844] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:41:59 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T17:40:42.844] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:20:09 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T17:40:52.845] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 12:30:35 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T17:41:02.844] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 10:30:20 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T17:41:12.844] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 08:01:46 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T17:41:22.844] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 06:33:32 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T17:41:32.843] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:35:24 GMT+0000 (GMT) - Times used: 1 **
+[2018-03-15T17:41:42.845] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:30:02 GMT+0000 (GMT) - Times used: 1 **
+[2018-03-15T17:41:52.844] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:14:04 GMT+0000 (GMT) - Times used: 1 **
+[2018-03-15T17:42:02.844] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 16:59:01 GMT+0000 (GMT) - Times used: 1 **
+[2018-03-15T17:42:12.844] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 16:49:23 GMT+0000 (GMT) - Times used: 1 **
+[2018-03-15T17:42:22.844] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 16:34:57 GMT+0000 (GMT) - Times used: 1 **
+[2018-03-15T17:42:32.844] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 16:28:36 GMT+0000 (GMT) - Times used: 1 **
+[2018-03-15T17:42:42.845] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 16:10:42 GMT+0000 (GMT) - Times used: 1 **
+[2018-03-15T17:42:52.844] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 16:00:41 GMT+0000 (GMT) - Times used: 1 **
+[2018-03-15T17:43:02.844] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:58:39 GMT+0000 (GMT) - Times used: 1 **
+[2018-03-15T17:43:12.844] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:56:39 GMT+0000 (GMT) - Times used: 1 **
+[2018-03-15T17:43:22.845] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:55:35 GMT+0000 (GMT) - Times used: 1 **
+[2018-03-15T17:43:32.842] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:53:44 GMT+0000 (GMT) - Times used: 1 **
+[2018-03-15T17:43:42.845] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:50:58 GMT+0000 (GMT) - Times used: 1 **
+[2018-03-15T17:43:52.843] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:47:58 GMT+0000 (GMT) - Times used: 1 **
+[2018-03-15T17:44:02.844] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:47:16 GMT+0000 (GMT) - Times used: 1 **
+[2018-03-15T17:44:12.845] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:41:59 GMT+0000 (GMT) - Times used: 1 **
+[2018-03-15T17:45:29.294] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T17:45:29.536] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T17:45:29.541] [INFO] AUTO UPDATER - Updating app statistics...
+[2018-03-15T17:45:29.550] [INFO] default - Server is listening on port: 3000
+[2018-03-15T17:45:29.582] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T17:45:29.619] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T17:45:29.966] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T17:45:30.008] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T17:45:30.127] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T17:45:30.213] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T17:45:30.258] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T17:45:30.391] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T17:45:30.395] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T17:45:30.478] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T17:45:30.478] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T17:45:30.500] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T17:45:30.504] [INFO] SLIDE CTRL - POSTS: New '2' - Already Exists '49'
+[2018-03-15T17:45:46.616] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:44:48 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T17:45:56.610] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:40:14 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T17:46:06.610] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:44:48 GMT+0000 (GMT) - Times used: 1 **
+[2018-03-15T17:46:16.609] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:40:14 GMT+0000 (GMT) - Times used: 1 **
+[2018-03-15T17:46:26.612] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:20:09 GMT+0000 (GMT) - Times used: 1 **
+[2018-03-15T17:46:36.610] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 12:30:35 GMT+0000 (GMT) - Times used: 1 **
+[2018-03-15T17:46:46.610] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 10:30:20 GMT+0000 (GMT) - Times used: 1 **
+[2018-03-15T17:46:56.610] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 08:01:46 GMT+0000 (GMT) - Times used: 1 **
+[2018-03-15T17:47:06.609] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 06:33:32 GMT+0000 (GMT) - Times used: 1 **
+[2018-03-15T17:47:16.610] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:44:48 GMT+0000 (GMT) - Times used: 2 **
+[2018-03-15T17:47:26.608] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:40:14 GMT+0000 (GMT) - Times used: 2 **
+[2018-03-15T17:47:34.624] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T17:47:35.152] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T17:47:35.161] [INFO] AUTO UPDATER - Updating app statistics...
+[2018-03-15T17:47:35.176] [INFO] default - Server is listening on port: 3000
+[2018-03-15T17:47:35.226] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T17:47:35.285] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T17:47:35.592] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T17:47:35.709] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T17:47:35.726] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T17:47:35.771] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T17:47:35.822] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T17:47:35.895] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T17:47:35.899] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T17:47:36.065] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T17:47:36.065] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T17:47:36.113] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T17:47:36.118] [INFO] SLIDE CTRL - POSTS: New '1' - Already Exists '50'
+[2018-03-15T17:47:36.627] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:45:19 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T17:47:52.739] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:45:19 GMT+0000 (GMT) - Times used: 1 **
+[2018-03-15T17:48:02.735] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:45:19 GMT+0000 (GMT) - Times used: 2 **
+[2018-03-15T17:48:12.734] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:35:24 GMT+0000 (GMT) - Times used: 2 **
+[2018-03-15T17:48:22.735] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:30:02 GMT+0000 (GMT) - Times used: 2 **
+[2018-03-15T17:48:32.737] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:14:04 GMT+0000 (GMT) - Times used: 2 **
+[2018-03-15T17:48:42.739] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 16:59:01 GMT+0000 (GMT) - Times used: 2 **
+[2018-03-15T17:48:46.150] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T17:48:46.608] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T17:48:46.617] [INFO] AUTO UPDATER - Updating app statistics...
+[2018-03-15T17:48:46.635] [INFO] default - Server is listening on port: 3000
+[2018-03-15T17:48:46.681] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T17:48:46.739] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T17:48:47.030] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T17:48:47.044] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T17:48:47.113] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T17:48:47.306] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T17:48:47.353] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T17:48:47.359] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T17:48:47.363] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T17:48:48.412] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T17:48:48.418] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T17:48:48.496] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T17:48:48.497] [INFO] SLIDE CTRL - POSTS: New '0' - Already Exists '51'
+[2018-03-15T17:49:00.778] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 16:49:23 GMT+0000 (GMT) - Times used: 2 **
+[2018-03-15T17:49:10.778] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 16:34:57 GMT+0000 (GMT) - Times used: 2 **
+[2018-03-15T17:49:20.776] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 16:28:36 GMT+0000 (GMT) - Times used: 2 **
+[2018-03-15T17:49:30.775] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 16:10:42 GMT+0000 (GMT) - Times used: 2 **
+[2018-03-15T17:49:40.778] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 16:00:41 GMT+0000 (GMT) - Times used: 2 **
+[2018-03-15T17:50:05.083] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T17:50:05.340] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T17:50:05.345] [INFO] AUTO UPDATER - Updating app statistics...
+[2018-03-15T17:50:05.354] [INFO] default - Server is listening on port: 3000
+[2018-03-15T17:50:05.385] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T17:50:05.421] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T17:50:05.700] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T17:50:05.725] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T17:50:05.785] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T17:50:05.836] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T17:50:05.851] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T17:50:05.988] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T17:50:05.991] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T17:50:06.129] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T17:50:06.130] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T17:50:06.155] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T17:50:06.155] [INFO] SLIDE CTRL - POSTS: New '0' - Already Exists '51'
+[2018-03-15T17:50:18.608] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:58:39 GMT+0000 (GMT) - Times used: 2 **
+[2018-03-15T17:50:28.603] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:56:39 GMT+0000 (GMT) - Times used: 2 **
+[2018-03-15T17:50:38.602] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:55:35 GMT+0000 (GMT) - Times used: 2 **
+[2018-03-15T17:50:48.603] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:53:44 GMT+0000 (GMT) - Times used: 2 **
+[2018-03-15T17:50:58.605] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:50:58 GMT+0000 (GMT) - Times used: 2 **
+[2018-03-15T17:51:08.602] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:47:58 GMT+0000 (GMT) - Times used: 2 **
+[2018-03-15T17:58:07.111] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T17:58:07.364] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T17:58:07.369] [INFO] AUTO UPDATER - Updating app statistics...
+[2018-03-15T17:58:07.380] [INFO] default - Server is listening on port: 3000
+[2018-03-15T17:58:07.411] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T17:58:07.446] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T17:58:07.799] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T17:58:07.863] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T17:58:07.966] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T17:58:08.030] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T17:58:08.089] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T17:58:08.098] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T17:58:08.101] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T17:58:08.189] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T17:58:08.190] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T17:58:08.217] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T17:58:08.221] [INFO] SLIDE CTRL - POSTS: New '2' - Already Exists '49'
+[2018-03-15T17:58:20.826] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:56:19 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T17:58:30.821] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:54:28 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T17:58:40.820] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:56:19 GMT+0000 (GMT) - Times used: 1 **
+[2018-03-15T17:58:50.820] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:54:28 GMT+0000 (GMT) - Times used: 1 **
+[2018-03-15T17:59:00.823] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:56:19 GMT+0000 (GMT) - Times used: 2 **
+[2018-03-15T17:59:10.820] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:54:28 GMT+0000 (GMT) - Times used: 2 **
+[2018-03-15T18:00:01.790] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T18:00:02.026] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T18:00:02.032] [INFO] AUTO UPDATER - Updating app statistics...
+[2018-03-15T18:00:02.041] [INFO] default - Server is listening on port: 3000
+[2018-03-15T18:00:02.073] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T18:00:02.110] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T18:00:02.366] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T18:00:02.489] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T18:00:02.531] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T18:00:02.606] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:00:02.685] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:00:02.966] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:00:02.970] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T18:00:03.113] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T18:00:03.114] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T18:00:03.158] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T18:00:03.158] [INFO] SLIDE CTRL - POSTS: New '0' - Already Exists '51'
+[2018-03-15T18:00:51.787] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T18:00:52.037] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T18:00:52.043] [INFO] AUTO UPDATER - Updating app statistics...
+[2018-03-15T18:00:52.052] [INFO] default - Server is listening on port: 3000
+[2018-03-15T18:00:52.082] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T18:00:52.121] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T18:00:52.363] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T18:00:52.427] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T18:00:52.455] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T18:00:52.566] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:00:52.613] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:00:52.665] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:00:52.668] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T18:00:52.759] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T18:00:52.759] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T18:00:52.789] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T18:00:52.790] [INFO] SLIDE CTRL - POSTS: New '0' - Already Exists '51'
+[2018-03-15T18:01:04.362] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:47:16 GMT+0000 (GMT) - Times used: 2 **
+[2018-03-15T18:01:14.356] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:41:59 GMT+0000 (GMT) - Times used: 2 **
+[2018-03-15T18:01:24.357] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:20:09 GMT+0000 (GMT) - Times used: 2 **
+[2018-03-15T18:01:34.357] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 12:30:35 GMT+0000 (GMT) - Times used: 2 **
+[2018-03-15T18:01:44.363] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 10:30:20 GMT+0000 (GMT) - Times used: 2 **
+[2018-03-15T18:01:54.356] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 08:01:46 GMT+0000 (GMT) - Times used: 2 **
+[2018-03-15T18:02:04.357] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 06:33:32 GMT+0000 (GMT) - Times used: 2 **
+[2018-03-15T18:05:18.371] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T18:05:18.621] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T18:05:18.626] [INFO] AUTO UPDATER - Updating app statistics...
+[2018-03-15T18:05:18.636] [INFO] default - Server is listening on port: 3000
+[2018-03-15T18:05:18.672] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T18:05:18.711] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T18:05:18.993] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T18:05:19.009] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T18:05:19.024] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T18:05:19.110] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:05:19.116] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:05:19.259] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:05:19.264] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T18:05:19.365] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T18:05:19.366] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T18:05:19.389] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T18:05:19.394] [INFO] SLIDE CTRL - POSTS: New '2' - Already Exists '49'
+[2018-03-15T18:07:32.245] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T18:07:32.487] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T18:07:32.493] [INFO] AUTO UPDATER - Updating app statistics...
+[2018-03-15T18:07:32.503] [INFO] default - Server is listening on port: 3000
+[2018-03-15T18:07:32.538] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T18:07:32.574] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T18:07:32.888] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T18:07:32.951] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T18:07:32.955] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T18:07:32.971] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:07:33.087] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:07:33.208] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:07:33.212] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T18:07:33.283] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T18:07:33.283] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T18:07:33.306] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T18:07:33.307] [INFO] SLIDE CTRL - POSTS: New '0' - Already Exists '51'
+[2018-03-15T18:08:13.978] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T18:08:14.241] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T18:08:14.246] [INFO] AUTO UPDATER - Updating app statistics...
+[2018-03-15T18:08:14.256] [INFO] default - Server is listening on port: 3000
+[2018-03-15T18:08:14.289] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T18:08:14.329] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T18:08:14.612] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T18:08:14.618] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T18:08:14.700] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T18:08:14.843] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:08:14.869] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:08:14.932] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:08:14.940] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T18:08:15.023] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T18:08:15.023] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T18:08:15.052] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T18:08:15.052] [INFO] SLIDE CTRL - POSTS: New '0' - Already Exists '51'
+[2018-03-15T18:09:07.490] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T18:09:07.730] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T18:09:07.736] [INFO] AUTO UPDATER - Updating app statistics...
+[2018-03-15T18:09:07.752] [INFO] default - Server is listening on port: 3000
+[2018-03-15T18:09:07.787] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T18:09:07.823] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T18:09:08.158] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T18:09:08.166] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T18:09:08.175] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T18:09:08.383] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:09:08.512] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:09:08.667] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:09:08.673] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T18:09:08.758] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T18:09:08.759] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T18:09:08.783] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T18:09:08.783] [INFO] SLIDE CTRL - POSTS: New '0' - Already Exists '51'
+[2018-03-15T18:09:34.453] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T18:09:34.747] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T18:09:34.752] [INFO] AUTO UPDATER - Updating app statistics...
+[2018-03-15T18:09:34.762] [INFO] default - Server is listening on port: 3000
+[2018-03-15T18:09:34.802] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T18:09:34.839] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T18:09:35.114] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T18:09:35.139] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T18:09:35.228] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:09:35.456] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:09:35.537] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:09:35.587] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T18:09:35.588] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T18:09:35.674] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T18:09:35.675] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T18:09:35.701] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T18:09:35.701] [INFO] SLIDE CTRL - POSTS: New '0' - Already Exists '51'
+[2018-03-15T18:10:05.617] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 18:04:00 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T18:10:15.613] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 18:02:05 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T18:10:25.613] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 18:04:00 GMT+0000 (GMT) - Times used: 1 **
+[2018-03-15T18:10:35.613] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 18:02:05 GMT+0000 (GMT) - Times used: 1 **
+[2018-03-15T18:10:45.615] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 18:04:00 GMT+0000 (GMT) - Times used: 2 **
+[2018-03-15T18:10:55.613] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 18:02:05 GMT+0000 (GMT) - Times used: 2 **
+[2018-03-15T18:11:05.612] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 18:04:00 GMT+0000 (GMT) - Times used: 3 **
+[2018-03-15T18:13:19.636] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T18:13:19.878] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T18:13:19.883] [INFO] AUTO UPDATER - Updating app statistics...
+[2018-03-15T18:13:19.894] [INFO] default - Server is listening on port: 3000
+[2018-03-15T18:13:19.934] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T18:13:19.971] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T18:13:20.220] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T18:13:20.294] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T18:13:20.334] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:13:20.358] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T18:13:20.500] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:13:20.566] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:13:20.570] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T18:13:20.654] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T18:13:20.654] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T18:13:20.686] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T18:13:20.686] [INFO] SLIDE CTRL - POSTS: New '0' - Already Exists '51'
+[2018-03-15T18:13:32.989] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 18:02:05 GMT+0000 (GMT) - Times used: 3 **
+[2018-03-15T18:13:42.983] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:56:19 GMT+0000 (GMT) - Times used: 3 **
+[2018-03-15T18:13:52.983] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:54:28 GMT+0000 (GMT) - Times used: 3 **
+[2018-03-15T18:14:02.983] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:45:19 GMT+0000 (GMT) - Times used: 3 **
+[2018-03-15T18:14:12.986] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:44:48 GMT+0000 (GMT) - Times used: 3 **
+[2018-03-15T18:14:22.983] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:40:14 GMT+0000 (GMT) - Times used: 3 **
+[2018-03-15T18:14:32.983] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:35:24 GMT+0000 (GMT) - Times used: 3 **
+[2018-03-15T18:14:42.983] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:30:02 GMT+0000 (GMT) - Times used: 3 **
+[2018-03-15T18:14:52.983] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:14:04 GMT+0000 (GMT) - Times used: 3 **
+[2018-03-15T18:14:59.435] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T18:14:59.816] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T18:14:59.873] [INFO] AUTO UPDATER - Updating app statistics...
+[2018-03-15T18:14:59.889] [INFO] default - Server is listening on port: 3000
+[2018-03-15T18:14:59.929] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T18:15:00.001] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T18:15:00.250] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T18:15:00.319] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T18:15:00.348] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T18:15:00.482] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:15:00.488] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:15:00.497] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:15:00.502] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T18:15:00.659] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T18:15:00.660] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T18:15:00.725] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T18:15:00.726] [INFO] SLIDE CTRL - POSTS: New '0' - Already Exists '51'
+[2018-03-15T18:15:12.849] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 16:59:01 GMT+0000 (GMT) - Times used: 3 **
+[2018-03-15T18:15:22.848] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 16:49:23 GMT+0000 (GMT) - Times used: 3 **
+[2018-03-15T18:15:32.846] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 16:34:57 GMT+0000 (GMT) - Times used: 3 **
+[2018-03-15T18:15:42.845] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 16:28:36 GMT+0000 (GMT) - Times used: 3 **
+[2018-03-15T18:15:52.846] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 16:10:42 GMT+0000 (GMT) - Times used: 3 **
+[2018-03-15T18:16:16.350] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T18:16:16.604] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T18:16:16.609] [INFO] AUTO UPDATER - Updating app statistics...
+[2018-03-15T18:16:16.618] [INFO] default - Server is listening on port: 3000
+[2018-03-15T18:16:16.655] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T18:16:16.690] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T18:16:16.950] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T18:16:16.998] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T18:16:17.005] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T18:16:17.185] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:16:17.229] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:16:17.311] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:16:17.315] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T18:16:17.388] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T18:16:17.389] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T18:16:17.415] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T18:16:17.418] [INFO] SLIDE CTRL - POSTS: New '1' - Already Exists '50'
+[2018-03-15T18:16:40.048] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 18:15:10 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T18:16:50.045] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 18:15:10 GMT+0000 (GMT) - Times used: 1 **
+[2018-03-15T18:17:00.044] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 18:15:10 GMT+0000 (GMT) - Times used: 2 **
+[2018-03-15T18:17:10.044] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 18:15:10 GMT+0000 (GMT) - Times used: 3 **
+[2018-03-15T18:17:20.045] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 16:00:41 GMT+0000 (GMT) - Times used: 3 **
+[2018-03-15T18:21:00.524] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T18:21:00.813] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T18:21:00.818] [INFO] AUTO UPDATER - Updating app statistics...
+[2018-03-15T18:21:00.829] [INFO] default - Server is listening on port: 3000
+[2018-03-15T18:21:00.868] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T18:21:00.911] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T18:21:01.158] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T18:21:01.199] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T18:21:01.252] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T18:21:01.364] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:21:01.387] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:21:01.421] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:21:01.424] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T18:21:01.500] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T18:21:01.500] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T18:21:01.523] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T18:21:01.523] [INFO] SLIDE CTRL - POSTS: New '0' - Already Exists '51'
+[2018-03-15T18:21:13.174] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:58:39 GMT+0000 (GMT) - Times used: 3 **
+[2018-03-15T18:21:23.175] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:56:39 GMT+0000 (GMT) - Times used: 3 **
+[2018-03-15T18:21:33.173] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:55:35 GMT+0000 (GMT) - Times used: 3 **
+[2018-03-15T18:21:43.171] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:53:44 GMT+0000 (GMT) - Times used: 3 **
+[2018-03-15T18:21:53.173] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:50:58 GMT+0000 (GMT) - Times used: 3 **
+[2018-03-15T18:21:53.506] [INFO] STAT CTRL - Loading statistics.
+[2018-03-15T18:25:30.979] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T18:25:31.222] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T18:25:31.227] [INFO] AUTO UPDATER - Updating app statistics...
+[2018-03-15T18:25:31.236] [INFO] default - Server is listening on port: 3000
+[2018-03-15T18:25:31.267] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T18:25:31.302] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T18:25:31.595] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T18:25:31.607] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T18:25:31.711] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:25:31.776] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:25:31.799] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T18:25:31.861] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:25:31.865] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T18:25:32.003] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T18:25:32.004] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T18:25:32.046] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T18:25:32.050] [INFO] SLIDE CTRL - POSTS: New '1' - Already Exists '50'
+[2018-03-15T18:25:44.146] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 18:21:54 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T18:25:54.142] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 18:21:54 GMT+0000 (GMT) - Times used: 1 **
+[2018-03-15T18:26:04.141] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 18:21:54 GMT+0000 (GMT) - Times used: 2 **
+[2018-03-15T18:26:14.140] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 18:21:54 GMT+0000 (GMT) - Times used: 3 **
+[2018-03-15T18:26:24.141] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:47:58 GMT+0000 (GMT) - Times used: 3 **
+[2018-03-15T18:26:24.384] [INFO] STAT CTRL - Loading statistics.
+[2018-03-15T18:27:31.352] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T18:27:31.593] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T18:27:31.599] [INFO] AUTO UPDATER - Updating app statistics...
+[2018-03-15T18:27:31.608] [INFO] default - Server is listening on port: 3000
+[2018-03-15T18:27:31.643] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T18:27:31.679] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T18:27:31.945] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T18:27:32.054] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T18:27:32.236] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:27:32.243] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:27:32.290] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T18:27:32.304] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:27:32.308] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T18:27:32.392] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T18:27:32.392] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T18:27:32.416] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T18:27:32.416] [INFO] SLIDE CTRL - POSTS: New '0' - Already Exists '51'
+[2018-03-15T18:27:34.065] [INFO] STAT CTRL - Loading statistics.
+[2018-03-15T18:31:19.431] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T18:31:19.717] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T18:31:19.722] [INFO] AUTO UPDATER - Updating app statistics...
+[2018-03-15T18:31:19.735] [INFO] default - Server is listening on port: 3000
+[2018-03-15T18:31:19.794] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T18:31:19.849] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T18:31:20.132] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T18:31:20.160] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T18:31:20.234] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T18:31:20.362] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:31:20.436] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:31:20.486] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:31:20.489] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T18:31:20.574] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T18:31:20.575] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T18:31:20.601] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T18:31:20.601] [INFO] SLIDE CTRL - POSTS: New '0' - Already Exists '51'
+[2018-03-15T18:31:33.440] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:47:16 GMT+0000 (GMT) - Times used: 3 **
+[2018-03-15T18:31:33.450] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:41:59 GMT+0000 (GMT) - Times used: 3 **
+[2018-03-15T18:31:43.440] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:20:09 GMT+0000 (GMT) - Times used: 3 **
+[2018-03-15T18:31:43.450] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 12:30:35 GMT+0000 (GMT) - Times used: 3 **
+[2018-03-15T18:31:53.437] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 10:30:20 GMT+0000 (GMT) - Times used: 3 **
+[2018-03-15T18:31:53.446] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 08:01:46 GMT+0000 (GMT) - Times used: 3 **
+[2018-03-15T18:32:03.437] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 06:33:32 GMT+0000 (GMT) - Times used: 3 **
+[2018-03-15T18:32:03.446] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 18:21:54 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-15T18:32:13.438] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 18:15:10 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-15T18:32:13.492] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 18:04:00 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-15T18:32:13.636] [INFO] STAT CTRL - Loading statistics.
+[2018-03-15T18:32:41.245] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T18:32:41.481] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T18:32:41.487] [INFO] AUTO UPDATER - Updating app statistics...
+[2018-03-15T18:32:41.497] [INFO] default - Server is listening on port: 3000
+[2018-03-15T18:32:41.528] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T18:32:41.568] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T18:32:41.814] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T18:32:41.846] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T18:32:41.875] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T18:32:41.997] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:32:42.032] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:32:42.232] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:32:42.234] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T18:32:42.337] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T18:32:42.338] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T18:32:42.384] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T18:32:42.384] [INFO] SLIDE CTRL - POSTS: New '0' - Already Exists '51'
+[2018-03-15T18:32:43.850] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 18:02:05 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-15T18:32:53.926] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:56:19 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-15T18:32:53.936] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:54:28 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-15T18:33:03.923] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:45:19 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-15T18:33:03.933] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:44:48 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-15T18:33:13.922] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:40:14 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-15T18:33:13.931] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:35:24 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-15T18:33:23.922] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:30:02 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-15T18:33:23.932] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 17:14:04 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-15T18:33:33.923] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 16:59:01 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-15T18:33:33.976] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 16:49:23 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-15T18:33:34.155] [INFO] STAT CTRL - Loading statistics.
+[2018-03-15T18:35:14.575] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T18:35:14.868] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T18:35:14.874] [INFO] AUTO UPDATER - Updating app statistics...
+[2018-03-15T18:35:14.883] [INFO] default - Server is listening on port: 3000
+[2018-03-15T18:35:14.917] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T18:35:14.954] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T18:35:15.253] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T18:35:15.268] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T18:35:15.273] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T18:35:15.397] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:35:15.434] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:35:15.499] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:35:15.504] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T18:35:15.579] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T18:35:15.579] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T18:35:15.603] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T18:35:15.604] [INFO] SLIDE CTRL - POSTS: New '0' - Already Exists '51'
+[2018-03-15T18:35:19.051] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 16:34:57 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-15T18:35:29.081] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 16:28:36 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-15T18:35:39.083] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 16:10:42 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-15T18:35:49.081] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 16:00:41 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-15T18:35:59.080] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:58:39 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-15T18:36:09.080] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:56:39 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-15T18:36:19.082] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:55:35 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-15T18:36:19.332] [INFO] STAT CTRL - Loading statistics.
+[2018-03-15T18:37:08.856] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T18:37:09.094] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T18:37:09.099] [INFO] AUTO UPDATER - Updating app statistics...
+[2018-03-15T18:37:09.109] [INFO] default - Server is listening on port: 3000
+[2018-03-15T18:37:09.147] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T18:37:09.184] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T18:37:09.458] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T18:37:09.462] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T18:37:09.528] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T18:37:09.723] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:37:09.760] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:37:09.782] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:37:09.785] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T18:37:09.860] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T18:37:09.860] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T18:37:09.886] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T18:37:09.889] [INFO] SLIDE CTRL - POSTS: New '2' - Already Exists '49'
+[2018-03-15T18:37:12.377] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 18:36:12 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T18:37:22.448] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 18:35:05 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T18:37:32.445] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 18:36:12 GMT+0000 (GMT) - Times used: 1 **
+[2018-03-15T18:37:42.444] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 18:35:05 GMT+0000 (GMT) - Times used: 1 **
+[2018-03-15T18:37:52.443] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 18:36:12 GMT+0000 (GMT) - Times used: 2 **
+[2018-03-15T18:38:02.444] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 18:35:05 GMT+0000 (GMT) - Times used: 2 **
+[2018-03-15T18:38:12.444] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 18:36:12 GMT+0000 (GMT) - Times used: 3 **
+[2018-03-15T18:38:12.663] [INFO] STAT CTRL - Loading statistics.
+[2018-03-15T18:38:31.842] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T18:38:32.117] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T18:38:32.125] [INFO] AUTO UPDATER - Updating app statistics...
+[2018-03-15T18:38:32.137] [INFO] default - Server is listening on port: 3000
+[2018-03-15T18:38:32.178] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T18:38:32.218] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T18:38:32.505] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T18:38:32.522] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T18:38:32.563] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T18:38:32.679] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:38:32.696] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:38:32.842] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:38:32.846] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T18:38:32.932] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T18:38:32.932] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T18:38:32.956] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T18:38:32.957] [INFO] SLIDE CTRL - POSTS: New '0' - Already Exists '51'
+[2018-03-15T18:38:33.656] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 18:35:05 GMT+0000 (GMT) - Times used: 3 **
+[2018-03-15T18:38:43.731] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 18:36:12 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-15T18:38:53.734] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 18:35:05 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-15T18:39:03.731] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:53:44 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-15T18:39:13.730] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:50:58 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-15T18:39:23.731] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 15:47:58 GMT+0000 (GMT) - Times used: 4 **
+[2018-03-15T18:39:23.970] [INFO] STAT CTRL - Loading statistics.
+[2018-03-15T18:53:32.220] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T18:53:32.221] [INFO] AUTO UPDATER - Updating app statistics...
+[2018-03-15T18:53:32.612] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T18:53:32.668] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T18:53:32.710] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T18:53:32.801] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:53:32.870] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:53:32.933] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T18:53:32.937] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T18:53:33.015] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T18:53:33.016] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T18:53:33.045] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T18:53:33.049] [INFO] SLIDE CTRL - POSTS: New '2' - Already Exists '49'
+[2018-03-15T19:30:35.717] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T19:30:35.949] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T19:30:35.962] [INFO] default - Server is listening on port: 3000
+[2018-03-15T19:30:35.993] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T19:30:36.029] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T19:30:36.406] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T19:30:36.447] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T19:30:36.454] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T19:30:36.496] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T19:30:36.602] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T19:30:36.771] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T19:30:36.776] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T19:30:36.850] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T19:30:36.851] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T19:30:36.875] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T19:30:36.882] [INFO] SLIDE CTRL - POSTS: New '11' - Already Exists '40'
+[2018-03-15T19:30:40.779] [INFO] STAT CTRL - Loading weekly total posts...
+[2018-03-15T19:45:36.032] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T19:45:36.327] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T19:45:36.374] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T19:45:36.414] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T19:45:36.514] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T19:45:36.594] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T19:45:36.610] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T19:45:36.613] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T19:45:36.685] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T19:45:36.686] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T19:45:36.713] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T19:45:36.714] [INFO] SLIDE CTRL - POSTS: New '2' - Already Exists '49'
+[2018-03-15T19:47:47.767] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T19:47:48.104] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T19:47:48.128] [INFO] default - Server is listening on port: 3000
+[2018-03-15T19:47:48.173] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T19:47:48.211] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T19:47:48.521] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T19:47:48.548] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T19:47:48.576] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T19:47:48.782] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T19:47:48.826] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T19:47:48.853] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T19:47:48.856] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T19:47:48.935] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T19:47:48.936] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T19:47:48.958] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T19:47:48.962] [INFO] SLIDE CTRL - POSTS: New '2' - Already Exists '49'
+[2018-03-15T19:47:51.826] [INFO] STAT CTRL - Loading weekly total posts...
+[2018-03-15T19:54:53.439] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T19:54:53.800] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T19:54:53.826] [INFO] default - Server is listening on port: 3000
+[2018-03-15T19:54:53.855] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T19:54:53.894] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T19:54:54.165] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T19:54:54.215] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T19:54:54.334] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T19:54:54.482] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T19:54:54.522] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T19:54:54.635] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T19:54:54.637] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T19:54:54.736] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T19:54:54.737] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T19:54:54.768] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T19:54:54.772] [INFO] SLIDE CTRL - POSTS: New '1' - Already Exists '50'
+[2018-03-15T19:54:55.627] [INFO] STAT CTRL - Loading weekly total posts...
+[2018-03-15T19:55:17.265] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T19:55:17.500] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T19:55:17.514] [INFO] default - Server is listening on port: 3000
+[2018-03-15T19:55:17.551] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T19:55:17.589] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T19:55:17.847] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T19:55:17.883] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T19:55:17.952] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T19:55:18.078] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T19:55:18.107] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T19:55:18.135] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T19:55:18.139] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T19:55:18.242] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T19:55:18.243] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T19:55:18.271] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T19:55:18.271] [INFO] SLIDE CTRL - POSTS: New '0' - Already Exists '51'
+[2018-03-15T19:55:19.789] [INFO] STAT CTRL - Loading weekly total posts...
+[2018-03-15T19:56:11.128] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T19:56:11.385] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T19:56:11.403] [INFO] default - Server is listening on port: 3000
+[2018-03-15T19:56:11.438] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T19:56:11.476] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T19:56:11.725] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T19:56:11.746] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T19:56:11.815] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T19:56:11.868] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T19:56:11.875] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T19:56:12.060] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T19:56:12.065] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T19:56:12.155] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T19:56:12.155] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T19:56:12.179] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T19:56:12.179] [INFO] SLIDE CTRL - POSTS: New '0' - Already Exists '51'
+[2018-03-15T19:56:14.123] [INFO] STAT CTRL - Loading weekly total posts...
+[2018-03-15T19:59:31.599] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T19:59:31.835] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T19:59:31.848] [INFO] default - Server is listening on port: 3000
+[2018-03-15T19:59:31.880] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T19:59:31.916] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T19:59:32.223] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T19:59:32.405] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T19:59:32.453] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T19:59:32.768] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T19:59:32.784] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T19:59:32.859] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T19:59:32.864] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T19:59:32.934] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T19:59:32.934] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T19:59:32.958] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T19:59:32.958] [INFO] SLIDE CTRL - POSTS: New '0' - Already Exists '51'
+[2018-03-15T19:59:39.698] [INFO] STAT CTRL - Loading weekly total posts...
+[2018-03-15T20:03:47.968] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T20:03:48.203] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T20:03:48.217] [INFO] default - Server is listening on port: 3000
+[2018-03-15T20:03:48.258] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T20:03:48.294] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T20:03:48.588] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T20:03:48.624] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T20:03:48.655] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T20:03:48.677] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T20:03:48.765] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T20:03:48.918] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T20:03:48.922] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T20:03:49.013] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T20:03:49.014] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T20:03:49.045] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T20:03:49.049] [INFO] SLIDE CTRL - POSTS: New '2' - Already Exists '49'
+[2018-03-15T20:03:49.958] [INFO] STAT CTRL - Loading weekly total posts...
+[2018-03-15T20:04:30.976] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T20:04:31.205] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T20:04:31.219] [INFO] default - Server is listening on port: 3000
+[2018-03-15T20:04:31.255] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T20:04:31.292] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T20:04:31.552] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T20:04:31.609] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T20:04:31.705] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T20:04:31.775] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T20:04:31.802] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T20:04:31.995] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T20:04:31.999] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T20:04:32.083] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T20:04:32.083] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T20:04:32.109] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T20:04:32.109] [INFO] SLIDE CTRL - POSTS: New '0' - Already Exists '51'
+[2018-03-15T20:04:33.657] [INFO] STAT CTRL - Loading weekly total posts...
+[2018-03-15T20:06:00.454] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T20:06:00.713] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T20:06:00.731] [INFO] default - Server is listening on port: 3000
+[2018-03-15T20:06:00.766] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T20:06:00.802] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T20:06:01.060] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T20:06:01.071] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T20:06:01.175] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T20:06:01.184] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T20:06:01.198] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T20:06:01.408] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T20:06:01.412] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T20:06:01.483] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T20:06:01.484] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T20:06:01.508] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T20:06:01.511] [INFO] SLIDE CTRL - POSTS: New '1' - Already Exists '50'
+[2018-03-15T20:06:03.187] [INFO] STAT CTRL - Loading weekly total posts...
+[2018-03-15T20:07:32.902] [INFO] DB - Connecting to MongoDb...
+[2018-03-15T20:07:33.154] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-15T20:07:33.169] [INFO] default - Server is listening on port: 3000
+[2018-03-15T20:07:33.202] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-15T20:07:33.238] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-15T20:07:33.480] [INFO] TWITTER API - No. of Tweets for query '#siliconbeach filter:media -RT - 50.720806,-1.904755,50mi' = 0
+[2018-03-15T20:07:33.542] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.720806,-1.904755,50mi' = 4
+[2018-03-15T20:07:33.618] [INFO] TWITTER API - No. of Tweets for query 'bournemouth filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T20:07:33.627] [INFO] TWITTER API - No. of Tweets for query '#helicopter filter:media -RT - 50.720806,-1.904755,50mi' = 2
+[2018-03-15T20:07:33.672] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T20:07:33.765] [INFO] TWITTER API - No. of Tweets for query 'from:bournemouthuni filter:media -RT - 50.720806,-1.904755,50mi' = 15
+[2018-03-15T20:07:33.767] [INFO] TWITTER API - Total tweets: 51
+[2018-03-15T20:07:33.860] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-15T20:07:33.861] [INFO] SLIDE CTRL - No. of Tweets to exist check 51.
+[2018-03-15T20:07:33.889] [INFO] SLIDE CTRL - Check complete.
+[2018-03-15T20:07:33.893] [INFO] SLIDE CTRL - POSTS: New '1' - Already Exists '50'
+[2018-03-15T20:07:35.179] [INFO] STAT CTRL - Loading weekly total posts...
+[2018-03-15T20:11:24.507] [INFO] STAT CTRL - Loading weekly total posts...
+[2018-03-15T20:12:00.455] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 20:06:29 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T20:12:10.555] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 20:05:24 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T20:12:20.553] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 20:01:51 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T20:12:30.553] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 20:01:12 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T20:12:40.554] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 19:53:36 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T20:12:50.554] [INFO] SLIDE CTRL - ** Next post - Date: Thu Mar 15 2018 19:46:14 GMT+0000 (GMT) - Times used: 0 **
+[2018-03-15T20:12:50.747] [INFO] STAT CTRL - Loading weekly total posts...

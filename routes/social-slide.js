@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
     });
 });
 
-router.get('/stat', (req, res) => {
+router.get('/stats', (req, res) => {
     res.render('statistics', {
         title: 'Statistics'
     });
@@ -18,7 +18,7 @@ router.get('/stat', (req, res) => {
 
 router.get('/api/get/next-post', slideController.getNextPost);
 
-router.get('/api/get/next-stat', statsController.getPostOfTheWeek);
+router.get('/api/get/next-stat', statsController.getTotalPosts);
 
 router.get('/api/get/slide-speed', settingController.getSlideSpeed);
 
