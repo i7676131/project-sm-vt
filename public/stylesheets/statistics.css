@@ -1,16 +1,5 @@
 .chart_container1 {
     position: relative;
-    float: right;
-    margin: 2.5% 2.5% 2.5% 0;
-    padding: 0 1% 1% 0;
-    height: 85vh;
-    width: 50vw;
-    background-color: white;
-    box-shadow: 0 4px 8px RGBA(0,0,0,0.2), 0 6px 20px 0 RGBA(0,0,0,0.19);
-    opacity: 0.8;
-}
-.chart_container2 {
-    position: relative;
     float: left;
     margin: 2.5% 0 2.5% 2.5%;
     padding: 0 1% 0 0;
@@ -20,7 +9,17 @@
     box-shadow: 0 4px 8px RGBA(0,0,0,0.2), 0 6px 20px 0 RGBA(0,0,0,0.19);
     opacity: 0.8;
 }
-
+.chart_container2 {
+    position: relative;
+    float: right;
+    margin: 2.5% 2.5% 2.5% 0;
+    padding: 0 1% 1% 0;
+    height: 85vh;
+    width: 50vw;
+    background-color: white;
+    box-shadow: 0 4px 8px RGBA(0,0,0,0.2), 0 6px 20px 0 RGBA(0,0,0,0.19);
+    opacity: 0.8;
+}
 #chart_logo {
     position: absolute;
     left: 0;

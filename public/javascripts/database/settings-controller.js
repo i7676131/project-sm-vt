@@ -28,7 +28,9 @@ settingsController.getSettings = (req, res) => {
 
 settingsController.getSlideSpeed = (req, res) => {
     AppSetting.findOne({_id: settingObjId}, (err, settings) => {
-        if (err) {log.err(err, logger);}
+        if (err) {
+            log.err(err, logger);
+        }
         res.json(convert.secsToMills(settings.slideSpeed));
     });
 };
@@ -58,15 +60,20 @@ settingsController.getBlacklist = () => {
 };
 
 settingsController.addListItem = (req, res) => {
-    let newWord = '';
-    if (req.body.geoCode !== '') {
-        newWord = {word: req.body.listWord, geocode: req.body.geoCode.replace(/\s/g, '')};
+    let formWord = req.body.listWord;
+    let geoCode = req.body.geoCode;
+    let list = req.body.listType;
+    let newObj = '';
+
+    // Check if geoCode has been entered by user or if undefined while adding blacklist word.
+    if (geoCode !== '' && geoCode != null ) {
+        newObj = {word: formWord, geocode: geoCode.replace(/\s/g, '')};
     } else {
-        newWord = {word: req.body.listWord};
+        newObj = {word: formWord};
     }
 
     let success = encodeURIComponent('Added successfully.');
-    AppSetting.update({_id: settingObjId}, {$push: {[req.body.listType]: newWord}}, (err) => {
+    AppSetting.update({_id: settingObjId}, {$push: {[list]: newObj}}, (err) => {
         if (err) {
             let failure = encodeURIComponent(err);
             res.redirect('/settings?message=' + failure);
