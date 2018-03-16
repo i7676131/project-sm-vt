@@ -31,6 +31,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/social-slide', socialSlide);
 app.use('/settings', settings);
 
+app.use((req, res, next) => {
+
+    var err = new Error('Invalid Token.');
+    err.status = 89;
+    next(err);
+});
+
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
     var err = new Error('Not Found');

@@ -38,48 +38,44 @@ socialSlide.controller("SocialController", function ($scope, $http, $window, $in
 });
 
 
-socialSlide.controller("StatController", function ($scope, $http, $window, $interval) {
+socialSlide.controller("StatController", function ($scope, $http, $window) {
 
     $http.get('/social-slide/api/get/next-stat').then((res) => {
 
         let dailyChart = res.data.dailyTotal;
         let weeklyChart = res.data.weeklyPosts;
 
-        populateChart(dailyChart.labels, dailyChart.data, weeklyChart.labels, weeklyChart.data, weeklyChart.title)
+        populateChart(dailyChart, weeklyChart)
 
     });
 
+    function nextPost(){
+        $window.location = '/social-slide';
+    }
+
+    setTimeout(nextPost, 30000);
+
 });
 
-function populateChart(dailyLabels, dailyData, weeklyLabels, weeklyData, weeklyTitle){
+function populateChart(dailyChartData, weeklyChartData){
 
-    let ctx1 = document.getElementById('posts_of_week');
-    let ctx2 = document.getElementById('total_daily_posts');
+    /*
+        1. Get the graphs by ID from the web page (statistics.pug).
+        2. Inject each graph with their corresponding data and labels.
+        3. Construct the options and settings for each graph.
+        4. Create chart objects and assign options and data.
+    */
 
-    let total_daily_chart = {
-        labels: dailyLabels,
-        datasets: [{
-            backgroundColor: 'rgba(255,1,128,0.2)',
-            borderColor: 'rgba(255,1,128,1)',
-            borderWidth: 2,
-            hoverBackgroundColor: 'rgba(255,1,128,0.5)',
-            hoverBorderColor: 'rgba(255,1,128,1)',
-            data: dailyData
-        }]
-    };
-    let posts_of_week_chart = {
-        labels: weeklyLabels,
-        datasets: [{
-            backgroundColor: 'rgba(255,1,128,0.2)',
-            borderColor: 'rgba(255,1,128,1)',
-            borderWidth: 2,
-            hoverBackgroundColor: 'rgba(255,1,128,0.5)',
-            hoverBorderColor: 'rgba(255,1,128,1)',
-            data: weeklyData
-        }]
-    };
+    // 1.
+    let ctx1 = document.getElementById('total_daily_posts');
+    let ctx2 = document.getElementById('posts_of_week');
 
-    let options2 = {
+    // 2.
+    let total_daily_chart = getChartData(dailyChartData.data, dailyChartData.labels);
+    let posts_of_week_chart = getChartData(weeklyChartData.data, weeklyChartData.labels);
+
+    // 3.
+    let ctxOptions1 = {
         title: {
             display: true,
             text: 'Total Daily Posts',
@@ -104,11 +100,10 @@ function populateChart(dailyLabels, dailyData, weeklyLabels, weeklyData, weeklyT
             display: false
         }
     };
-
-    let options1 = {
+    let ctxOptions2 = {
         title: {
             display: true,
-            text: 'Top Weekly Posts - Week of Year '+weeklyTitle,
+            text: 'Top Weekly Posts - Week of Year '+weeklyChartData.title,
             fontSize: 30,
             padding: 12
         },
@@ -132,21 +127,33 @@ function populateChart(dailyLabels, dailyData, weeklyLabels, weeklyData, weeklyT
         }
     };
 
-
-
     Chart.defaults.global.defaultFontColor = 'black';
     Chart.defaults.global.defaultFontSize = 16;
 
+    // 4.
     let myChart1 = new Chart (ctx1, {
+        type: 'line',
+        options: ctxOptions1,
+        data: total_daily_chart
+    });
+    let myChart2 = new Chart (ctx2, {
         type: 'bar',
-        options: options1,
+        options: ctxOptions2,
         data: posts_of_week_chart
     });
 
-    let myChart2 = new Chart (ctx2, {
-        type: 'line',
-        options: options2,
-        data: total_daily_chart
-    });
+}
 
+function getChartData(chartData, chartLabel){
+    return {
+        labels: chartLabel,
+        datasets: [{
+            backgroundColor: 'rgba(255,1,128,0.2)',
+            borderColor: 'rgba(255,1,128,1)',
+            borderWidth: 2,
+            hoverBackgroundColor: 'rgba(255,1,128,0.5)',
+            hoverBorderColor: 'rgba(255,1,128,1)',
+            data: chartData
+        }]
+    }
 }

@@ -71,9 +71,19 @@ function getTweets(query) {
             tweet_mode: conf.twitter.tweet_mode
         }, (err, data, res) => {
 
-            if (err) {
-                reject(err);
+            if(data.errors != null){
+                if(data.errors[0].code === 89){
+                    log.err('Received error from Twitter: code '+data.errors[0].code, logger);
+                    throw Error(data.errors[0].message);
+                }else if(data.errors[0].code === 88){
+                    log.err('Received error from Twitter: code '+data.errors[0].code, logger);
+                    throw Error(data.errors[0].message);
+                }
             }
+
+
+
+            if (err) {reject(err);}
 
             log.inf('No. of Tweets for query \'' + query.word+' - '+query.geocode+'\' = '+ data.statuses.length, logger);
 
