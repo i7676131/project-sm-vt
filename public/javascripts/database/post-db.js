@@ -1,12 +1,12 @@
-var log = require('../helpers/logger');
-var format = require('../helpers/format-date');
-var SmPost = require('../models/sm-post-model');
+let log = require('../helpers/logger');
+let format = require('../helpers/format-date');
+let SmPost = require('../models/sm-post-model');
 
-const logger = 'SLIDE CTRL';
+const logger = 'POST DB';
 
-var slideController = {};
+let postController = {};
 
-slideController.getNextPost = (req, res) => {
+postController.getNextPost = (req, res) => {
 
     options = {
         timesUsedToday:1,
@@ -20,9 +20,12 @@ slideController.getNextPost = (req, res) => {
         }
 
         if(post !== null){
-            log.inf('** Next post - Date: '+post.smDate+' - Times used: '+post.timesUsedToday+' **', logger);
+            log.inf('** Next post - ID: '+post.smId+
+                ' - Date: '+post.smDate+
+                ' - Username: '+post.smUserName+
+                ' - Times used: '+post.timesUsedToday+' **', logger);
 
-            slideController.updateUsedPost(post._id);
+            postController.updateUsedPost(post._id);
             let fmtPost = format.twitterDate(post);
             res.json(fmtPost);
         }else{
@@ -31,19 +34,18 @@ slideController.getNextPost = (req, res) => {
     });
 };
 
-slideController.updateUsedPost = (objId) => {
+postController.updateUsedPost = (objId) => {
     let timesUsed = 0;
     SmPost.findOne({_id: objId}, (err, post) => {
         if (err) {log.err('Could not get post by id '+objId+". "+err, logger);}
         timesUsed = post.timesUsedToday + 1;
-        //log.inf('Times used today was ' + post.timesUsedToday + ' now ' + timesUsed + '.', logger);
         SmPost.update({_id: objId}, {timesUsedToday: timesUsed}, {upsert: true}, (err) => {
             if (err) {log.err('Could not update \'timesUsedToday\' field.\n' + err, logger);}
         });
     });
 };
 
-slideController.addSocialMediaPosts = (posts) => {
+postController.addSocialMediaPosts = (posts) => {
     log.inf('No. of Tweets to exist check ' + posts.length + '.', logger);
 
     let filteredPosts = [];
@@ -84,4 +86,4 @@ function checkExists(post) {
         });
     });
 }
-module.exports = slideController;
+module.exports = postController;

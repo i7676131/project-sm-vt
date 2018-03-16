@@ -1,5 +1,5 @@
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+let mongoose = require('mongoose');
+let Schema = mongoose.Schema;
 
 let postSchema = new Schema({
     smId: String,
@@ -12,11 +12,11 @@ let postSchema = new Schema({
     },
     smAvatarUrl: {
         type: String,
-        default: '/images/logos/twitter-logo.png' //TODO add default profile pic.
+        default: '/images/logos/twitter-logo.png'
     },
     smImageUrl: {
         type: String,
-        default: '/images/default-image.png' //TODO add default background image, in case there is no SM image.
+        default: '/images/default-image.png'
     },
     smPlatform: String,
     keywordUsed: String,

@@ -9,9 +9,11 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var updater = require('./public/javascripts/system/auto-updater');
-var stat = require('./public/javascripts/database/stats-controller');
+//var stat = require('./public/javascripts/database/statistics-db');
 var socialSlide = require('./routes/social-slide');
 var settings = require('./routes/settings');
+
+//stat.getDailyTotal();
 
 // create global app object
 var app = express();
@@ -30,13 +32,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/social-slide', socialSlide);
 app.use('/settings', settings);
-
-app.use((req, res, next) => {
-
-    var err = new Error('Invalid Token.');
-    err.status = 89;
-    next(err);
-});
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

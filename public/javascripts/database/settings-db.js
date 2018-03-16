@@ -4,7 +4,7 @@ var convert = require('../helpers/milliseconds');
 var AppSetting = require('../models/settings-model');
 
 const settingObjId = conf.settings.settingDocObjectId;
-const logger = 'SETTINGS CTRL';
+const logger = 'SETTINGS DB';
 
 var settingsController = {};
 
@@ -142,6 +142,6 @@ function updateSetting(field, newValue) {
             log.inf(field + ' was updated successfully.', logger);
         }
     });
-};
+}
 
 module.exports = settingsController;

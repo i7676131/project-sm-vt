@@ -1,7 +1,7 @@
-var settings = require('../../../database/settings-controller');
+var settings = require('../../../database/settings-db');
 var log = require('../../../helpers/logger');
 var convert = require('../../../helpers/tweet-model-mapper');
-var db = require('../../../database/slide-controller');
+var db = require('../../../database/post-db');
 var Twitter = require('twitter');
 var conf = require('../../../../../config/system-config');
 var client = new Twitter({
@@ -33,18 +33,15 @@ api.getNewPosts = () => {
         }
 
         let filteredTweets = [];
-
         log.inf('Total tweets: ' + singleArrayOfTweets.length, logger);
         for (let i = 0; i < singleArrayOfTweets.length; i++) {
             filteredTweets.push(checkBlacklist(singleArrayOfTweets[i]));
         }
-
         return Promise.all(filteredTweets);
 
     }).then((filteredTweets) => {
 
         let nullFilteredTweets = [];
-
         for (let i = 0; i < filteredTweets.length; i++) {
             if(filteredTweets[i] !== null){
                 nullFilteredTweets.push(filteredTweets[i]);
@@ -52,7 +49,6 @@ api.getNewPosts = () => {
         }
 
         log.inf('Total filtered tweets: '+nullFilteredTweets.length, logger);
-
         db.addSocialMediaPosts(nullFilteredTweets);
 
     }).catch((reject) => {
@@ -73,15 +69,13 @@ function getTweets(query) {
 
             if(data.errors != null){
                 if(data.errors[0].code === 89){
-                    log.err('Received error from Twitter: code '+data.errors[0].code, logger);
+                    log.err('Received error from Twitter. Code: '+data.errors[0].code+' Error: '+data.errors[0].message, logger);
                     throw Error(data.errors[0].message);
                 }else if(data.errors[0].code === 88){
                     log.err('Received error from Twitter: code '+data.errors[0].code, logger);
                     throw Error(data.errors[0].message);
                 }
             }
-
-
 
             if (err) {reject(err);}
 

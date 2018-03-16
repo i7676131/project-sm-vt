@@ -1,6 +1,6 @@
-var conf = require('../../../config/system-config');
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+let conf = require('../../../config/system-config');
+let mongoose = require('mongoose');
+let Schema = mongoose.Schema;
 
 let settingSchema = new Schema({
     whitelist: [{

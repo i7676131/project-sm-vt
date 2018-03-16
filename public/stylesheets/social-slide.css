@@ -48,6 +48,7 @@
     border-radius: 50%;
     position: relative;
     float: left;
+    box-shadow: 0 4px 8px RGBA(0,0,0,0.2), 0 6px 20px 0 RGBA(0,0,0,0.19);
 }
 #txt_name{
     margin: 50px 5% 0 5%;

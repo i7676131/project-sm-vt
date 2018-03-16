@@ -1,12 +1,11 @@
-var WeeklyPosts = require('../models/weekly-posts-model');
-var DailyTotalPosts = require('../models/daily-total-model');
-var Settings = require('../models/settings-model');
-var SmPost = require('../models/sm-post-model');
-var log = require('../helpers/logger');
+let WeeklyPosts = require('../models/weekly-posts-model');
+let DailyTotal = require('../models/daily-total-model');
+let SmPost = require('../models/sm-post-model');
+let log = require('../helpers/logger');
 
-const logger = 'STAT CTRL';
+const logger = 'STAT DB';
 
-var statsController = {};
+let statsController = {};
 
 statsController.getStatistics = (req, res) => {
 
@@ -23,6 +22,8 @@ statsController.getStatistics = (req, res) => {
     }).catch((err) => {
         log.err('Problem getting statistics: '+err);
     });*/
+
+    statsController.getDailyTotal();
 
     let testData = {
         weeklyPosts:{
@@ -45,19 +46,25 @@ function getWeeklyPosts () {
 
     log.inf('Loading posts of the week...', logger);
 
-
 }
 
-function getDailyTotal () {
+statsController.getDailyTotal = () => {
 
-    log.inf('Loading daily total...', logger);
+    //log.inf('Loading daily total...', logger);
 
+    // .find({}).limit(10).sort({statDate: -1}).exec((err, docs) => {
+
+    DailyTotal.find({}, (err, docs) => {
+
+        if(err){throw err;}
+
+        log.inf(docs, logger);
+
+    });
 };
 
 statsController.updateDailyTotal = () => {
-    SmPost.find({keywordUsed:'pier'}).count((err, count) => {
-        //console.log('COUNT: '+count);
-    });
+
 };
 
 statsController.updateWeeklyPosts = () => {

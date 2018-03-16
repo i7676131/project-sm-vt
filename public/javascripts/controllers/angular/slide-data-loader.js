@@ -16,10 +16,10 @@ socialSlide.controller("SocialController", function ($scope, $http, $window, $in
             console.log('Count = '+count);
             if(count === 0){
                 $window.location = '/social-slide/stats'
+            }else{
+                getNextPost();
             }
-            getNextPost();
             count--;
-
         }, speed[0].data);
     });
 

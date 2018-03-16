@@ -1,8 +1,8 @@
 var express = require('express');
 var router = express.Router();
-var slideController = require('../public/javascripts/database/slide-controller');
-var statsController = require('../public/javascripts/database/stats-controller');
-var settingController = require('../public/javascripts/database/settings-controller');
+var postController = require('../public/javascripts/database/post-db');
+var statsController = require('../public/javascripts/database/statistics-db');
+var settingController = require('../public/javascripts/database/settings-db');
 
 router.get('/', (req, res) => {
     res.render('social-slide', {
@@ -16,7 +16,7 @@ router.get('/stats', (req, res) => {
     });
 });
 
-router.get('/api/get/next-post', slideController.getNextPost);
+router.get('/api/get/next-post', postController.getNextPost);
 
 router.get('/api/get/next-stat', statsController.getStatistics);
 

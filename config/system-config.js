@@ -16,7 +16,7 @@ module.exports = {
         count: 15,                              // Number of Tweets returned per keyword.
         result_type: 'recent',                  // Either 'recent', 'popular' or 'mixed'.
         lang: 'en',                             // Language based on ISO 639-1 code.
-        tweet_mode: 'extended',                 // Allows app to get Media elements.
+        tweet_mode: 'extended',                 // Allows app to get Media elements **DO NOT MODIFY**.
         geocode: '50.720806,-1.904755,50mi'     // Default if none selected.
     }
 };
