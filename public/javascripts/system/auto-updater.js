@@ -1,7 +1,6 @@
 var conf = require('../../../config/system-config');
 var AppSetting = require('../models/settings-model');
 var timeConverter = require('../helpers/milliseconds');
-var Statistics = require('../database/statistics-db');
 var Twitter = require('../apis/platforms/twitter/twitter-api');
 var log = require('../helpers/logger');
 const settingObjId = conf.settings.settingDocObjectId;

@@ -9,36 +9,39 @@ let statsController = {};
 
 statsController.getStatistics = (req, res) => {
 
-    /*let allStats = [];
+    let allStats = [];
 
-    allStats.push(getWeeklyPosts());
+    //allStats.push(getWeeklyPosts());
 
     allStats.push(getDailyTotal());
 
     Promise.all(allStats).then((stats) => {
 
+        // TODO: format all stats into readable arrays for chart.
+
         res.json(stats);
 
     }).catch((err) => {
         log.err('Problem getting statistics: '+err);
-    });*/
+    });
 
-    statsController.getDailyTotal();
+
+    /*statsController.getDailyTotal();
 
     let testData = {
-        weeklyPosts:{
+        weeklyPosts: {
             title: 11,
-            labels: ['from:mr_rone_','#bournemouth filter:media -RT','#siliconbeach filter:media', 'from:ratio -RT',
+            labels: ['from:mr_rone_', '#bournemouth filter:media -RT', '#siliconbeach filter:media', 'from:ratio -RT',
                 '#london filter:media -RT', '#beach filter:media -RT'],
-            data: [121,189,152,20,202,178]
+            data: [121, 189, 152, 20, 202, 178]
         },
         dailyTotal: {
-            labels: ['10th','11th','12th','13th','14th','15th','16th','17th','18th','19th'],
-            data: [304,289,300,260,345,310,302,332,289,299]
+            labels: ['10th', '11th', '12th', '13th', '14th', '15th', '16th', '17th', '18th', '19th'],
+            data: [304, 289, 300, 260, 345, 310, 302, 332, 289, 299]
         }
     };
 
-    res.json(testData);
+    res.json(testData);*/
 
 };
 
@@ -48,13 +51,9 @@ function getWeeklyPosts () {
 
 }
 
-statsController.getDailyTotal = () => {
+function getDailyTotal() {
 
-    //log.inf('Loading daily total...', logger);
-
-    // .find({}).limit(10).sort({statDate: -1}).exec((err, docs) => {
-
-    DailyTotal.find({}, (err, docs) => {
+    DailyTotal.find({}).limit(10).sort({statDate: -1}).exec((err, docs) => {
 
         if(err){throw err;}
 

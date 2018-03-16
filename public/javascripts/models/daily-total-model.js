@@ -13,5 +13,5 @@ let dailyTotalSchema = new Schema({
     }
 });
 
-let DailyTotal = mongoose.model('DailyTotalPosts', dailyTotalSchema);
-module.exports = DailyTotal;
+let DailyTotalPosts = mongoose.model('dailytotalposts', dailyTotalSchema);
+module.exports = DailyTotalPosts;
