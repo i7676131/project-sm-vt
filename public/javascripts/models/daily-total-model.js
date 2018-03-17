@@ -6,10 +6,6 @@ let dailyTotalSchema = new Schema({
     dayTotal: {
         type: Number,
         default: 0
-    },
-    statDate: {
-        type: Date,
-        default: Date.now()
     }
 });
 

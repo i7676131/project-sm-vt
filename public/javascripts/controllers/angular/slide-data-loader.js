@@ -78,7 +78,7 @@ function populateChart(dailyChartData, weeklyChartData){
     let ctxOptions1 = {
         title: {
             display: true,
-            text: 'Total Daily Posts',
+            text: dailyChartData.title,
             fontSize: 30,
             padding: 12
         },
@@ -103,7 +103,7 @@ function populateChart(dailyChartData, weeklyChartData){
     let ctxOptions2 = {
         title: {
             display: true,
-            text: 'Top Weekly Posts - Week of Year '+weeklyChartData.title,
+            text: weeklyChartData.title,
             fontSize: 30,
             padding: 12
         },

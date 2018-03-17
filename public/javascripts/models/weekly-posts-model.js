@@ -11,12 +11,12 @@ let word = {
 };
 
 let weeklyPosts = new Schema({
-    weekCommencing: {
+    weekOfYear: {
         type: Number,
         default: week.getWeek()
     },
     words: [word]
 });
 
-let WeeklyPosts = mongoose.model('WeeklyPosts', weeklyPosts);
+let WeeklyPosts = mongoose.model('weeklyposts', weeklyPosts);
 module.exports = WeeklyPosts;

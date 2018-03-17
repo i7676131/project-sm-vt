@@ -1,13 +1,14 @@
-var conf = require('../../../config/system-config');
-var AppSetting = require('../models/settings-model');
-var timeConverter = require('../helpers/milliseconds');
-var Twitter = require('../apis/platforms/twitter/twitter-api');
-var log = require('../helpers/logger');
+let conf = require('../../../config/system-config');
+let AppSetting = require('../models/settings-model');
+let Stats = require('../database/statistics-db');
+let timeConverter = require('../helpers/milliseconds');
+let Twitter = require('../apis/platforms/twitter/twitter-api');
+let log = require('../helpers/logger');
 const settingObjId = conf.settings.settingDocObjectId;
 const logger = 'AUTO UPDATER';
 
 // Set default interval in-case of error.
-var updateRefresh = 900000;
+let updateRefresh = 900000;
 
 // Update list once when app starts.
 updateAppData();
@@ -23,11 +24,13 @@ function getUpdateRefresh() {
         log.inf('API refresh set to \'' + updateRefresh + '\' (milliseconds)', logger);
         setInterval(updateAppData, updateRefresh);
     });
-};
+}
 
 function updateAppData() {
-
     log.inf('Updating social media post list...', logger);
     Twitter.getNewPosts();
-
-};
+    log.inf('Updating daily total statistics...', logger);
+    Stats.updateDailyTotal();
+    log.inf('Updating popular posts of the week...', logger);
+    Stats.updateWeeklyPosts();
+}

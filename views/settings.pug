@@ -15,12 +15,12 @@ block content
             button(type='submit') Update
         br
         h1 Whitelist Settings
-        h2 Add a Query to the whitelist.
-        p Hashtags e.g: #bournemouth
-        p User Mentions e.g: @RatioNetwork
-        p From specific user e.g: from:RatioNetwork
-        p Phrases e.g: "Ratio are cool"
-        p Includes images e.g: Beach filter:images
+        p Include Tweets with hashtag e.g: #bournemouth
+        p Include Tweets with user mentions e.g: @RatioNetwork
+        p Include Tweets from specific user e.g: from:RatioNetwork
+        p Include Tweets with phrases e.g: "Ratio are kickass"
+        p Include Tweets with images e.g: Beach filter:media
+        p Don't include retweets e.g: #Bournemouth -RT
         br
         label Enter New Query and Geo-location (optional)
         form(action='/settings/add' method='POST')
@@ -28,6 +28,7 @@ block content
             input(type='text' placeholder='latitude, longitude, radius' name='geoCode')
             input(type='hidden' name='listType' value='whitelist')
             button(type='submit') Save
+        br
         label Select Whitelist Query for Deletion (Select 1 or More...)
         form(action='/settings/delete' method='POST' enctype='application/x-www-form-urlencoded')
             input(type='hidden' name='listType' value='whitelist')
@@ -46,6 +47,7 @@ block content
             input(type='text' placeholder='Blacklist......' name='listWord' required=true)
             input(type='hidden' name='listType' value='blacklist')
             button(type='submit') Save
+        br
         label Select Blacklist Word for Deletion (Select 1 or More...)
         form(action='/settings/delete' method='POST' enctype='application/x-www-form-urlencoded')
             input(type='hidden' name='listType' value='blacklist')

@@ -1,5 +1,7 @@
 let week = require('current-week-number');
 let months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+let daySuffix = ['st','nd','rd','th','th','th','th','th','th','th','th','th','th','th','th','th','th','th','th','th',
+    'st','nd','th','th','th','th','th','th','th','st'];
 
 let formatDate = {};
 
@@ -18,6 +20,16 @@ formatDate.twitterDate = (post) => {
         smUserName: post.smUserName,
         smName: post.smName
     }
+};
+
+formatDate.getDaySuffix = (day) => {
+    return day+daySuffix[day-1];
+};
+
+formatDate.getDay = (date) => {
+
+    let newDate = new Date(date);
+    return newDate.getUTCDate();
 };
 
 formatDate.getWeek = () => {

@@ -1,3 +1,4 @@
+let fmtDate = require('../helpers/format-date');
 let mongoose = require('mongoose');
 let Schema = mongoose.Schema;
 
@@ -24,6 +25,14 @@ let postSchema = new Schema({
         type: Number,
         default: 0,
         required: true
+    },
+    weekOfYearAdded: {
+        type: Number,
+        default: fmtDate.getWeek(Date.now())
+    },
+    dayAdded: {
+        type: Number,
+        default: fmtDate.getDay(Date.now())
     },
     postExpiry: {
         type: Date,

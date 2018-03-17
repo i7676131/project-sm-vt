@@ -35,7 +35,7 @@ api.getNewPosts = () => {
         let filteredTweets = [];
         log.inf('Total tweets: ' + singleArrayOfTweets.length, logger);
         for (let i = 0; i < singleArrayOfTweets.length; i++) {
-            filteredTweets.push(checkBlacklist(singleArrayOfTweets[i]));
+            filteredTweets.push(settings.checkBlacklist(singleArrayOfTweets[i]));
         }
         return Promise.all(filteredTweets);
 
@@ -85,35 +85,6 @@ function getTweets(query) {
                 resolve(data.statuses);
             }else {
                 resolve(convert.convertToTwitterModel(data.statuses, query.word));
-            }
-        });
-    });
-}
-
-function checkBlacklist(tweet) {
-    return new Promise((resolve, reject) => {
-
-        settings.getBlacklist().then((bList) => {
-            let rejectTweet = false;
-
-            for (let i = 0; i < bList.length; i++) {
-
-                regPatt = new RegExp(bList[i].word, 'ig');
-                if (regPatt.test(tweet.smContent)) {
-                    log.war('Not adding post containing \''+bList[i].word+'\' in full_text \''+tweet.smContent+'\'', logger);
-                    rejectTweet = true;
-                    break;
-                }else if (regPatt.test(tweet.smUserName)) {
-                    log.war('Not adding post containing \''+bList[i].word+'\' in username \''+tweet.smUserName+'\'', logger);
-                    rejectTweet = true;
-                    break;
-                }
-            }
-
-            if(rejectTweet){
-                resolve(null);
-            }else{
-                resolve(tweet);
             }
         });
     });
