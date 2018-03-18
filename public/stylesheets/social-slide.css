@@ -42,9 +42,9 @@
     float: right;
 }
 #avatar{
-    height: 80px;
-    width: 80px;
-    margin: 5% 10px 0 5%;
+    height: 75px;
+    width: 75px;
+    margin: 5% 15px 0 5%;
     border-radius: 50%;
     position: relative;
     float: left;
@@ -60,7 +60,7 @@
 }
 #txt_content{
     height: inherit;
-    margin: 5% 5% 0 5%;
+    margin: 10% 5% 0 5%;
     font-size: 30px;
     overflow: auto;
     max-height: 50vh;
@@ -72,5 +72,19 @@
     float: right;
 }
 
+.front_img.ng-hide-add, .front_img.ng-hide-remove {
+    transition: all linear 0.5s;
+    display: block;
+}
+
+.front_img.ng-hide-add.ng-hide-add-active, .front_img.ng-hide-remove {
+    transition: all linear 0s;
+    opacity: 0;
+}
+
+.front_img.ng-hide-add, .front_img.ng-hide-remove.ng-hide-remove-active {
+    transition: all linear 0.5s;
+    opacity: 1;
+}
 
 

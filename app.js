@@ -12,6 +12,7 @@ var updater = require('./public/javascripts/system/auto-updater');
 //var stat = require('./public/javascripts/database/statistics-db');
 var socialSlide = require('./routes/social-slide');
 var settings = require('./routes/settings');
+var about = require('./routes/about');
 
 //stat.getDailyTotal();
 
@@ -32,6 +33,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/social-slide', socialSlide);
 app.use('/settings', settings);
+app.use('/about', about);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

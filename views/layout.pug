@@ -1,23 +1,26 @@
 doctype html
 html(lang='en' ng-app="socialSlide")
-  head
-    meta(charset='UTF-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel='stylesheet', href='/stylesheets/social-slide.css')
-    link(rel='stylesheet', href='/stylesheets/statistics.css')
-    script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js')
-    script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js')
-    script(src='/javascripts/controllers/angular/slide-data-loader.js')
-    script(src='//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js')
-  body
-    ul
-      li
-        div.dropdown
-          a(href='javascript:void(0)').dropbtn •••
-          div.dropdown_items
-            a(href='/about') About
-            a(href='/settings') Settings
-            a(href='/social-slide') Social Slide
-  block content
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        title= title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='/stylesheets/social-slide.css')
+        link(rel='stylesheet', href='/stylesheets/statistics.css')
+        link(rel='stylesheet', href='/stylesheets/settings.css')
+        link(rel='stylesheet', href='/stylesheets/about.css')
+
+        script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js')
+        script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js')
+        script(src='/javascripts/controllers/angular/slide-data-loader.js')
+        script(src='//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js')
+    body
+        ul
+            li
+                div.dropdown
+                    a(href='javascript:void(0)').dropbtn •••
+                    div.dropdown_items
+                        a(href='/about') About
+                        a(href='/settings') Settings
+                        a(href='/social-slide') Social Slide
+    block content

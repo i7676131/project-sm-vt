@@ -1,5 +1,24 @@
 let socialSlide = angular.module('socialSlide', ['ngRoute']);
 
+socialSlide.directive('fadeIn', function($timeout){
+
+    return{
+        restrict: 'A',
+        link: function($scope, $element, attrs){
+
+            $element.addClass("ng-hide-remove");
+            $element.on('load', function(){
+                $element.addClass("ng-hide-add");
+            });
+            attrs.$observe("ngSrc", function () {
+                $element.removeClass("ng-hide-add");
+                $element.addClass("ng-hide-remove");
+            })
+        }
+    }
+
+});
+
 socialSlide.controller("SocialController", function ($scope, $http, $window, $interval) {
     let count = 5;
 

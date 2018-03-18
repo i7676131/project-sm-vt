@@ -1,0 +1,22 @@
+.about_box {
+    width: 20%;
+    height: 200px;
+    box-shadow: 0 4px 8px RGBA(0,0,0,0.2), 0 6px 20px 0 RGBA(0,0,0,0.19);
+    background-color: #FFFFFF;
+    text-align: center;
+    color: RGB(255,1,128);
+    font-weight: bold;
+    line-height: 200px;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin: auto;
+}
+p {
+    vertical-align: middle;
+    line-height: 1.5;
+    display: inline-block;
+}
