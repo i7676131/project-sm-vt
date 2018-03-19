@@ -2,14 +2,14 @@ extends layout
 
 block content
     div.container
-
         if message
             div.request_message
                 span(onclick="this.parentElement.style.display='none';").close_btn &times;
                 = message
-
         div.general_container
             h1 General Settings
+            h2 Update
+            br
             div.form_container
                 form(action='/settings/update' method='POST')
                     label Update Refresh (mins) *Requires App Restart:
@@ -17,7 +17,7 @@ block content
                     input(type='number' min='15' max='60' placeholder='Current: '+appSett[0].updateRefresh+'...' name='formUpdateRefresh')
                     br
                     br
-                    label Slide Speed (secs):
+                    label Update Slide Speed (secs):
                     br
                     input(type='number' min='10' max='60' placeholder='Current: '+appSett[0].slideSpeed+'...' name='formSlideSpeed')
                     br
@@ -26,39 +26,44 @@ block content
 
         div.whitelist_container
             h1 Whitelist Settings
-
                 h2 Guide
                 br
-                p Please make each query as specific as possible using the patterns listed below. Failure to do so could
-                 |  result in random and undesired results.
-                br
+                p.
+                    Please make each query as specific as possible using the patterns listed below. Failure to do so
+                    could result in random and undesired results.
                 p • To include Tweets with hashtag use the # symbol. Example: #bournemouth
-                br
                 p • To include Tweets with user mentions use the @ symbol. Example: @RatioNetwork
-                br
-                p • To include Tweets from specific user use from:<USER> pattern. Example: from:RatioNetwork
-                br
-                p • To include Tweets with phrases the "<PHRASE>" symbols. Example: "Ratio are kickass"
-                br
+                p • To include Tweets from specific user use from:USER pattern. Example: from:RatioNetwork
+                p • To include Tweets with phrases the "PHRASE" symbols. Example: "Ratio are kickass"
                 p • To include Tweets with images use filter:media pattern. Example: Beach filter:media
-                br
                 p • To not include retweets add the -RT pattern. Example: #Bournemouth -RT
-            hr
+                p.
+                    • Geo-location is an optional field that will include Tweets from that location and radius. Example input
+                    for London with a radius of 50 miles: 51.50853, -0.12574, 50mi
+                p.
+                    • It is recommended to use the following website for latitude/longitude coordinates:
+                    #[a(href='http://latitudelongitude.org/') latitudelongitude.org]
+            br
+            br
+            h2 Add
+            br
             div.form_container
                 form(action='/settings/add' method='POST')
                     label Enter New Query:
                     br
-                    input(type='text' placeholder='Whitelist...' name='listWord' required=true).whitelist_input
+                    input(type='text' placeholder='Query...' name='listWord' required=true).whitelist_input
                     br
                     br
-                    label Geo-location (optional):
+                    label Enter Geo-location (optional):
                     br
-                    input(type='text' placeholder='latitude, longitude, radius...' name='geoCode').loglat_input
+                    input(type='text' placeholder='Latitude, longitude, radius...' name='geoCode').loglat_input
                     input(type='hidden' name='listType' value='whitelist')
                     br
                     br
                     button(type='submit').btn Save
-            hr
+            br
+            h2 Delete
+            br
             div.form_container
                 form(action='/settings/delete' method='POST' enctype='application/x-www-form-urlencoded')
                     input(type='hidden' name='listType' value='whitelist')
@@ -76,11 +81,13 @@ block content
 
         div.blacklist_container
             h1 Blacklist Settings
-            p
-            | Use this section to alter the blacklist settings. Any word in the blacklist will be used to filter out any
-            | unwanted content from appearing on the social slide. To block a specific user simply enter the username
-            | like so: RatioNetwork
+            p.
+                Use this section to alter the blacklist settings. Any word in the blacklist will be used to filter out any
+                unwanted content from appearing on the social slide. To block a specific user simply enter the username
+                like so: RatioNetwork
             br
+            br
+            h2 Add
             br
             div.form_container
                 form(action='/settings/add' method='POST')
@@ -91,7 +98,9 @@ block content
                     br
                     br
                     button(type='submit').btn Save
-            hr
+            br
+            h2 Delete
+            br
             div.form_container
                 form(action='/settings/delete' method='POST' enctype='application/x-www-form-urlencoded')
                     input(type='hidden' name='listType' value='blacklist')
