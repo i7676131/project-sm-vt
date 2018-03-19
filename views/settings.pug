@@ -20,6 +20,8 @@ block content
                     label Slide Speed (secs):
                     br
                     input(type='number' min='10' max='60' placeholder='Current: '+appSett[0].slideSpeed+'...' name='formSlideSpeed')
+                    br
+                    br
                     button(type='submit').btn Update
 
         div.whitelist_container
@@ -53,6 +55,8 @@ block content
                     br
                     input(type='text' placeholder='latitude, longitude, radius...' name='geoCode').loglat_input
                     input(type='hidden' name='listType' value='whitelist')
+                    br
+                    br
                     button(type='submit').btn Save
             hr
             div.form_container
@@ -67,6 +71,7 @@ block content
                                     option(value=word._id) #{word.word}
                                 else
                                     option(value=0) No data to display.
+                    br
                     button(type='submit').btn Delete
 
         div.blacklist_container
@@ -83,6 +88,8 @@ block content
                     br
                     input(type='text' placeholder='Blacklist......' name='listWord' required=true)
                     input(type='hidden' name='listType' value='blacklist')
+                    br
+                    br
                     button(type='submit').btn Save
             hr
             div.form_container
@@ -97,4 +104,5 @@ block content
                                     option(value=word._id) #{word.word}
                                 else
                                     option(value=0) No data to display.
+                    br
                     button(type='submit').btn Delete

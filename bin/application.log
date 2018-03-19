@@ -38505,3 +38505,796 @@ MongoNetworkError: failed to connect to server [localhost:27017] on first connec
 [2018-03-19T15:26:04.397] [INFO] POST DB - No. of Tweets to exist check 49.
 [2018-03-19T15:26:04.459] [INFO] POST DB - Check complete.
 [2018-03-19T15:26:04.460] [INFO] POST DB - POSTS: New '0' - Already Exists '49'
+[2018-03-19T16:20:40.874] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T16:20:41.133] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T16:20:41.138] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T16:20:41.139] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T16:20:41.146] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T16:20:41.177] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T16:20:41.216] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T16:20:41.380] [INFO] STAT DB - Daily total has been updated to 128.
+[2018-03-19T16:20:41.382] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T16:20:41.644] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T16:20:41.647] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:20:41.674] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:20:41.707] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T16:20:41.916] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:20:41.943] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:20:42.047] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 13
+[2018-03-19T16:20:42.051] [INFO] TWITTER API - Total tweets: 52
+[2018-03-19T16:20:42.326] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T16:20:42.326] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-19T16:20:42.327] [INFO] POST DB - No. of Tweets to exist check 51.
+[2018-03-19T16:20:42.424] [INFO] POST DB - Check complete.
+[2018-03-19T16:20:42.440] [INFO] POST DB - POSTS: New '9' - Already Exists '42'
+[2018-03-19T16:20:45.727] [INFO] POST DB - ** Next post - ID: 975767825590693900 - Date: Mon Mar 19 2018 16:15:53 GMT+0000 (GMT) - Username: @ElvethamHotel - Times used: 0 **
+[2018-03-19T16:21:51.191] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T16:21:51.428] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T16:21:51.432] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T16:21:51.433] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T16:21:51.439] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T16:21:51.469] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T16:21:51.508] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T16:21:51.611] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T16:21:51.614] [INFO] STAT DB - Daily total has been updated to 137.
+[2018-03-19T16:21:51.816] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T16:21:51.868] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T16:21:51.895] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:21:51.916] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:21:52.113] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:21:52.151] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:21:52.159] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 13
+[2018-03-19T16:21:52.163] [INFO] TWITTER API - Total tweets: 52
+[2018-03-19T16:21:52.261] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T16:21:52.261] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-19T16:21:52.261] [INFO] POST DB - No. of Tweets to exist check 51.
+[2018-03-19T16:21:52.296] [INFO] POST DB - Check complete.
+[2018-03-19T16:21:52.296] [INFO] POST DB - POSTS: New '0' - Already Exists '51'
+[2018-03-19T16:22:14.384] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T16:22:14.621] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T16:22:14.626] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T16:22:14.627] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T16:22:14.635] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T16:22:14.667] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T16:22:14.706] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T16:22:14.786] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T16:22:14.787] [INFO] STAT DB - Daily total has been updated to 137.
+[2018-03-19T16:22:15.030] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T16:22:15.036] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:22:15.047] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:22:15.101] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T16:22:15.280] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:22:15.288] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 13
+[2018-03-19T16:22:15.338] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:22:15.341] [INFO] TWITTER API - Total tweets: 52
+[2018-03-19T16:22:15.457] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T16:22:15.458] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-19T16:22:15.458] [INFO] POST DB - No. of Tweets to exist check 51.
+[2018-03-19T16:22:15.498] [INFO] POST DB - Check complete.
+[2018-03-19T16:22:15.498] [INFO] POST DB - POSTS: New '0' - Already Exists '51'
+[2018-03-19T16:22:31.012] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T16:22:31.251] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T16:22:31.256] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T16:22:31.257] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T16:22:31.263] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T16:22:31.299] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T16:22:31.338] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T16:22:31.415] [INFO] STAT DB - Daily total has been updated to 137.
+[2018-03-19T16:22:31.431] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T16:22:31.672] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:22:31.682] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:22:31.692] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T16:22:31.735] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T16:22:31.913] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 13
+[2018-03-19T16:22:31.923] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:22:31.941] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:22:31.946] [INFO] TWITTER API - Total tweets: 52
+[2018-03-19T16:22:32.075] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T16:22:32.075] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-19T16:22:32.075] [INFO] POST DB - No. of Tweets to exist check 51.
+[2018-03-19T16:22:32.114] [INFO] POST DB - Check complete.
+[2018-03-19T16:22:32.114] [INFO] POST DB - POSTS: New '0' - Already Exists '51'
+[2018-03-19T16:22:45.480] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T16:22:45.710] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T16:22:45.715] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T16:22:45.716] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T16:22:45.722] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T16:22:45.760] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T16:22:45.799] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T16:22:45.861] [INFO] STAT DB - Daily total has been updated to 137.
+[2018-03-19T16:22:45.884] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T16:22:46.106] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T16:22:46.119] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T16:22:46.153] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:22:46.176] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:22:46.367] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:22:46.374] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:22:46.462] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 13
+[2018-03-19T16:22:46.465] [INFO] TWITTER API - Total tweets: 52
+[2018-03-19T16:22:46.601] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T16:22:46.602] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-19T16:22:46.602] [INFO] POST DB - No. of Tweets to exist check 51.
+[2018-03-19T16:22:46.655] [INFO] POST DB - Check complete.
+[2018-03-19T16:22:46.655] [INFO] POST DB - POSTS: New '0' - Already Exists '51'
+[2018-03-19T16:22:58.438] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T16:22:58.669] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T16:22:58.675] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T16:22:58.676] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T16:22:58.682] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T16:22:58.717] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T16:22:58.763] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T16:22:58.851] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T16:22:58.851] [INFO] STAT DB - Daily total has been updated to 137.
+[2018-03-19T16:22:59.069] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:22:59.075] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T16:22:59.119] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:22:59.279] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:22:59.299] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 13
+[2018-03-19T16:22:59.315] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T16:22:59.358] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:22:59.363] [INFO] TWITTER API - Total tweets: 52
+[2018-03-19T16:22:59.477] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T16:22:59.478] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-19T16:22:59.478] [INFO] POST DB - No. of Tweets to exist check 51.
+[2018-03-19T16:22:59.513] [INFO] POST DB - Check complete.
+[2018-03-19T16:22:59.513] [INFO] POST DB - POSTS: New '0' - Already Exists '51'
+[2018-03-19T16:23:08.203] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T16:23:08.513] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T16:23:08.518] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T16:23:08.519] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T16:23:08.527] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T16:23:08.562] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T16:23:08.603] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T16:23:08.690] [INFO] STAT DB - Daily total has been updated to 137.
+[2018-03-19T16:23:08.693] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T16:23:08.985] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:23:09.146] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T16:23:09.202] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:23:09.269] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T16:23:09.432] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 13
+[2018-03-19T16:23:09.912] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:23:09.919] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:23:09.924] [INFO] TWITTER API - Total tweets: 52
+[2018-03-19T16:23:10.049] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T16:23:10.049] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-19T16:23:10.050] [INFO] POST DB - No. of Tweets to exist check 51.
+[2018-03-19T16:23:10.094] [INFO] POST DB - Check complete.
+[2018-03-19T16:23:10.094] [INFO] POST DB - POSTS: New '0' - Already Exists '51'
+[2018-03-19T16:23:21.274] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T16:23:21.585] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T16:23:21.592] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T16:23:21.594] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T16:23:21.602] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T16:23:21.633] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T16:23:21.689] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T16:23:21.827] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T16:23:21.828] [INFO] STAT DB - Daily total has been updated to 137.
+[2018-03-19T16:23:22.003] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T16:23:22.009] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:23:22.028] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:23:22.061] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T16:23:22.158] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:23:22.243] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 13
+[2018-03-19T16:23:22.291] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:23:22.295] [INFO] TWITTER API - Total tweets: 52
+[2018-03-19T16:23:22.421] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T16:23:22.422] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-19T16:23:22.422] [INFO] POST DB - No. of Tweets to exist check 51.
+[2018-03-19T16:23:22.465] [INFO] POST DB - Check complete.
+[2018-03-19T16:23:22.465] [INFO] POST DB - POSTS: New '0' - Already Exists '51'
+[2018-03-19T16:25:16.521] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T16:25:16.813] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T16:25:16.818] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T16:25:16.819] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T16:25:16.825] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T16:25:16.864] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T16:25:16.903] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T16:25:17.002] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T16:25:17.003] [INFO] STAT DB - Daily total has been updated to 137.
+[2018-03-19T16:25:17.308] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:25:17.315] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T16:25:17.317] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T16:25:17.343] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:25:17.532] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:25:17.537] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 13
+[2018-03-19T16:25:17.551] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:25:17.555] [INFO] TWITTER API - Total tweets: 52
+[2018-03-19T16:25:17.691] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T16:25:17.692] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-19T16:25:17.693] [INFO] POST DB - No. of Tweets to exist check 51.
+[2018-03-19T16:25:17.734] [INFO] POST DB - Check complete.
+[2018-03-19T16:25:17.734] [INFO] POST DB - POSTS: New '0' - Already Exists '51'
+[2018-03-19T16:25:47.918] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T16:25:48.221] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T16:25:48.228] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T16:25:48.229] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T16:25:48.236] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T16:25:48.274] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T16:25:48.322] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T16:25:48.386] [INFO] STAT DB - Daily total has been updated to 137.
+[2018-03-19T16:25:48.403] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T16:25:48.634] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T16:25:48.669] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:25:48.698] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T16:25:48.798] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:25:48.812] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:25:48.858] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 13
+[2018-03-19T16:25:48.994] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:25:48.998] [INFO] TWITTER API - Total tweets: 52
+[2018-03-19T16:25:49.126] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T16:25:49.127] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-19T16:25:49.127] [INFO] POST DB - No. of Tweets to exist check 51.
+[2018-03-19T16:25:49.169] [INFO] POST DB - Check complete.
+[2018-03-19T16:25:49.169] [INFO] POST DB - POSTS: New '0' - Already Exists '51'
+[2018-03-19T16:25:56.894] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T16:25:57.170] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T16:25:57.178] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T16:25:57.180] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T16:25:57.191] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T16:25:57.231] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T16:25:57.273] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T16:25:57.375] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T16:25:57.376] [INFO] STAT DB - Daily total has been updated to 137.
+[2018-03-19T16:25:57.584] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T16:25:57.611] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:25:57.675] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:25:57.703] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 13
+[2018-03-19T16:25:57.707] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T16:25:57.811] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:25:57.930] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:25:57.934] [INFO] TWITTER API - Total tweets: 52
+[2018-03-19T16:25:58.062] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T16:25:58.063] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-19T16:25:58.063] [INFO] POST DB - No. of Tweets to exist check 51.
+[2018-03-19T16:25:58.104] [INFO] POST DB - Check complete.
+[2018-03-19T16:25:58.104] [INFO] POST DB - POSTS: New '0' - Already Exists '51'
+[2018-03-19T16:36:51.796] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T16:36:52.038] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T16:36:52.043] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T16:36:52.044] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T16:36:52.049] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T16:36:52.100] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T16:36:52.144] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T16:36:52.228] [INFO] STAT DB - Daily total has been updated to 137.
+[2018-03-19T16:36:52.265] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T16:36:52.526] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:36:52.757] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T16:36:52.776] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:36:52.855] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T16:36:52.923] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:36:53.065] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:36:53.290] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 13
+[2018-03-19T16:36:53.294] [INFO] TWITTER API - Total tweets: 52
+[2018-03-19T16:36:53.406] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T16:36:53.407] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-19T16:36:53.407] [INFO] POST DB - No. of Tweets to exist check 51.
+[2018-03-19T16:36:53.447] [INFO] POST DB - Check complete.
+[2018-03-19T16:36:53.451] [INFO] POST DB - POSTS: New '2' - Already Exists '49'
+[2018-03-19T16:38:04.659] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T16:38:04.962] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T16:38:04.968] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T16:38:04.970] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T16:38:04.978] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T16:38:05.022] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T16:38:05.066] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T16:38:05.145] [INFO] STAT DB - Daily total has been updated to 139.
+[2018-03-19T16:38:05.169] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T16:38:05.354] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T16:38:05.463] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:38:05.540] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:38:05.563] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T16:38:05.637] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:38:05.652] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:38:05.657] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 13
+[2018-03-19T16:38:05.660] [INFO] TWITTER API - Total tweets: 52
+[2018-03-19T16:38:05.769] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T16:38:05.769] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-19T16:38:05.770] [INFO] POST DB - No. of Tweets to exist check 51.
+[2018-03-19T16:38:05.816] [INFO] POST DB - Check complete.
+[2018-03-19T16:38:05.816] [INFO] POST DB - POSTS: New '0' - Already Exists '51'
+[2018-03-19T16:38:59.930] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T16:39:00.169] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T16:39:00.174] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T16:39:00.175] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T16:39:00.181] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T16:39:00.218] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T16:39:00.270] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T16:39:00.371] [INFO] STAT DB - Daily total has been updated to 139.
+[2018-03-19T16:39:00.372] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T16:39:00.610] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T16:39:00.630] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:39:00.657] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:39:00.663] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T16:39:00.907] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 13
+[2018-03-19T16:39:00.913] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:39:01.079] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:39:01.082] [INFO] TWITTER API - Total tweets: 52
+[2018-03-19T16:39:01.206] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T16:39:01.207] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-19T16:39:01.207] [INFO] POST DB - No. of Tweets to exist check 51.
+[2018-03-19T16:39:01.249] [INFO] POST DB - Check complete.
+[2018-03-19T16:39:01.250] [INFO] POST DB - POSTS: New '0' - Already Exists '51'
+[2018-03-19T16:39:49.232] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T16:39:49.464] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T16:39:49.469] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T16:39:49.470] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T16:39:49.476] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T16:39:49.511] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T16:39:49.550] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T16:39:49.637] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T16:39:49.638] [INFO] STAT DB - Daily total has been updated to 139.
+[2018-03-19T16:39:49.894] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T16:39:49.903] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:39:49.906] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:39:49.954] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T16:39:50.196] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:39:50.257] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 13
+[2018-03-19T16:39:50.288] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:39:50.291] [INFO] TWITTER API - Total tweets: 52
+[2018-03-19T16:39:50.400] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T16:39:50.400] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-19T16:39:50.400] [INFO] POST DB - No. of Tweets to exist check 51.
+[2018-03-19T16:39:50.435] [INFO] POST DB - Check complete.
+[2018-03-19T16:39:50.436] [INFO] POST DB - POSTS: New '0' - Already Exists '51'
+[2018-03-19T16:40:51.068] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T16:40:51.327] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T16:40:51.332] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T16:40:51.333] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T16:40:51.339] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T16:40:51.374] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T16:40:51.411] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T16:40:51.521] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T16:40:51.522] [INFO] STAT DB - Daily total has been updated to 139.
+[2018-03-19T16:40:51.763] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T16:40:51.798] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:40:51.800] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T16:40:51.916] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:40:51.963] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:40:52.102] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:40:52.180] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 13
+[2018-03-19T16:40:52.185] [INFO] TWITTER API - Total tweets: 52
+[2018-03-19T16:40:52.278] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T16:40:52.279] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-19T16:40:52.280] [INFO] POST DB - No. of Tweets to exist check 51.
+[2018-03-19T16:40:52.314] [INFO] POST DB - Check complete.
+[2018-03-19T16:40:52.314] [INFO] POST DB - POSTS: New '0' - Already Exists '51'
+[2018-03-19T16:41:32.691] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T16:41:32.924] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T16:41:32.931] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T16:41:32.933] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T16:41:32.942] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T16:41:32.985] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T16:41:33.037] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T16:42:16.613] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T16:42:16.844] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T16:42:16.848] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T16:42:16.849] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T16:42:16.855] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T16:42:16.888] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T16:42:16.926] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T16:42:17.011] [INFO] STAT DB - Daily total has been updated to 139.
+[2018-03-19T16:42:17.032] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T16:42:17.319] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T16:42:17.327] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T16:42:17.361] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:42:17.414] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:42:17.538] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:42:17.555] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 13
+[2018-03-19T16:42:17.585] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:42:17.591] [INFO] TWITTER API - Total tweets: 52
+[2018-03-19T16:42:17.685] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T16:42:17.686] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-19T16:42:17.686] [INFO] POST DB - No. of Tweets to exist check 51.
+[2018-03-19T16:42:18.096] [INFO] POST DB - Check complete.
+[2018-03-19T16:42:18.096] [INFO] POST DB - POSTS: New '0' - Already Exists '51'
+[2018-03-19T16:43:50.411] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T16:43:50.646] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T16:43:50.651] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T16:43:50.652] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T16:43:50.658] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T16:43:50.694] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T16:43:50.734] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T16:43:50.877] [INFO] STAT DB - Daily total has been updated to 139.
+[2018-03-19T16:43:50.878] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T16:43:51.171] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T16:43:51.191] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:43:51.202] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:43:51.237] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T16:43:51.293] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:43:51.379] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 13
+[2018-03-19T16:43:51.454] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:43:51.457] [INFO] TWITTER API - Total tweets: 52
+[2018-03-19T16:43:51.566] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T16:43:51.567] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-19T16:43:51.567] [INFO] POST DB - No. of Tweets to exist check 51.
+[2018-03-19T16:43:51.599] [INFO] POST DB - Check complete.
+[2018-03-19T16:43:51.599] [INFO] POST DB - POSTS: New '0' - Already Exists '51'
+[2018-03-19T16:48:52.219] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T16:48:52.448] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T16:48:52.453] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T16:48:52.454] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T16:48:52.460] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T16:48:52.496] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T16:48:52.534] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T16:48:52.612] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T16:48:52.613] [INFO] STAT DB - Daily total has been updated to 139.
+[2018-03-19T16:48:52.916] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:48:52.920] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T16:48:52.952] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:48:52.955] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T16:48:53.074] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:48:53.088] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:48:53.278] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 14
+[2018-03-19T16:48:53.284] [INFO] TWITTER API - Total tweets: 53
+[2018-03-19T16:48:53.372] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T16:48:53.375] [INFO] TWITTER API - Total filtered tweets: 52
+[2018-03-19T16:48:53.376] [INFO] POST DB - No. of Tweets to exist check 52.
+[2018-03-19T16:48:53.407] [INFO] POST DB - Check complete.
+[2018-03-19T16:48:53.411] [INFO] POST DB - POSTS: New '3' - Already Exists '49'
+[2018-03-19T16:49:45.491] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T16:49:45.747] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T16:49:45.754] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T16:49:45.756] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T16:49:45.762] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T16:49:45.796] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T16:49:45.837] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T16:49:45.937] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T16:49:45.941] [INFO] STAT DB - Daily total has been updated to 142.
+[2018-03-19T16:49:46.136] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T16:49:46.180] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:49:46.240] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:49:46.256] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T16:49:46.288] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:49:46.428] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 14
+[2018-03-19T16:49:46.515] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:49:46.518] [INFO] TWITTER API - Total tweets: 53
+[2018-03-19T16:49:46.638] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T16:49:46.639] [INFO] TWITTER API - Total filtered tweets: 52
+[2018-03-19T16:49:46.640] [INFO] POST DB - No. of Tweets to exist check 52.
+[2018-03-19T16:49:47.128] [INFO] POST DB - Check complete.
+[2018-03-19T16:49:47.128] [INFO] POST DB - POSTS: New '0' - Already Exists '52'
+[2018-03-19T16:50:42.718] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T16:50:42.988] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T16:50:42.993] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T16:50:42.994] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T16:50:43.004] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T16:50:43.038] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T16:50:43.079] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T16:50:43.175] [INFO] STAT DB - Daily total has been updated to 142.
+[2018-03-19T16:50:43.176] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T16:50:43.382] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T16:50:43.398] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T16:50:43.423] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:50:43.437] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:50:43.637] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:50:43.662] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:50:43.737] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 14
+[2018-03-19T16:50:43.740] [INFO] TWITTER API - Total tweets: 53
+[2018-03-19T16:50:43.843] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T16:50:43.845] [INFO] TWITTER API - Total filtered tweets: 52
+[2018-03-19T16:50:43.846] [INFO] POST DB - No. of Tweets to exist check 52.
+[2018-03-19T16:50:43.885] [INFO] POST DB - Check complete.
+[2018-03-19T16:50:43.885] [INFO] POST DB - POSTS: New '0' - Already Exists '52'
+[2018-03-19T16:53:27.001] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T16:53:27.243] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T16:53:27.248] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T16:53:27.249] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T16:53:27.255] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T16:53:27.293] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T16:53:27.331] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T16:53:27.428] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T16:53:27.429] [INFO] STAT DB - Daily total has been updated to 142.
+[2018-03-19T16:53:27.671] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T16:53:27.673] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:53:27.746] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:53:27.787] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T16:53:27.859] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:53:27.969] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:53:28.059] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 14
+[2018-03-19T16:53:28.064] [INFO] TWITTER API - Total tweets: 53
+[2018-03-19T16:53:28.168] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T16:53:28.173] [INFO] TWITTER API - Total filtered tweets: 52
+[2018-03-19T16:53:28.174] [INFO] POST DB - No. of Tweets to exist check 52.
+[2018-03-19T16:53:28.209] [INFO] POST DB - Check complete.
+[2018-03-19T16:53:28.209] [INFO] POST DB - POSTS: New '0' - Already Exists '52'
+[2018-03-19T16:53:45.432] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T16:53:45.770] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T16:53:45.782] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T16:53:45.784] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T16:53:45.791] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T16:53:45.827] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T16:53:45.893] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T16:53:46.060] [INFO] STAT DB - Daily total has been updated to 142.
+[2018-03-19T16:53:46.061] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T16:53:46.268] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:53:46.277] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:53:46.307] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T16:53:46.347] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T16:53:46.383] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:53:46.529] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:53:46.594] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 14
+[2018-03-19T16:53:46.599] [INFO] TWITTER API - Total tweets: 53
+[2018-03-19T16:53:46.707] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T16:53:46.708] [INFO] TWITTER API - Total filtered tweets: 52
+[2018-03-19T16:53:46.708] [INFO] POST DB - No. of Tweets to exist check 52.
+[2018-03-19T16:53:46.752] [INFO] POST DB - Check complete.
+[2018-03-19T16:53:46.752] [INFO] POST DB - POSTS: New '0' - Already Exists '52'
+[2018-03-19T16:57:34.938] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T16:57:35.197] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T16:57:35.217] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T16:57:35.219] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T16:57:35.226] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T16:57:35.277] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T16:57:35.322] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T16:57:35.411] [INFO] STAT DB - Daily total has been updated to 142.
+[2018-03-19T16:57:35.421] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T16:57:35.647] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T16:57:35.686] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T16:57:35.691] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:57:35.694] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T16:57:35.931] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 13
+[2018-03-19T16:57:35.936] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:57:36.303] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T16:57:36.306] [INFO] TWITTER API - Total tweets: 52
+[2018-03-19T16:57:36.424] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'Seems a little odd to say when there's still ☃️#snow on the ground, but we take a little #SpringBreak 🌱 #Easter 🐰returning on Sunday 29th April for our @FontwellPark #westsussex #weddingfayre #WeddingFair '
+[2018-03-19T16:57:36.427] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T16:57:36.427] [INFO] TWITTER API - Total filtered tweets: 50
+[2018-03-19T16:57:36.427] [INFO] POST DB - No. of Tweets to exist check 50.
+[2018-03-19T16:57:36.472] [INFO] POST DB - Check complete.
+[2018-03-19T16:57:36.475] [INFO] POST DB - POSTS: New '1' - Already Exists '49'
+[2018-03-19T17:00:04.406] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T17:00:04.634] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T17:00:04.640] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T17:00:04.641] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T17:00:04.647] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T17:00:04.685] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T17:00:04.726] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T17:00:04.823] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T17:00:04.824] [INFO] STAT DB - Daily total has been updated to 143.
+[2018-03-19T17:00:05.071] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T17:00:05.084] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T17:00:05.131] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T17:00:05.147] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T17:00:05.342] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T17:00:05.428] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 13
+[2018-03-19T17:00:05.439] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T17:00:05.442] [INFO] TWITTER API - Total tweets: 52
+[2018-03-19T17:00:05.574] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'Seems a little odd to say when there's still ☃️#snow on the ground, but we take a little #SpringBreak 🌱 #Easter 🐰returning on Sunday 29th April for our @FontwellPark #westsussex #weddingfayre #WeddingFair '
+[2018-03-19T17:00:05.575] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T17:00:05.575] [INFO] TWITTER API - Total filtered tweets: 50
+[2018-03-19T17:00:05.576] [INFO] POST DB - No. of Tweets to exist check 50.
+[2018-03-19T17:00:05.611] [INFO] POST DB - Check complete.
+[2018-03-19T17:00:05.611] [INFO] POST DB - POSTS: New '0' - Already Exists '50'
+[2018-03-19T17:00:33.172] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T17:00:33.417] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T17:00:33.422] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T17:00:33.423] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T17:00:33.430] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T17:00:33.493] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T17:00:33.556] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T17:00:33.709] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T17:00:33.710] [INFO] STAT DB - Daily total has been updated to 143.
+[2018-03-19T17:00:33.930] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T17:00:33.939] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T17:00:33.945] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T17:00:34.008] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T17:00:34.123] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T17:00:34.140] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T17:00:34.229] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 13
+[2018-03-19T17:00:34.231] [INFO] TWITTER API - Total tweets: 52
+[2018-03-19T17:00:34.346] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'Seems a little odd to say when there's still ☃️#snow on the ground, but we take a little #SpringBreak 🌱 #Easter 🐰returning on Sunday 29th April for our @FontwellPark #westsussex #weddingfayre #WeddingFair '
+[2018-03-19T17:00:34.352] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T17:00:34.353] [INFO] TWITTER API - Total filtered tweets: 50
+[2018-03-19T17:00:34.354] [INFO] POST DB - No. of Tweets to exist check 50.
+[2018-03-19T17:00:34.395] [INFO] POST DB - Check complete.
+[2018-03-19T17:00:34.396] [INFO] POST DB - POSTS: New '0' - Already Exists '50'
+[2018-03-19T17:01:18.119] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T17:01:18.371] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T17:01:18.377] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T17:01:18.378] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T17:01:18.385] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T17:01:18.435] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T17:01:18.505] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T17:01:18.599] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T17:01:18.599] [INFO] STAT DB - Daily total has been updated to 143.
+[2018-03-19T17:01:18.821] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T17:01:18.868] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T17:01:18.892] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T17:01:18.956] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T17:01:19.106] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T17:01:19.172] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 13
+[2018-03-19T17:01:19.352] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T17:01:19.358] [INFO] TWITTER API - Total tweets: 52
+[2018-03-19T17:01:19.472] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'Seems a little odd to say when there's still ☃️#snow on the ground, but we take a little #SpringBreak 🌱 #Easter 🐰returning on Sunday 29th April for our @FontwellPark #westsussex #weddingfayre #WeddingFair '
+[2018-03-19T17:01:19.473] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T17:01:19.474] [INFO] TWITTER API - Total filtered tweets: 50
+[2018-03-19T17:01:19.474] [INFO] POST DB - No. of Tweets to exist check 50.
+[2018-03-19T17:01:19.512] [INFO] POST DB - Check complete.
+[2018-03-19T17:01:19.512] [INFO] POST DB - POSTS: New '0' - Already Exists '50'
+[2018-03-19T17:01:24.194] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T17:01:24.424] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T17:01:24.429] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T17:01:24.430] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T17:01:24.436] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T17:01:24.466] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T17:01:24.508] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T17:01:24.611] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T17:01:24.614] [INFO] STAT DB - Daily total has been updated to 143.
+[2018-03-19T17:01:24.831] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T17:01:24.861] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T17:01:24.863] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T17:01:24.909] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T17:01:24.916] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 13
+[2018-03-19T17:01:24.961] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T17:01:25.090] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T17:01:25.095] [INFO] TWITTER API - Total tweets: 52
+[2018-03-19T17:01:25.191] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'Seems a little odd to say when there's still ☃️#snow on the ground, but we take a little #SpringBreak 🌱 #Easter 🐰returning on Sunday 29th April for our @FontwellPark #westsussex #weddingfayre #WeddingFair '
+[2018-03-19T17:01:25.196] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T17:01:25.196] [INFO] TWITTER API - Total filtered tweets: 50
+[2018-03-19T17:01:25.197] [INFO] POST DB - No. of Tweets to exist check 50.
+[2018-03-19T17:01:25.231] [INFO] POST DB - Check complete.
+[2018-03-19T17:01:25.231] [INFO] POST DB - POSTS: New '0' - Already Exists '50'
+[2018-03-19T17:01:54.594] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T17:01:54.827] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T17:01:54.831] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T17:01:54.832] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T17:01:54.838] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T17:01:54.871] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T17:01:54.912] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T17:01:55.004] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T17:01:55.005] [INFO] STAT DB - Daily total has been updated to 143.
+[2018-03-19T17:01:55.258] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T17:01:55.282] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T17:01:55.317] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T17:01:55.319] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T17:01:55.442] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T17:01:55.577] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T17:01:55.671] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 13
+[2018-03-19T17:01:55.675] [INFO] TWITTER API - Total tweets: 52
+[2018-03-19T17:01:55.771] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'Seems a little odd to say when there's still ☃️#snow on the ground, but we take a little #SpringBreak 🌱 #Easter 🐰returning on Sunday 29th April for our @FontwellPark #westsussex #weddingfayre #WeddingFair '
+[2018-03-19T17:01:55.774] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T17:01:55.775] [INFO] TWITTER API - Total filtered tweets: 50
+[2018-03-19T17:01:55.775] [INFO] POST DB - No. of Tweets to exist check 50.
+[2018-03-19T17:01:55.827] [INFO] POST DB - Check complete.
+[2018-03-19T17:01:55.827] [INFO] POST DB - POSTS: New '0' - Already Exists '50'
+[2018-03-19T17:04:40.163] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T17:04:40.409] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T17:04:40.414] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T17:04:40.416] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T17:04:40.422] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T17:04:40.455] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T17:04:40.494] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T17:04:40.584] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T17:04:40.585] [INFO] STAT DB - Daily total has been updated to 143.
+[2018-03-19T17:04:40.771] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T17:04:40.853] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T17:04:40.868] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T17:04:40.925] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T17:04:40.981] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 13
+[2018-03-19T17:04:41.025] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T17:04:41.114] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T17:04:41.120] [INFO] TWITTER API - Total tweets: 52
+[2018-03-19T17:04:41.236] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'Seems a little odd to say when there's still ☃️#snow on the ground, but we take a little #SpringBreak 🌱 #Easter 🐰returning on Sunday 29th April for our @FontwellPark #westsussex #weddingfayre #WeddingFair '
+[2018-03-19T17:04:41.240] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T17:04:41.241] [INFO] TWITTER API - Total filtered tweets: 50
+[2018-03-19T17:04:41.241] [INFO] POST DB - No. of Tweets to exist check 50.
+[2018-03-19T17:04:41.293] [INFO] POST DB - Check complete.
+[2018-03-19T17:04:41.293] [INFO] POST DB - POSTS: New '0' - Already Exists '50'
+[2018-03-19T17:04:59.775] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T17:05:00.026] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T17:05:00.035] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T17:05:00.037] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T17:05:00.044] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T17:05:00.078] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T17:05:00.117] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T17:05:00.200] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T17:05:00.200] [INFO] STAT DB - Daily total has been updated to 143.
+[2018-03-19T17:05:00.531] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T17:05:00.572] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T17:05:00.596] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T17:05:00.772] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T17:05:00.825] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T17:05:00.915] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 13
+[2018-03-19T17:05:00.920] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T17:05:00.924] [INFO] TWITTER API - Total tweets: 52
+[2018-03-19T17:05:01.050] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'Seems a little odd to say when there's still ☃️#snow on the ground, but we take a little #SpringBreak 🌱 #Easter 🐰returning on Sunday 29th April for our @FontwellPark #westsussex #weddingfayre #WeddingFair '
+[2018-03-19T17:05:01.056] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T17:05:01.057] [INFO] TWITTER API - Total filtered tweets: 50
+[2018-03-19T17:05:01.057] [INFO] POST DB - No. of Tweets to exist check 50.
+[2018-03-19T17:05:01.550] [INFO] POST DB - Check complete.
+[2018-03-19T17:05:01.550] [INFO] POST DB - POSTS: New '0' - Already Exists '50'
+[2018-03-19T17:05:12.358] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T17:05:12.604] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T17:05:12.609] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T17:05:12.610] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T17:05:12.618] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T17:05:12.653] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T17:05:12.692] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T17:05:12.831] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T17:05:12.831] [INFO] STAT DB - Daily total has been updated to 143.
+[2018-03-19T17:05:13.008] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T17:05:13.045] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T17:05:13.050] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T17:05:13.146] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T17:05:13.255] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T17:05:13.290] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T17:05:13.327] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 13
+[2018-03-19T17:05:13.329] [INFO] TWITTER API - Total tweets: 52
+[2018-03-19T17:05:13.433] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'Seems a little odd to say when there's still ☃️#snow on the ground, but we take a little #SpringBreak 🌱 #Easter 🐰returning on Sunday 29th April for our @FontwellPark #westsussex #weddingfayre #WeddingFair '
+[2018-03-19T17:05:13.435] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T17:05:13.435] [INFO] TWITTER API - Total filtered tweets: 50
+[2018-03-19T17:05:13.435] [INFO] POST DB - No. of Tweets to exist check 50.
+[2018-03-19T17:05:13.464] [INFO] POST DB - Check complete.
+[2018-03-19T17:05:13.464] [INFO] POST DB - POSTS: New '0' - Already Exists '50'
+[2018-03-19T17:06:24.559] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T17:06:24.800] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T17:06:24.806] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T17:06:24.807] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T17:06:24.817] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T17:06:24.866] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T17:06:24.907] [INFO] AUTO UPDATER - API refresh set to '900000' (milliseconds)
+[2018-03-19T17:06:25.006] [INFO] STAT DB - Daily total has been updated to 143.
+[2018-03-19T17:06:25.012] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T17:06:25.243] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T17:06:25.247] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T17:06:25.333] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T17:06:25.336] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T17:06:25.422] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T17:06:25.442] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T17:06:25.627] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 13
+[2018-03-19T17:06:25.632] [INFO] TWITTER API - Total tweets: 52
+[2018-03-19T17:06:25.726] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'Seems a little odd to say when there's still ☃️#snow on the ground, but we take a little #SpringBreak 🌱 #Easter 🐰returning on Sunday 29th April for our @FontwellPark #westsussex #weddingfayre #WeddingFair '
+[2018-03-19T17:06:25.729] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T17:06:25.730] [INFO] TWITTER API - Total filtered tweets: 50
+[2018-03-19T17:06:25.730] [INFO] POST DB - No. of Tweets to exist check 50.
+[2018-03-19T17:06:25.761] [INFO] POST DB - Check complete.
+[2018-03-19T17:06:25.761] [INFO] POST DB - POSTS: New '0' - Already Exists '50'
+[2018-03-19T17:07:41.566] [INFO] SETTINGS DB - slideSpeed was updated successfully.
+[2018-03-19T17:07:47.386] [INFO] SETTINGS DB - updateRefresh was updated successfully.
+[2018-03-19T17:09:34.910] [INFO] SETTINGS DB - updateRefresh was updated successfully.
+[2018-03-19T17:10:00.767] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T17:10:01.019] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T17:10:01.025] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T17:10:01.027] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T17:10:01.038] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T17:10:01.070] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T17:10:01.108] [INFO] AUTO UPDATER - API refresh set to '1200000' (milliseconds)
+[2018-03-19T17:10:01.216] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T17:10:01.216] [INFO] STAT DB - Daily total has been updated to 143.
+[2018-03-19T17:10:01.463] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T17:10:01.512] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T17:10:01.554] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T17:10:01.679] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T17:10:01.783] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T17:10:01.792] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 3
+[2018-03-19T17:10:01.810] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 13
+[2018-03-19T17:10:01.817] [INFO] TWITTER API - Total tweets: 53
+[2018-03-19T17:10:01.925] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'Seems a little odd to say when there's still ☃️#snow on the ground, but we take a little #SpringBreak 🌱 #Easter 🐰returning on Sunday 29th April for our @FontwellPark #westsussex #weddingfayre #WeddingFair '
+[2018-03-19T17:10:01.927] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T17:10:01.934] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-19T17:10:01.935] [INFO] POST DB - No. of Tweets to exist check 51.
+[2018-03-19T17:10:01.973] [INFO] POST DB - Check complete.
+[2018-03-19T17:10:01.978] [INFO] POST DB - POSTS: New '2' - Already Exists '49'
+[2018-03-19T17:10:36.796] [INFO] DB - Connecting to MongoDb...
+[2018-03-19T17:10:37.031] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-03-19T17:10:37.036] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-03-19T17:10:37.038] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-03-19T17:10:37.044] [INFO] WWW - Server is listening on port: 3000
+[2018-03-19T17:10:37.080] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-03-19T17:10:37.118] [INFO] AUTO UPDATER - API refresh set to '1200000' (milliseconds)
+[2018-03-19T17:10:37.229] [INFO] STAT DB - Weekly total has been updated.
+[2018-03-19T17:10:37.231] [INFO] STAT DB - Daily total has been updated to 145.
+[2018-03-19T17:10:37.449] [INFO] TWITTER API - No. of Tweets for query 'from:rationetwork - 50.72048,-1.8795,50mi' = 1
+[2018-03-19T17:10:37.515] [INFO] TWITTER API - No. of Tweets for query '#forests filter:media -RT - 50.72048,-1.8795,50mi' = 2
+[2018-03-19T17:10:37.707] [INFO] TWITTER API - No. of Tweets for query 'from:mr_rone_ - 50.72048,-1.8795,50mi' = 4
+[2018-03-19T17:10:37.722] [INFO] TWITTER API - No. of Tweets for query '#beach filter:media -RT - 50.72048,-1.8795,50mi' = 3
+[2018-03-19T17:10:37.733] [INFO] TWITTER API - No. of Tweets for query '#snow filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T17:10:37.738] [INFO] TWITTER API - No. of Tweets for query '#bournemouth filter:media -RT - 50.72048,-1.8795,50mi' = 15
+[2018-03-19T17:10:37.809] [INFO] TWITTER API - No. of Tweets for query '#photography filter:media -RT - 50.72048,-1.8795,50mi' = 13
+[2018-03-19T17:10:37.814] [INFO] TWITTER API - Total tweets: 53
+[2018-03-19T17:10:37.939] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'I'm looking forward to another blast of #cold #weather across @VisitHampshire and @VisitSussex but I really cannot wait to see the #woodland and #forests full of #bluebells again! :D @BBCEarth @BBCSpringwatch @BBCCountryfile '
+[2018-03-19T17:10:37.941] [WARN] SETTINGS DB - Not adding post containing 'sex' in full_text 'Seems a little odd to say when there's still ☃️#snow on the ground, but we take a little #SpringBreak 🌱 #Easter 🐰returning on Sunday 29th April for our @FontwellPark #westsussex #weddingfayre #WeddingFair '
+[2018-03-19T17:10:37.942] [INFO] TWITTER API - Total filtered tweets: 51
+[2018-03-19T17:10:37.943] [INFO] POST DB - No. of Tweets to exist check 51.
+[2018-03-19T17:10:37.979] [INFO] POST DB - Check complete.
+[2018-03-19T17:10:37.984] [INFO] POST DB - POSTS: New '2' - Already Exists '49'
