@@ -56,6 +56,31 @@ api.getNewPosts = () => {
     });
 };
 
+api.getSingleNewPost = (query) => {
+
+    getTweets(query).then((tweets) => {
+
+        nullFilteredTweets = nullFilter(tweets);
+
+        log.inf('Total filtered tweets: '+nullFilteredTweets.length, logger);
+        db.addSocialMediaPosts(nullFilteredTweets);
+
+    }).catch((err) => {
+        log.err(err);
+    });
+
+};
+
+function nullFilter(tweets){
+    let nullFilteredTweets = [];
+    for (let i = 0; i < tweets.length; i++) {
+        if(tweets[i] !== null){
+            nullFilteredTweets.push(tweets[i]);
+        }
+    }
+    return nullFilteredTweets;
+}
+
 function getTweets(query) {
     return new Promise((resolve, reject) => {
         client.get('search/tweets', {

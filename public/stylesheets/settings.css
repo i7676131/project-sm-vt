@@ -13,16 +13,26 @@
 
 }
 
-.instructions {
+.form_container {
     background-color: RGB(242,242,242);
     padding:20px;
 }
 
 .btn {
-    width: 10%;
+    width: 20%;
     float: right;
     cursor: pointer;
     padding: 10px 18px;
+    border: none;
+    background-color: RGB(255,1,128);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: RGB(201, 0, 100);
 }
 
 h1 {
@@ -31,50 +41,56 @@ h1 {
 
 hr {
     border: 0;
-    height: 1px;
-    background-color: RGB(255,1,128);
+    height: 2px;
+    background-color: RGB(242,242,242);
     margin: 40px 0 40px 0;
 }
 
 label {
     display: block;
     float: left;
-    width: 25%;
     margin-right: 5%;
 }
 
-input[type=text], input[type=number], select {
-    width: 30%;
+input[type=text], input[type=number], .select_container {
+    width: 70%;
     padding: 10px 18px;
     box-sizing: border-box;
     border-style: none;
     border-bottom: 2px solid RGB(255, 1, 128);
-    box-shadow: 0 4px 8px RGBA(0,0,0,0.2), 0 6px 20px 0 RGBA(0,0,0,0.19);
     background-color: #FFFFFF;
 
 }
-input[type=text]:focus, input[type=number]:focus, select:focus {
-    
-    background-color: RGB(255, 1, 128);
-    color: #FFFFFF;
+
+.select_container select {
+    background: transparent;
+    border: none;
+}
+
+input[type=text]:focus, input[type=number]:focus {
+    color: RGB(255, 1, 128);
+    font-weight: bold;
+    box-shadow: 0 4px 8px RGBA(0,0,0,0.2), 0 6px 20px 0 RGBA(0,0,0,0.19);
 
 }
+
 .request_message {
     margin: 5%;
     padding: 15px;
     font-size: 125%;
-    background-color: RGB(255, 1, 128);
+    background-color: RGB(212,237,218);
+    color: RGB(20,80,33);
     box-shadow: 0 4px 8px RGBA(0,0,0,0.2), 0 6px 20px 0 RGBA(0,0,0,0.19);
 }
 .close_btn {
     margin-left: 15px;
-    color: #FFFFFF;
+    color: RGB(118,162,127);
     font-weight: bold;
     float: right;
     font-size: 22px;
     line-height: 20px;
     cursor: pointer;
-    transition: 0.3s
+    transition: 0.5s
 }
 .close_btn:hover {
     color: #000000

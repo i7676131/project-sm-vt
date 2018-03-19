@@ -8,13 +8,13 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var updater = require('./public/javascripts/system/auto-updater');
-//var stat = require('./public/javascripts/database/statistics-db');
+var autoUpdater = require('./public/javascripts/system/auto-updater');
 var socialSlide = require('./routes/social-slide');
 var settings = require('./routes/settings');
 var about = require('./routes/about');
 
-//stat.getDailyTotal();
+// Start auto updater.
+autoUpdater.initiate();
 
 // create global app object
 var app = express();

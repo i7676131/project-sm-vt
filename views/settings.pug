@@ -10,18 +10,21 @@ block content
 
         div.general_container
             h1 General Settings
-            form(action='/settings/update' method='POST')
-                label Update Refresh (mins) *Requires App Restart:
-                input(type='number' min='15' max='60' placeholder=appSett[0].updateRefresh+'...' name='formUpdateRefresh')
-                br
-                br
-                label Slide Speed (secs):
-                input(type='number' min='10' max='60' placeholder=appSett[0].slideSpeed+'...' name='formSlideSpeed')
-                button(type='submit').btn Update
+            div.form_container
+                form(action='/settings/update' method='POST')
+                    label Update Refresh (mins) *Requires App Restart:
+                    br
+                    input(type='number' min='15' max='60' placeholder='Current: '+appSett[0].updateRefresh+'...' name='formUpdateRefresh')
+                    br
+                    br
+                    label Slide Speed (secs):
+                    br
+                    input(type='number' min='10' max='60' placeholder='Current: '+appSett[0].slideSpeed+'...' name='formSlideSpeed')
+                    button(type='submit').btn Update
 
         div.whitelist_container
             h1 Whitelist Settings
-            div.instructions
+
                 h2 Guide
                 br
                 p Please make each query as specific as possible using the patterns listed below. Failure to do so could
@@ -39,44 +42,59 @@ block content
                 br
                 p • To not include retweets add the -RT pattern. Example: #Bournemouth -RT
             hr
-            form(action='/settings/add' method='POST')
-                label Enter New Query:
-                input(type='text' placeholder='Whitelist...' name='listWord' required=true).whitelist_input
-                br
-                br
-                label Geo-location (optional):
-                input(type='text' placeholder='latitude, longitude, radius...' name='geoCode').loglat_input
-                input(type='hidden' name='listType' value='whitelist')
-
-                button(type='submit').btn Save
+            div.form_container
+                form(action='/settings/add' method='POST')
+                    label Enter New Query:
+                    br
+                    input(type='text' placeholder='Whitelist...' name='listWord' required=true).whitelist_input
+                    br
+                    br
+                    label Geo-location (optional):
+                    br
+                    input(type='text' placeholder='latitude, longitude, radius...' name='geoCode').loglat_input
+                    input(type='hidden' name='listType' value='whitelist')
+                    button(type='submit').btn Save
             hr
-
-            form(action='/settings/delete' method='POST' enctype='application/x-www-form-urlencoded')
-                input(type='hidden' name='listType' value='whitelist')
-                label Select Whitelist Query for Deletion (Select 1 or More...):
-                select(required=true name='whitelistSelect')
-                    each item in appSett
-                        each word in item.whitelist
-                            option(value=word._id) #{word.word}
-                        else
-                            option(value=0) No data to display.
-                button(type='submit').btn Delete
+            div.form_container
+                form(action='/settings/delete' method='POST' enctype='application/x-www-form-urlencoded')
+                    input(type='hidden' name='listType' value='whitelist')
+                    label Select Whitelist Query for Deletion:
+                    br
+                    div.select_container
+                        select(required=true name='whitelistSelect')
+                            each item in appSett
+                                each word in item.whitelist
+                                    option(value=word._id) #{word.word}
+                                else
+                                    option(value=0) No data to display.
+                    button(type='submit').btn Delete
 
         div.blacklist_container
             h1 Blacklist Settings
-            form(action='/settings/add' method='POST')
-                label Add a Word to the Blacklist:
-                input(type='text' placeholder='Blacklist......' name='listWord' required=true)
-                input(type='hidden' name='listType' value='blacklist')
-                button(type='submit').btn Save
+            p
+            | Use this section to alter the blacklist settings. Any word in the blacklist will be used to filter out any
+            | unwanted content from appearing on the social slide. To block a specific user simply enter the username
+            | like so: RatioNetwork
+            br
+            br
+            div.form_container
+                form(action='/settings/add' method='POST')
+                    label Add a Word to the Blacklist:
+                    br
+                    input(type='text' placeholder='Blacklist......' name='listWord' required=true)
+                    input(type='hidden' name='listType' value='blacklist')
+                    button(type='submit').btn Save
             hr
-            form(action='/settings/delete' method='POST' enctype='application/x-www-form-urlencoded')
-                input(type='hidden' name='listType' value='blacklist')
-                label Select Blacklist Word for Deletion (Select 1 or More...):
-                select(required=true name='blacklistSelect')
-                    each item in appSett
-                        each word in item.blacklist
-                            option(value=word._id) #{word.word}
-                        else
-                            option(value=0) No data to display.
-                button(type='submit').btn Delete
+            div.form_container
+                form(action='/settings/delete' method='POST' enctype='application/x-www-form-urlencoded')
+                    input(type='hidden' name='listType' value='blacklist')
+                    label Select Blacklist Word for Deletion:
+                    br
+                    div.select_container
+                        select(required=true name='blacklistSelect')
+                            each item in appSett
+                                each word in item.blacklist
+                                    option(value=word._id) #{word.word}
+                                else
+                                    option(value=0) No data to display.
+                    button(type='submit').btn Delete

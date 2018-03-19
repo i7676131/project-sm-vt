@@ -11,8 +11,14 @@ const logger = 'AUTO UPDATER';
 let updateRefresh = 900000;
 
 // Update list once when app starts.
-updateAppData();
-getUpdateRefresh();
+module.exports = {
+
+    initiate: function () {
+        updateAppData();
+        getUpdateRefresh();
+    }
+
+};
 
 function getUpdateRefresh() {
     AppSetting.find({_id: settingObjId}).exec((err, setting) => {
