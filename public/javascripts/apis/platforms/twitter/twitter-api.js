@@ -33,16 +33,13 @@ api.getNewPosts = function *() {
 
     yield Promise.all(filteredTweets);
 
-    let nullFilteredTweets = [];
-    for (let i = 0; i < filteredTweets.length; i++) {
-        if(filteredTweets[i] !== null){
-            nullFilteredTweets.push(filteredTweets[i]);
-        }
-    }
+    let nullFilteredTweets = nullFilter(filteredTweets);
 
     log.inf('Total filtered tweets: '+nullFilteredTweets.length, logger);
     db.addSocialMediaPosts(nullFilteredTweets);
 };
+
+
 
 function doubleArrToSingleArr(doubleArr){
     let singleArr = [];
@@ -105,7 +102,7 @@ api.getSingleNewPost = (query) => {
 
     getTweets(query).then((tweets) => {
 
-        nullFilteredTweets = nullFilter(tweets);
+        let nullFilteredTweets = nullFilter(tweets);
 
         log.inf('Total filtered tweets: '+nullFilteredTweets.length, logger);
         db.addSocialMediaPosts(nullFilteredTweets);

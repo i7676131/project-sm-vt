@@ -47,6 +47,10 @@ postController.updateUsedPost = (objId) => {
     });
 };
 
+postController.addSocialMediaPost = (post) => {
+
+};
+
 postController.addSocialMediaPosts = (posts) => {
     log.inf('No. of Tweets to exist check ' + posts.length + '.', logger);
 
