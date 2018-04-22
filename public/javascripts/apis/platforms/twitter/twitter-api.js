@@ -12,6 +12,49 @@ var client = new Twitter({
 const logger = 'TWITTER API';
 var api = {};
 
+api.getNewPosts = function *() {
+
+    let wList = yield settings.getWhitelist();
+
+    let allTweets = [];
+    for (let i = 0; i < wList.length; i++) {
+        allTweets.push(getTweets(wList[i]));
+    }
+
+    let doubleArrayOfTweets = yield Promise.all(allTweets);
+
+    let singleArrayOfTweets = doubleArrToSingleArr(doubleArrayOfTweets);
+
+    let filteredTweets = [];
+    log.inf('Total tweets: ' + singleArrayOfTweets.length, logger);
+    for (let i = 0; i < singleArrayOfTweets.length; i++) {
+        filteredTweets.push(settings.checkBlacklist(singleArrayOfTweets[i]));
+    }
+
+    yield Promise.all(filteredTweets);
+
+    let nullFilteredTweets = [];
+    for (let i = 0; i < filteredTweets.length; i++) {
+        if(filteredTweets[i] !== null){
+            nullFilteredTweets.push(filteredTweets[i]);
+        }
+    }
+
+    log.inf('Total filtered tweets: '+nullFilteredTweets.length, logger);
+    db.addSocialMediaPosts(nullFilteredTweets);
+};
+
+function doubleArrToSingleArr(doubleArr){
+    let singleArr = [];
+    for (let i = 0; i < doubleArr.length; i++) {
+        for (let x = 0; x < doubleArr[i].length; x++) {
+            singleArr.push(doubleArr[i][x]);
+        }
+    }
+    return singleArr;
+}
+
+/*
 api.getNewPosts = () => {
 
     settings.getWhitelist().then((wList) => {
@@ -55,6 +98,8 @@ api.getNewPosts = () => {
         log.err(reject, logger);
     });
 };
+*/
+
 
 api.getSingleNewPost = (query) => {
 

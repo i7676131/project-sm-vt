@@ -37,7 +37,9 @@ postController.getNextPost = (req, res) => {
 postController.updateUsedPost = (objId) => {
     let timesUsed = 0;
     SmPost.findOne({_id: objId}, (err, post) => {
-        if (err) {log.err('Could not get post by id '+objId+". "+err, logger);}
+        if (err) {
+            log.err('Could not get post by id '+objId+". "+err, logger);
+        }
         timesUsed = post.timesUsedToday + 1;
         SmPost.update({_id: objId}, {timesUsedToday: timesUsed}, {upsert: true}, (err) => {
             if (err) {log.err('Could not update \'timesUsedToday\' field.\n' + err, logger);}
@@ -77,7 +79,9 @@ postController.addSocialMediaPosts = (posts) => {
 function checkExists(post) {
     return new Promise((resolve, reject) => {
         SmPost.find({smId: post.smId}, (err, result) => {
-            if (err) {reject(err);}
+            if (err) {
+                reject(err);
+            }
             if (result.length) {
                 resolve(true);
             } else {
