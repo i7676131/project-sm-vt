@@ -12,6 +12,7 @@ var client = new Twitter({
 const logger = 'TWITTER API';
 var api = {};
 
+
 api.getNewPosts = function *() {
 
     let wList = yield settings.getWhitelist();
@@ -22,11 +23,11 @@ api.getNewPosts = function *() {
     }
 
     let doubleArrayOfTweets = yield Promise.all(allTweets);
-
     let singleArrayOfTweets = doubleArrToSingleArr(doubleArrayOfTweets);
 
-    let filteredTweets = [];
     log.inf('Total tweets: ' + singleArrayOfTweets.length, logger);
+
+    let filteredTweets = [];
     for (let i = 0; i < singleArrayOfTweets.length; i++) {
         filteredTweets.push(settings.checkBlacklist(singleArrayOfTweets[i]));
     }
@@ -37,6 +38,7 @@ api.getNewPosts = function *() {
 
     log.inf('Total filtered tweets: '+nullFilteredTweets.length, logger);
     db.addSocialMediaPosts(nullFilteredTweets);
+
 };
 
 

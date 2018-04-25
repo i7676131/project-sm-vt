@@ -12,6 +12,7 @@ var client = new Twitter({
 const logger = 'TWITTER API';
 var api = {};
 
+
 api.getNewPosts = () => {
 
     settings.getWhitelist((err, whitelist) => {

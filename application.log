@@ -12,3 +12,45 @@ MongoNetworkError: failed to connect to server [localhost:27017] on first connec
 [2018-04-18T12:19:09.402] [INFO] WWW - Server is listening on port: 3000
 [2018-04-18T12:19:09.425] [FATAL] DB - Connection to MongoDb failed...
 MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]
+[2018-04-25T12:57:59.453] [INFO] DB - Connecting to MongoDb...
+[2018-04-25T12:58:00.047] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-04-25T12:58:00.051] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-04-25T12:58:00.052] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-04-25T12:58:00.057] [INFO] WWW - Server is listening on port: 3000
+[2018-04-25T12:58:00.065] [FATAL] DB - Connection to MongoDb failed...
+MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]
+[2018-04-25T13:00:51.741] [INFO] DB - Connecting to MongoDb...
+[2018-04-25T13:00:51.991] [INFO] AUTO UPDATER - Updating social media post list...
+[2018-04-25T13:00:51.995] [INFO] AUTO UPDATER - Updating daily total statistics...
+[2018-04-25T13:00:51.997] [INFO] AUTO UPDATER - Updating popular posts of the week...
+[2018-04-25T13:00:52.002] [INFO] WWW - Server is listening on port: 3000
+[2018-04-25T13:00:52.017] [FATAL] DB - Connection to MongoDb failed...
+MongoNetworkError: failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]
+[2018-04-25T13:05:59.581] [ERROR] default - Input variable is not a number, returning default '900000'.
+[2018-04-25T13:06:23.987] [ERROR] default - Input variable is not a number, returning default '900000'.
+[2018-04-25T13:06:45.627] [ERROR] default - Input variable is empty or null, returning default '900000'.
+[2018-04-25T13:07:04.724] [ERROR] default - Input variable is not a number, returning default '900000'.
+[2018-04-25T13:07:45.941] [ERROR] default - Input variable is not a number, returning default '900000'.
+[2018-04-25T13:07:45.946] [ERROR] default - Input variable is not a number, returning default '900000'.
+[2018-04-25T13:08:08.212] [ERROR] default - Input variable is not a number, returning default '900000'.
+[2018-04-25T13:08:08.215] [ERROR] default - Input variable is empty or null, returning default '900000'.
+[2018-04-25T13:08:40.079] [ERROR] default - Input variable is not a number, returning default '900000'.
+[2018-04-25T13:08:40.082] [ERROR] default - Input variable is empty or null, returning default '900000'.
+[2018-04-25T13:09:26.088] [ERROR] default - Input variable is not a number, returning default '900000'.
+[2018-04-25T13:09:26.091] [ERROR] default - Input variable is empty or null, returning default '900000'.
+[2018-04-25T13:11:15.674] [ERROR] default - Input variable is not a number, returning default '900000'.
+[2018-04-25T13:11:15.679] [ERROR] default - Input variable is empty or null, returning default '900000'.
+[2018-04-25T13:11:15.683] [ERROR] default - Input variable is not a number, returning default '10000'.
+[2018-04-25T13:11:15.683] [ERROR] default - Input variable is empty or null, returning default '10000'.
+[2018-04-25T13:14:04.737] [ERROR] default - Input variable is not a number, returning default '900000'.
+[2018-04-25T13:14:04.740] [ERROR] default - Input variable is empty or null, returning default '900000'.
+[2018-04-25T13:14:04.743] [ERROR] default - Input variable is not a number, returning default '10000'.
+[2018-04-25T13:14:04.743] [ERROR] default - Input variable is empty or null, returning default '10000'.
+[2018-04-25T13:14:26.642] [ERROR] default - Input variable is not a number, returning default '900000'.
+[2018-04-25T13:14:26.645] [ERROR] default - Input variable is empty or null, returning default '900000'.
+[2018-04-25T13:14:26.648] [ERROR] default - Input variable is not a number, returning default '10000'.
+[2018-04-25T13:14:26.649] [ERROR] default - Input variable is empty or null, returning default '10000'.
+[2018-04-25T13:25:27.810] [ERROR] default - Input variable is not a number, returning default '900000'.
+[2018-04-25T13:25:27.820] [ERROR] default - Input variable is empty or null, returning default '900000'.
+[2018-04-25T13:25:27.829] [ERROR] default - Input variable is not a number, returning default '10000'.
+[2018-04-25T13:25:27.830] [ERROR] default - Input variable is empty or null, returning default '10000'.
