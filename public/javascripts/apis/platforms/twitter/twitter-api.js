@@ -12,7 +12,6 @@ var client = new Twitter({
 const logger = 'TWITTER API';
 var api = {};
 
-
 api.getNewPosts = function *() {
 
     let wList = yield settings.getWhitelist();
@@ -41,9 +40,7 @@ api.getNewPosts = function *() {
 
 };
 
-
-
-function doubleArrToSingleArr(doubleArr){
+function doubleArrToSingleArr(doubleArr) {
     let singleArr = [];
     for (let i = 0; i < doubleArr.length; i++) {
         for (let x = 0; x < doubleArr[i].length; x++) {
@@ -52,53 +49,6 @@ function doubleArrToSingleArr(doubleArr){
     }
     return singleArr;
 }
-
-/*
-api.getNewPosts = () => {
-
-    settings.getWhitelist().then((wList) => {
-
-        let allTweets = [];
-        for (let i = 0; i < wList.length; i++) {
-            allTweets.push(getTweets(wList[i]));
-        }
-        return Promise.all(allTweets);
-
-    }).then((doubleArrayOfTweets) => {
-
-        let singleArrayOfTweets = [];
-        // Turn into single dimension array of tweets.
-        for (let i = 0; i < doubleArrayOfTweets.length; i++) {
-            for (let x = 0; x < doubleArrayOfTweets[i].length; x++) {
-                singleArrayOfTweets.push(doubleArrayOfTweets[i][x]);
-            }
-        }
-
-        let filteredTweets = [];
-        log.inf('Total tweets: ' + singleArrayOfTweets.length, logger);
-        for (let i = 0; i < singleArrayOfTweets.length; i++) {
-            filteredTweets.push(settings.checkBlacklist(singleArrayOfTweets[i]));
-        }
-        return Promise.all(filteredTweets);
-
-    }).then((filteredTweets) => {
-
-        let nullFilteredTweets = [];
-        for (let i = 0; i < filteredTweets.length; i++) {
-            if(filteredTweets[i] !== null){
-                nullFilteredTweets.push(filteredTweets[i]);
-            }
-        }
-
-        log.inf('Total filtered tweets: '+nullFilteredTweets.length, logger);
-        db.addSocialMediaPosts(nullFilteredTweets);
-
-    }).catch((reject) => {
-        log.err(reject, logger);
-    });
-};
-*/
-
 
 api.getSingleNewPost = (query) => {
 

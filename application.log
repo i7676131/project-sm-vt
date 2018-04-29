@@ -58,3 +58,51 @@ MongoNetworkError: failed to connect to server [localhost:27017] on first connec
 [2018-04-28T12:29:02.296] [ERROR] default - Input variable is empty or null, returning default '900000'.
 [2018-04-28T12:29:02.302] [ERROR] default - Input variable is not a number, returning default '10000'.
 [2018-04-28T12:29:02.303] [ERROR] default - Input variable is empty or null, returning default '10000'.
+[2018-04-29T11:30:21.366] [ERROR] default - Input variable is not a number, returning default '900000'.
+[2018-04-29T11:30:21.370] [ERROR] default - Input variable is empty or null, returning default '900000'.
+[2018-04-29T11:30:21.374] [ERROR] default - Input variable is not a number, returning default '10000'.
+[2018-04-29T11:30:21.375] [ERROR] default - Input variable is empty or null, returning default '10000'.
+[2018-04-29T11:49:46.051] [ERROR] default - Input variable is not a number, returning default '900000'.
+[2018-04-29T11:49:46.054] [ERROR] default - Input variable is empty or null, returning default '900000'.
+[2018-04-29T11:49:46.058] [ERROR] default - Input variable is not a number, returning default '10000'.
+[2018-04-29T11:49:46.058] [ERROR] default - Input variable is empty or null, returning default '10000'.
+[2018-04-29T11:50:36.765] [ERROR] default - Input variable is not a number, returning default '900000'.
+[2018-04-29T11:50:36.767] [ERROR] default - Input variable is empty or null, returning default '900000'.
+[2018-04-29T11:50:36.770] [ERROR] default - Input variable is not a number, returning default '10000'.
+[2018-04-29T11:50:36.770] [ERROR] default - Input variable is empty or null, returning default '10000'.
+[2018-04-29T11:51:55.116] [ERROR] default - Input variable is not a number, returning default '900000'.
+[2018-04-29T11:51:55.119] [ERROR] default - Input variable is empty or null, returning default '900000'.
+[2018-04-29T11:51:55.124] [ERROR] default - Input variable is not a number, returning default '10000'.
+[2018-04-29T11:51:55.125] [ERROR] default - Input variable is empty or null, returning default '10000'.
+[2018-04-29T12:40:08.676] [ERROR] default - Input variable is not a number, returning default '900000'.
+[2018-04-29T12:40:08.679] [ERROR] default - Input variable is empty or null, returning default '900000'.
+[2018-04-29T12:40:08.683] [ERROR] default - Input variable is not a number, returning default '10000'.
+[2018-04-29T12:40:08.684] [ERROR] default - Input variable is empty or null, returning default '10000'.
+[2018-04-29T12:40:58.479] [ERROR] default - Input variable is not a number, returning default '900000'.
+[2018-04-29T12:40:58.483] [ERROR] default - Input variable is empty or null, returning default '900000'.
+[2018-04-29T12:40:58.489] [ERROR] default - Input variable is not a number, returning default '10000'.
+[2018-04-29T12:40:58.489] [ERROR] default - Input variable is empty or null, returning default '10000'.
+[2018-04-29T12:43:35.663] [ERROR] default - Input variable is not a number, returning default '900000'.
+[2018-04-29T12:43:35.666] [ERROR] default - Input variable is empty or null, returning default '900000'.
+[2018-04-29T12:43:35.668] [ERROR] default - Input variable is not a number, returning default '10000'.
+[2018-04-29T12:43:35.668] [ERROR] default - Input variable is empty or null, returning default '10000'.
+[2018-04-29T12:43:51.198] [ERROR] default - Input variable is not a number, returning default '900000'.
+[2018-04-29T12:43:51.200] [ERROR] default - Input variable is empty or null, returning default '900000'.
+[2018-04-29T12:43:51.203] [ERROR] default - Input variable is not a number, returning default '10000'.
+[2018-04-29T12:43:51.203] [ERROR] default - Input variable is empty or null, returning default '10000'.
+[2018-04-29T12:45:50.114] [ERROR] default - Input variable is not a number, returning default '10000'.
+[2018-04-29T12:45:50.116] [ERROR] default - Input variable is empty or null, returning default '10000'.
+[2018-04-29T12:46:23.136] [ERROR] default - Input variable is not a number, returning default '10000'.
+[2018-04-29T12:46:23.139] [ERROR] default - Input variable is empty or null, returning default '10000'.
+[2018-04-29T13:23:12.063] [ERROR] default - Input variable is not a number, returning default '10000'.
+[2018-04-29T13:23:12.065] [ERROR] default - Input variable is empty or null, returning default '10000'.
+[2018-04-29T17:07:35.457] [INFO] DB - Connecting to MongoDb...
+[2018-04-29T17:07:35.752] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-04-29T17:07:48.790] [INFO] DB - Connecting to MongoDb...
+[2018-04-29T17:07:49.006] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-04-29T17:10:12.119] [INFO] DB - Connecting to MongoDb...
+[2018-04-29T17:10:12.345] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-04-29T17:12:04.572] [INFO] DB - Connecting to MongoDb...
+[2018-04-29T17:12:04.787] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb
+[2018-04-29T17:44:23.954] [INFO] DB - Connecting to MongoDb...
+[2018-04-29T17:44:24.185] [INFO] DB - App successfully connected to MongoDb - Port: 27017 - Db: DevDb

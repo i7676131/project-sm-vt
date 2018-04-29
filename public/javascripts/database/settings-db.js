@@ -3,7 +3,6 @@ let log = require('../helpers/logger');
 let convert = require('../helpers/milliseconds');
 let AppSetting = require('../models/settings-model');
 let SmPost = require('../models/sm-post-model');
-let updater = require('../system/auto-updater');
 
 const settingObjId = conf.settings.settingDocObjectId;
 const logger = 'SETTINGS DB';

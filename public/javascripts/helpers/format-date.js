@@ -33,7 +33,8 @@ formatDate.getDay = (date) => {
 };
 
 formatDate.getWeek = () => {
-    return week();
+    return 10;
+    //return week();
 };
 
 formatDate.getWeekFromDate = (date) => {
@@ -41,3 +42,7 @@ formatDate.getWeekFromDate = (date) => {
 };
 
 module.exports = formatDate;
+
+
+
+

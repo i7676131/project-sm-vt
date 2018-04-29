@@ -48,7 +48,7 @@ block content
             h2 Add
             br
             div.form_container
-                form(action='/settings/add' method='POST')
+                form(action='/settings/add' method='POST' enctype='application/x-www-form-urlencoded')
                     label Enter New Query:
                     br
                     input(type='text' placeholder='Query...' name='listWord' required=true).whitelist_input

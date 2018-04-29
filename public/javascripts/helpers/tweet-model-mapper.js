@@ -16,7 +16,6 @@ module.exports = {
                 smId: tweet.id,
                 smName: tweet.user.name,
                 smUserName: '@'+tweet.user.screen_name,
-                //smContent: tweet.full_text.replace(/http.*$/,'').replace(/https.*$/,'').replace(/&amp;/g,'&'),
                 smContent: tweet.full_text
                     .replace(/&amp;/g,'&')
                     .replace(/&gt;/g,'>')
