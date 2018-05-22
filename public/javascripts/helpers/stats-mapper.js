@@ -37,7 +37,8 @@ mapper.convertToChartData = (stats) => {
             chartTemplateData.weeklyPosts.labels.push(weeklyStats.words[i].query
                 .replace(/from:/ig,'From: @')
                 .replace(/filter:media/ig, '')
-                .replace(/-RT/ig, ''));
+                .replace(/-RT/ig, '')
+		.replace(/\s/,''));
         }
         return chartTemplateData;
     } else {
